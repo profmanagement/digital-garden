@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+.pnp/
+.yarn/install-state.gz
+
+# Build output
+dist/
+build/
+.output/
+.astro/
+.svelte-kit/
+
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+
+# Obsidian
+.obsidian/
+contents/.obsidian/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Logs & temp
+*.log
+*.tmp
+*.cache
+.cache/
+
+# Coverage & testing
+coverage/
+.nyc_output/
+
+# Docker
+*.env.docker
