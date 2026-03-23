@@ -38,4 +38,4 @@ I think I will close each post with at least some tidbits. There will always be 
 
 ## Related
 **"Garden" by Magnapop**, a track from their 1992 self-titled debut EP, produced with Michael Stipe of R.E.M.  The song runs 2:21 and opens the record.
-Listen on: [[https://music.apple.com/au/song/garden/600108540| Apple Music]] | [[https://open.spotify.com/track/2narfj4Na3tmtTSb2gt2By | Spotify]] | [[https://www.youtube.com/watch?v=05sfvU0jmRE&list=PLVBYB3ynO7FbBP-J0lJySUymw-FWQmsek | Youtube]]
+Listen on: [Apple Music](https://music.apple.com/au/song/garden/600108540) | [Spotify](https://open.spotify.com/track/2narfj4Na3tmtTSb2gt2By)| [Youtube](https://www.youtube.com/watch?v=05sfvU0jmRE&list=PLVBYB3ynO7FbBP-J0lJySUymw-FWQmsek)
