@@ -3,13 +3,17 @@
 ## Active Tasks
 *(None)*
 
+## Completed Tasks (recent)
+- [x] TASK-004: Nav & URL fixes (EN → /en/, navbar, title dedup, back link)
+
 ## Backlog
 *(None)*
 
-## Completed Tasks
+## All Completed Tasks
 - [x] TASK-001: Initial Workspace Setup
 - [x] TASK-002: Implement Core Project Files
 - [x] TASK-003: v2 Enhancements (auto nav, wikilinks, search)
+- [x] TASK-004: Nav & URL fixes
 
 ## Documents
 - [PRD-01: Digital Garden](01_PRD/PRD-01_20260321_digital-garden_v01.md)

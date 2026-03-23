@@ -25,12 +25,14 @@ jobs:
 
       - name: Build site
         run: |
-          mkdir -p _site/nl _site/content/en _site/content/nl
+          mkdir -p _site/en _site/nl
           cp style.css _site/style.css
 
-          # ── Feature 2: Wikilink preprocessing ─────────────────────────────
-          # Converts [[target|label]] → [label](target.html)
-          # Converts [[target]]       → [target](target.html)
+          # ── Helpers ────────────────────────────────────────────────────────
+
+          # Preprocess wikilinks before Pandoc:
+          # [[target|label]] → [label](target.html)
+          # [[target]]       → [target](target.html)
           preprocess() {
             sed -E \
               -e 's/\[\[([^|\]]+)\|([^\]]+)\]\]/[\2](\1.html)/g' \
@@ -38,112 +40,182 @@ jobs:
               "$1"
           }
 
-          # ── Feature 1: Pre-generate nav fragments ─────────────────────────
+          # Extract title from YAML frontmatter
+          get_title() {
+            grep -m1 '^title:' "$1" | sed 's/^title:[[:space:]]*//'
+          }
 
-          # EN index nav: language switch + search + auto page list
+          # ── Root redirect ──────────────────────────────────────────────────
+          {
+            echo '<!DOCTYPE html>'
+            echo '<html lang="en"><head><meta charset="utf-8">'
+            echo '<meta http-equiv="refresh" content="0;url=en/">'
+            echo '<title>Digital Garden</title>'
+            echo '</head><body><a href="en/">Digital Garden</a></body></html>'
+          } > _site/index.html
+
+          # ── Feature 1: Pre-generate nav fragments ─────────────────────────
+          # All pages are now in _site/en/ or _site/nl/ (flat, same level).
+          # All relative links resolve within that folder.
+
+          # EN index nav: logo + HOME|ABOUT + EN·NL + search + auto page list
           {
             echo '<nav class="site-nav">'
-            echo '  <span class="nav-lang"><a href="index.html">EN</a> &middot; <a href="nl/index.html">NL</a></span>'
-            echo '  <a class="nav-search" href="search-en.html">&#x1F50D;</a>'
+            echo '  <a class="nav-logo" href="index.html">Digital Garden</a>'
+            echo '  <span class="nav-links">'
+            echo '    <a href="index.html">HOME</a>'
+            echo '    <span class="nav-sep">|</span>'
+            echo '    <a href="about.html">ABOUT</a>'
+            echo '  </span>'
+            echo '  <span class="nav-right">'
+            echo '    <span class="nav-lang"><a href="index.html">EN</a> &middot; <a href="../nl/index.html">NL</a></span>'
+            echo '    <a class="nav-search" href="search.html">&#x1F50D;</a>'
+            echo '  </span>'
             echo '</nav>'
             echo '<section class="auto-nav"><ul>'
             for f in content/en/*.md; do
               [ -f "$f" ] || continue
-              title=$(grep -m1 '^title:' "$f" | sed 's/^title:[[:space:]]*//')
+              title=$(get_title "$f")
               filename=$(basename "${f%.md}")
-              echo "  <li><a href=\"content/en/${filename}.html\">${title}</a></li>"
+              echo "  <li><a href=\"${filename}.html\">${title}</a></li>"
             done
             echo '</ul></section>'
           } > _nav_en_index.html
 
-          # NL index nav: language switch + search + auto page list
+          # NL index nav
           {
             echo '<nav class="site-nav">'
-            echo '  <span class="nav-lang"><a href="../index.html">EN</a> &middot; <a href="index.html">NL</a></span>'
-            echo '  <a class="nav-search" href="../search-nl.html">&#x1F50D;</a>'
+            echo '  <a class="nav-logo" href="index.html">Digital Garden</a>'
+            echo '  <span class="nav-links">'
+            echo '    <a href="index.html">HOME</a>'
+            echo '    <span class="nav-sep">|</span>'
+            echo '    <a href="over-mij.html">OVER MIJ</a>'
+            echo '  </span>'
+            echo '  <span class="nav-right">'
+            echo '    <span class="nav-lang"><a href="../en/index.html">EN</a> &middot; <a href="index.html">NL</a></span>'
+            echo '    <a class="nav-search" href="search.html">&#x1F50D;</a>'
+            echo '  </span>'
             echo '</nav>'
             echo '<section class="auto-nav"><ul>'
             for f in content/nl/*.md; do
               [ -f "$f" ] || continue
-              title=$(grep -m1 '^title:' "$f" | sed 's/^title:[[:space:]]*//')
+              title=$(get_title "$f")
               filename=$(basename "${f%.md}")
-              echo "  <li><a href=\"../content/nl/${filename}.html\">${title}</a></li>"
+              echo "  <li><a href=\"${filename}.html\">${title}</a></li>"
             done
             echo '</ul></section>'
           } > _nav_nl_index.html
 
-          # EN content page nav: back + language switch + search
+          # EN content page nav: full nav bar + back link on second line
           {
             echo '<nav class="site-nav">'
-            echo '  <a class="nav-back" href="../../index.html">&larr; Back</a>'
-            echo '  <span class="nav-lang"><a href="../../index.html">EN</a> &middot; <a href="../../nl/index.html">NL</a></span>'
-            echo '  <a class="nav-search" href="../../search-en.html">&#x1F50D;</a>'
+            echo '  <a class="nav-logo" href="index.html">Digital Garden</a>'
+            echo '  <span class="nav-links">'
+            echo '    <a href="index.html">HOME</a>'
+            echo '    <span class="nav-sep">|</span>'
+            echo '    <a href="about.html">ABOUT</a>'
+            echo '  </span>'
+            echo '  <span class="nav-right">'
+            echo '    <span class="nav-lang"><a href="index.html">EN</a> &middot; <a href="../nl/index.html">NL</a></span>'
+            echo '    <a class="nav-search" href="search.html">&#x1F50D;</a>'
+            echo '  </span>'
             echo '</nav>'
+            echo '<p><a class="nav-back" href="index.html">&larr; Back</a></p>'
           } > _nav_en_page.html
 
-          # NL content page nav: back + language switch + search
+          # NL content page nav: full nav bar + back link on second line
           {
             echo '<nav class="site-nav">'
-            echo '  <a class="nav-back" href="../../nl/index.html">&larr; Terug</a>'
-            echo '  <span class="nav-lang"><a href="../../index.html">EN</a> &middot; <a href="../../nl/index.html">NL</a></span>'
-            echo '  <a class="nav-search" href="../../search-nl.html">&#x1F50D;</a>'
+            echo '  <a class="nav-logo" href="index.html">Digital Garden</a>'
+            echo '  <span class="nav-links">'
+            echo '    <a href="index.html">HOME</a>'
+            echo '    <span class="nav-sep">|</span>'
+            echo '    <a href="over-mij.html">OVER MIJ</a>'
+            echo '  </span>'
+            echo '  <span class="nav-right">'
+            echo '    <span class="nav-lang"><a href="../en/index.html">EN</a> &middot; <a href="index.html">NL</a></span>'
+            echo '    <a class="nav-search" href="search.html">&#x1F50D;</a>'
+            echo '  </span>'
             echo '</nav>'
+            echo '<p><a class="nav-back" href="index.html">&larr; Terug</a></p>'
           } > _nav_nl_page.html
 
           # ── Build pages ────────────────────────────────────────────────────
+          # --metadata title="" suppresses Pandoc's auto-generated <h1> block.
+          # --metadata pagetitle="..." sets the browser <title> tag instead.
 
-          # English homepage
-          preprocess index.md | pandoc \
+          # English homepage → _site/en/index.html
+          pt=$(get_title en/index.md)
+          preprocess en/index.md | pandoc \
             --standalone \
-            --css style.css \
+            --css ../style.css \
+            --metadata pagetitle="$pt" \
+            --metadata title="" \
             --include-before-body _nav_en_index.html \
             --lua-filter .pandoc/wikilinks.lua \
-            -o _site/index.html
+            -o _site/en/index.html
 
-          # Dutch homepage
+          # Dutch homepage → _site/nl/index.html
+          pt=$(get_title nl/index.md)
           preprocess nl/index.md | pandoc \
             --standalone \
             --css ../style.css \
+            --metadata pagetitle="$pt" \
+            --metadata title="" \
             --include-before-body _nav_nl_index.html \
             --lua-filter .pandoc/wikilinks.lua \
             -o _site/nl/index.html
 
-          # English search page
-          preprocess search-en.md | pandoc \
+          # English search page → _site/en/search.html
+          pt=$(get_title en/search.md)
+          preprocess en/search.md | pandoc \
             --standalone \
-            --css style.css \
+            --css ../style.css \
+            --metadata pagetitle="$pt" \
+            --metadata title="" \
+            --include-before-body _nav_en_index.html \
             --lua-filter .pandoc/wikilinks.lua \
-            -o _site/search-en.html
+            -o _site/en/search.html
 
-          # Dutch search page
-          preprocess search-nl.md | pandoc \
+          # Dutch search page → _site/nl/search.html
+          pt=$(get_title nl/search.md)
+          preprocess nl/search.md | pandoc \
             --standalone \
-            --css style.css \
+            --css ../style.css \
+            --metadata pagetitle="$pt" \
+            --metadata title="" \
+            --include-before-body _nav_nl_index.html \
             --lua-filter .pandoc/wikilinks.lua \
-            -o _site/search-nl.html
+            -o _site/nl/search.html
 
-          # English content pages
+          # English content pages → _site/en/
           for f in content/en/*.md; do
             [ -f "$f" ] || continue
             filename=$(basename "${f%.md}")
+            pt=$(get_title "$f")
             preprocess "$f" | pandoc \
               --standalone \
-              --css ../../style.css \
+              --css ../style.css \
+              --metadata pagetitle="$pt" \
+              --metadata title="" \
               --include-before-body _nav_en_page.html \
               --lua-filter .pandoc/wikilinks.lua \
-              -o "_site/content/en/${filename}.html"
+              -o "_site/en/${filename}.html"
           done
 
-          # Dutch content pages
+          # Dutch content pages → _site/nl/
           for f in content/nl/*.md; do
             [ -f "$f" ] || continue
             filename=$(basename "${f%.md}")
+            pt=$(get_title "$f")
             preprocess "$f" | pandoc \
               --standalone \
-              --css ../../style.css \
+              --css ../style.css \
+              --metadata pagetitle="$pt" \
+              --metadata title="" \
               --include-before-body _nav_nl_page.html \
               --lua-filter .pandoc/wikilinks.lua \
-              -o "_site/content/nl/${filename}.html"
+              -o "_site/nl/${filename}.html"
           done
 
       # ── Feature 3: Search index ──────────────────────────────────────────
