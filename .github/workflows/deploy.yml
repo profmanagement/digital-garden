@@ -21,7 +21,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Build site
         run: |
@@ -65,31 +65,45 @@ jobs:
             local dir="content/${lang}/notes"
             local out="_notes_listing_${lang}.html"
             local by_label
-            [ "$lang" = "en" ] && by_label="by" || by_label="door"
+            [ "$lang" = "en" ] && by_label="By" || by_label="Door"
             {
               echo '<section class="notes-list">'
               while IFS= read -r f; do
                 [ -f "$f" ] || continue
-                local slug title type category description author tags
+                local slug title type category description author written_by tags created
                 slug=$(basename "${f%.md}")
                 title=$(get_field "$f" "title")
                 type=$(get_field "$f" "type")
                 category=$(get_field "$f" "category")
                 description=$(get_field "$f" "description")
                 author=$(get_field "$f" "author")
+                written_by=$(get_field "$f" "written_by")
                 tags=$(get_field "$f" "tags")
-                echo '<article class="note-card">'
-                echo '  <div class="note-card-header">'
+                created=$(get_field "$f" "created")
+
+                echo '<div class="note-summary">'
+                echo "  <div class=\"note-summary-title\"><a href=\"${slug}.html\">${title}</a></div>"
+
+                # Meta line: Category | Description
+                local meta=""
+                [ -n "$category" ] && meta="${category}"
+                [ -n "$description" ] && meta="${meta:+${meta} | }${description}"
+                [ -n "$meta" ] && echo "  <div class=\"note-summary-meta\">${meta}</div>"
+
+                # Author line: {type} By {author} ({written_by})
+                echo '  <div class="note-summary-author">'
                 [ -n "$type" ] && echo "    <span class=\"note-type note-type--${type}\">${type}</span>"
-                [ -n "$category" ] && echo "    <span class=\"note-category\">${category}</span>"
+                [ -n "$author" ] && echo -n "    ${by_label} ${author}"
+                [ -n "$written_by" ] && echo " (${written_by})" || echo ""
                 echo '  </div>'
-                echo "  <h3><a href=\"${slug}.html\">${title}</a></h3>"
-                [ -n "$description" ] && echo "  <p class=\"note-desc\">${description}</p>"
-                echo '  <div class="note-card-footer">'
-                [ -n "$author" ] && echo "    <span class=\"note-author\">${by_label} ${author}</span>"
-                [ -n "$tags" ] && echo "    <span class=\"note-tags\">${tags}</span>"
-                echo '  </div>'
-                echo '</article>'
+
+                # Footer line: Created - Tags
+                local footer=""
+                [ -n "$created" ] && footer="${created}"
+                [ -n "$tags" ] && footer="${footer:+${footer} - }${tags}"
+                [ -n "$footer" ] && echo "  <div class=\"note-summary-footer\">${footer}</div>"
+
+                echo '</div>'
               done < <(
                 for n in "$dir"/*.md; do
                   [ -f "$n" ] || continue
