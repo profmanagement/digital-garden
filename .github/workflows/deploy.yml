@@ -43,8 +43,8 @@ jobs:
           # EN index nav: language switch + search + auto page list
           {
             echo '<nav class="site-nav">'
-            echo '  <span class="nav-lang"><a href="index.html">EN</a> · <a href="nl/index.html">NL</a></span>'
-            echo '  <a class="nav-search" href="search-en.html">🔍</a>'
+            echo '  <span class="nav-lang"><a href="index.html">EN</a> &middot; <a href="nl/index.html">NL</a></span>'
+            echo '  <a class="nav-search" href="search-en.html">&#x1F50D;</a>'
             echo '</nav>'
             echo '<section class="auto-nav"><ul>'
             for f in content/en/*.md; do
@@ -59,8 +59,8 @@ jobs:
           # NL index nav: language switch + search + auto page list
           {
             echo '<nav class="site-nav">'
-            echo '  <span class="nav-lang"><a href="../index.html">EN</a> · <a href="index.html">NL</a></span>'
-            echo '  <a class="nav-search" href="../search-nl.html">🔍</a>'
+            echo '  <span class="nav-lang"><a href="../index.html">EN</a> &middot; <a href="index.html">NL</a></span>'
+            echo '  <a class="nav-search" href="../search-nl.html">&#x1F50D;</a>'
             echo '</nav>'
             echo '<section class="auto-nav"><ul>'
             for f in content/nl/*.md; do
@@ -73,22 +73,22 @@ jobs:
           } > _nav_nl_index.html
 
           # EN content page nav: back + language switch + search
-          cat > _nav_en_page.html << 'NAVEOF'
-<nav class="site-nav">
-  <a class="nav-back" href="../../index.html">← Back</a>
-  <span class="nav-lang"><a href="../../index.html">EN</a> · <a href="../../nl/index.html">NL</a></span>
-  <a class="nav-search" href="../../search-en.html">🔍</a>
-</nav>
-NAVEOF
+          {
+            echo '<nav class="site-nav">'
+            echo '  <a class="nav-back" href="../../index.html">&larr; Back</a>'
+            echo '  <span class="nav-lang"><a href="../../index.html">EN</a> &middot; <a href="../../nl/index.html">NL</a></span>'
+            echo '  <a class="nav-search" href="../../search-en.html">&#x1F50D;</a>'
+            echo '</nav>'
+          } > _nav_en_page.html
 
           # NL content page nav: back + language switch + search
-          cat > _nav_nl_page.html << 'NAVEOF'
-<nav class="site-nav">
-  <a class="nav-back" href="../../nl/index.html">← Terug</a>
-  <span class="nav-lang"><a href="../../index.html">EN</a> · <a href="../../nl/index.html">NL</a></span>
-  <a class="nav-search" href="../../search-nl.html">🔍</a>
-</nav>
-NAVEOF
+          {
+            echo '<nav class="site-nav">'
+            echo '  <a class="nav-back" href="../../nl/index.html">&larr; Terug</a>'
+            echo '  <span class="nav-lang"><a href="../../index.html">EN</a> &middot; <a href="../../nl/index.html">NL</a></span>'
+            echo '  <a class="nav-search" href="../../search-nl.html">&#x1F50D;</a>'
+            echo '</nav>'
+          } > _nav_nl_page.html
 
           # ── Build pages ────────────────────────────────────────────────────
 
