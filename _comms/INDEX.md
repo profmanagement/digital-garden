@@ -6,6 +6,7 @@
 ## Completed Tasks (recent)
 - [x] TASK-005: Note metadata, folder restructure, deploy.yml update
 - [x] DONE-006: Automated Note Listing & Styling
+- [x] DONE-007: Refine Automated Note Listing (Clickable Card)
 
 ## Backlog
 *(None)*

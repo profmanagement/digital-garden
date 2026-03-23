@@ -81,8 +81,8 @@ jobs:
                 tags=$(get_field "$f" "tags")
                 created=$(get_field "$f" "created")
 
-                echo '<div class="note-summary">'
-                echo "  <div class=\"note-summary-title\"><a href=\"${slug}.html\">${title}</a></div>"
+                echo "<a href=\"${slug}.html\" class=\"note-summary\">"
+                echo "  <div class=\"note-summary-title\">${title}</div>"
 
                 # Meta line: Category | Description
                 local meta=""
@@ -103,7 +103,7 @@ jobs:
                 [ -n "$tags" ] && footer="${footer:+${footer} - }${tags}"
                 [ -n "$footer" ] && echo "  <div class=\"note-summary-footer\">${footer}</div>"
 
-                echo '</div>'
+                echo '</a>'
               done < <(
                 for n in "$dir"/*.md; do
                   [ -f "$n" ] || continue
