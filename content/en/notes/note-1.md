@@ -1,6 +1,6 @@
 ---
 title: On starting a digital garden
-description: What will i actually do here now i've created this?
+description: What will i actually do here now i have created this
 author: Bram
 written_by: 100% human
 status: draft

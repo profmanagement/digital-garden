@@ -5,6 +5,7 @@
 
 ## Completed Tasks (recent)
 - [x] TASK-005: Note metadata, folder restructure, deploy.yml update
+- [x] DONE-006: Automated Note Listing & Styling
 
 ## Backlog
 *(None)*
@@ -15,6 +16,7 @@
 - [x] TASK-003: v2 Enhancements (auto nav, wikilinks, search)
 - [x] TASK-004: Nav & URL fixes
 - [x] TASK-005: Note metadata, folder restructure, deploy.yml update
+- [x] DONE-006: Automated Note Listing & Styling
 
 ## Documents
 - [PRD-01: Digital Garden](01_PRD/PRD-01_20260321_digital-garden_v01.md)

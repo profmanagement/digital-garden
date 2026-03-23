@@ -117,7 +117,7 @@ All PLAN, TASK, DONE, RETRO, NOTES, MANUAL, and other `_comms/` documents must i
 *Created: YYYY-MM-DD HH:MM:SS · v01*
 ```
 
-Update the timestamp and version if substantially revised.
+Update the timestamp and version if substantially revised. And do always add the correct time! 
 
 ---
 
