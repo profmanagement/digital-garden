@@ -8,6 +8,7 @@
 - [x] DONE-006: Automated Note Listing & Styling
 - [x] DONE-007: Refine Automated Note Listing (Clickable Card)
 - [x] DONE-008: Refine Note Listing Hover Styles
+- [x] DONE-009: Note page title split bug + spacing & typography fix
 
 ## Backlog
 *(None)*
@@ -19,9 +20,12 @@
 - [x] TASK-004: Nav & URL fixes
 - [x] TASK-005: Note metadata, folder restructure, deploy.yml update
 - [x] DONE-006: Automated Note Listing & Styling
+- [x] DONE-007: Refine Automated Note Listing (Clickable Card)
+- [x] DONE-008: Refine Note Listing Hover Styles
+- [x] DONE-009: Note page title split bug + spacing & typography fix
 
 ## Documents
 - [PRD-01: Digital Garden](01_PRD/PRD-01_20260321_digital-garden_v01.md)
-- [MANUAL-01: Setup guide for replication](MANUAL-01_20260321_digital-garden-setup_v01.md)
+- [MANUAL-01: Setup guide for replication](MANUAL-01_20260321_digital-garden-setup_v02.md)
 - [RETRO-01: Launch retrospective](04_RETRO/RETRO-01_20260321_digital-garden-launch_v01.md)
 - [IDEA-01: Search enhancement — maturity filters & category tiles](05_IDEAS/IDEA-01_20260323_search-enhancement_v01.md)

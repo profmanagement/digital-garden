@@ -6,7 +6,7 @@ written_by: 80% human
 status: draft
 type: seedling
 category: Technology
-tags: []
+tags: [PKM, raycast, claude-code, software-reliability, digital-radio, macos]
 language: en
 translation:
 source:
