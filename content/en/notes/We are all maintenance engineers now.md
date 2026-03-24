@@ -44,4 +44,4 @@ Listen on: [Apple Music](https://music.apple.com/nl/album/mechanical-man/110309
 
 ---
 
-*Short closing thought or location line (optional).*
+*Filed from a Macbook that had other plans today*
