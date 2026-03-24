@@ -288,6 +288,7 @@ jobs:
 
             preprocess "$f" | pandoc \
               --standalone \
+              --wrap=none \
               --css ../style.css \
               --metadata pagetitle="$title" \
               --metadata title="" \
@@ -349,6 +350,7 @@ jobs:
 
             preprocess "$f" | pandoc \
               --standalone \
+              --wrap=none \
               --css ../style.css \
               --metadata pagetitle="$title" \
               --metadata title="" \

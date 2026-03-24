@@ -1,6 +1,6 @@
 ---
 title: We are all maintenance engineers now
-description: It's not a question of if software will break, but when.
+description: It's not a question if your software will break, but when.
 author: Bram
 written_by: 80% human
 status: draft
@@ -13,7 +13,7 @@ source:
 related:
 created: 2026-03-24
 modified: 2026-03-24
-version: v01
+version: v02
 ---
 
 # We are all maintenance engineers now
@@ -21,9 +21,7 @@ version: v01
 
 ## it's not a question of *if* software will break, but *when*
 
-At the PKM Summit 2026, [Mark Meinema](https://markmeinema.nl) showed us how we can easily create some extra features for Raycast using Claude Code.
-
-Some interesting questions came up during that session:  What makes you decide to build something? Mark said he only builds something when he notices some annoyance about repeating tasks. As soon as he feel enough friction he'll take action.
+At the PKM Summit 2026, [Mark Meinema](https://markmeinema.nl) showed us how we can easily create some extra features for Raycast using Claude Code.Some interesting questions came up during that session:  What makes you decide to build something? Mark said he only builds something when he notices some annoyance about repeating tasks. As soon as he feel enough friction he'll take action.
 
 But if you build all these pieces of  small custom software yourself, don't you also need to maintain it? Then came the remark that stuck: it's not a question of *if* software will break, but *when*.
 
