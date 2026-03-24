@@ -15,3 +15,13 @@ in my work and in my personal life.
 I work at the intersection of design, technology, and society.
 Lifelong learning, asking sharp questions, and actively exploring the world
 are the common threads in everything I do.
+
+___
+
+## Want to start your own digital garden?
+
+In this [github repository](https://github.com/cooltunes/digital-garden) you'll find everything you need to get started!
+
+Enjoy!
+
+[Bram](mailto:bram@clawlab.nl)
