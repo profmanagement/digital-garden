@@ -33,6 +33,12 @@ version: v01                   # Increment when substantially revised
 
 Write your note here. Use `[[wikilinks]]` to link to other notes.
 
+
+
+## Related
+**"Song Title" by Artist**, short bit of info about the song.
+Listen on: [Apple Music](https://music.apple.com/) | [Spotify](https://open.spotify.com/track/)| [Youtube](https://www.youtube.com/watch)
+
 ---
 
 *Short closing thought or location line (optional).*

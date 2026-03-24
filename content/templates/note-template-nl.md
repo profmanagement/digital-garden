@@ -33,6 +33,10 @@ version: v01                   # Verhoog bij substantiële revisie
 
 Schrijf je notitie hier. Gebruik `[[wikilinks]]` om naar andere notities te linken.
 
+## Related
+**"Song Title" by Artist**, short bit of info about the song.
+Listen on: [Apple Music](https://music.apple.com/) | [Spotify](https://open.spotify.com/track/) | [Youtube](https://www.youtube.com/watch)
+
 ---
 
 *Korte afsluitende gedachte of locatieregel (optioneel).*
