@@ -1,0 +1,21 @@
+{
+  "file-explorer:new-file": [],
+  "quickadd:choice:e6b80e2b-dbdd-40bb-a4bb-40b887be607c": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "N"
+    }
+  ],
+  "file-explorer:new-file-in-new-pane": [],
+  "quickadd:choice:12d857d0-9aa7-43f7-826c-4b6a5de2e401": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "N"
+    }
+  ]
+}

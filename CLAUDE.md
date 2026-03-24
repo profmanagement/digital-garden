@@ -10,7 +10,8 @@ Before starting any task, always:
 1. Scan the entire project directory to understand its structure.
 2. Identify key folders: design system, components, content, prototypes, config files.
 3. Read any existing `_comms/PRD/` files to understand prior planning.
-4. Summarize your findings before proposing any plan.
+4. **Check `_comms/06_TROUBLESHOOTING/KNOWN-ISSUES_v01.md`** — scan the issue index at the top. If your task involves shell/bash code or the deploy pipeline, read the relevant detail sections before writing any code.
+5. Summarize your findings before proposing any plan.
 
 ---
 
@@ -24,6 +25,7 @@ Claude operates within a structured communication system. Use the `_comms/` fold
 | Active task breakdowns | `_comms/02_TASK/` | `{ID}_{YYYYMMDD}_{slug}_v##.md` |
 | Completed work retrospectives | `_comms/04_RETRO/` | `{ID}_{YYYYMMDD}_{slug}_v##.md` |
 | Completed task files | `_comms/03_DONE/` | `{ID}_{YYYYMMDD}_{slug}_v##.md` |
+| Known issues & recurring bugs | `_comms/06_TROUBLESHOOTING/` | `KNOWN-ISSUES_v##.md` |
 
 ### Rules
 - **Never start implementation** without a plan file written to `_comms/01_PRD/`.

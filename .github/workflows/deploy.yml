@@ -42,7 +42,7 @@ jobs:
 
           # Extract a YAML frontmatter field (handles quoted & unquoted values)
           get_field() {
-            grep -m1 "^$2:" "$1" | sed "s/^$2:[[:space:]]*//" | tr -d '"' | xargs
+            grep -m1 "^$2:" "$1" | sed "s/^$2:[[:space:]]*//" | tr -d '"' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//'
           }
 
           get_title() { get_field "$1" "title"; }

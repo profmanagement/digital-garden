@@ -16,8 +16,8 @@ build/
 .env.*.local
 
 # Obsidian
-.obsidian/
-contents/.obsidian/
+# .obsidian/
+
 
 # Python
 __pycache__/
