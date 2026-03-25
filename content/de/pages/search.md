@@ -1,7 +1,6 @@
 ---
 title: Suche · Digital Garden
 ---
-
 # Suche
 
 <link href="../_pagefind/pagefind-ui.css" rel="stylesheet">

@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "df2ad7a553ae315e",
+            "id": "31a41ff33a10c7a7",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,7 +22,7 @@
             }
           },
           {
-            "id": "31a41ff33a10c7a7",
+            "id": "37439e3264a71d47",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -219,10 +219,14 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "df2ad7a553ae315e",
+  "active": "31a41ff33a10c7a7",
   "lastOpenFiles": [
     "content/en/pages/about.md",
     "content/de/pages/about.md",
+    "content/en/notes/We are all maintenance engineers now.md",
+    "content/en/notes/starting-a-digital-garden.md",
+    "content/de/pages/search.md",
+    "content/en/pages/search.md",
     "copilot/copilot-conversations/Kannst_Du_bitte_die_About_me_page_von_en_to@20260325_214755.md",
     "copilot/copilot-conversations",
     "copilot/copilot-custom-prompts/Clip Web Page.md",
@@ -246,10 +250,6 @@
     "README.md",
     "search-en.md",
     "search-de.md",
-    "content/en/pages/search.md",
-    "content/en/en/index.md",
-    "content/en/notes/Hello World.md",
-    "_comms/MANUAL-01_20260321_digital-garden-setup_v02.md",
     "_comms/INDEX.md.tmp.71705.1774424722552",
     "content/de/de",
     "content/de/pages",

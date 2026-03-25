@@ -24,6 +24,7 @@ In der Hochschullehre sollte PKM meiner Überzeugung nach als flexible, reflekti
 PKM ist für mich eng mit Lehrportfolios, akademischem Schreiben, Curriculumentwicklung, der Dokumentation meiner Lehrtätigkeit, dem Erwerb neuer Kompetenzen und einer reflektierten Bildungspraxis verknüpft. Besonders interessiert bin ich daran, wie PKM in der Hochschulbildung nicht einfach als „Add-on" etabliert werden kann, sondern als bedeutungsvolle Praxis vermittelt werden kann, die dazu beiträgt, bestehende Ungleichheiten im Bildungssystem zu verringern.
 
 Ich beschäftige mich regelmäßig mit Fragen wie:
+
 - Wie lässt sich PKM in Hochschule und akademische Arbeit integrieren?
 - Wie können digitale Kompetenzen und KI-bezogene Kompetenzen Teil von PKM werden?
 - Wie kann PKM evidenzbasiertes Lehren unterstützen?

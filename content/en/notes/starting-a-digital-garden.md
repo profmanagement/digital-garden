@@ -15,7 +15,6 @@ created: 2026-03-23
 modified: 2026-03-23
 version: v01
 ---
-
 # On starting a digital garden
 
 I am walking outside, thinking about how I will start my first blog post here on the Digital Garden.

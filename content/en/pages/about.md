@@ -24,6 +24,7 @@ In education, I believe PKM should be presented as a flexible, reflective, and h
 PKM is closely connected to teaching development, academic writing, curriculum design, documenting my teaching portfolio, learning new skills, and reflective educational practice. I am especially interested in how PKM can become part of higher education not as an “add-on,” but as a meaningful practice that can help reduce some of the inequalities that still shape educational systems today.
 
 I regularly work on questions such as:
+
 - How can PKM be integrated into higher education and academic work?
 - How can digital literacy and AI-related competence development become part of PKM?
 - How can PKM support evidence-based teaching?
