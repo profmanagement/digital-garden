@@ -38,7 +38,7 @@ I would be very interested in exchanging ideas, concepts, and practical approach
 ___
 ## Want to start your own digital garden?
 
-This digital garden is open source and freely accessible. In this [GitHub Repository](https://github.com/profmanagement/digital-garden) you'll find everything you need to get started.
+This digital garden is open source and freely accessible. In this [GitHub Repository](https://github.com/cooltunes/digital-garden) you'll find everything you need to get started.
 
 Looking forward to hearing from you!
 
