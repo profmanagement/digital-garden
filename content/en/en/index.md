@@ -11,5 +11,4 @@ This digital garden is an experiment that started at the PKM Summit 2026 and was
 
 
 ---
-
 *&copy; Maik Arnold 2026 | [Digital Garden](https://profmanagement.github.io/digital-garden)*
