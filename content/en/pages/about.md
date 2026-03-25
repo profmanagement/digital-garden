@@ -5,7 +5,7 @@ title: About me
 
 I’m delighted to start this inspiring digital garden with which want to explore the role of Personal Knowledge Management (PKM) in educational contexts together with you.
 
-I work as a professor of Social Work Management in higher education at the intersection of teaching, management, applied intercultural research, academic development, and project management. My background is in social sciences, management studies, and theology, and I am especially interested in how PKM can support reflective practice, academic writing, knowledge creation, and meaningful learning. Last year, I completed an additional master’s degree in higher education, with a thesis titled "Digital Gardening as a Reflective Practice for Teaching Development: A Phenomenographic Analysis of Higher Education Teachers’ Personal Knowledge Management."
+I work as a professor of Social Work Management in higher education at the intersection of teaching, social work management, applied intercultural research, academic development, and project management. My background is in social sciences, management studies, and theology, and I am especially interested in how PKM can support reflective practice, academic writing, knowledge creation, and meaningful learning. Last year, I completed an part-time master’s degree in higher education, with a thesis titled "Digital Gardening as a Reflective Practice for Teaching Development: A Phenomenographic Analysis of Higher Education Teachers’ Personal Knowledge Management."
 
 ---
 
