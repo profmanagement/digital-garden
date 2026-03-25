@@ -12,4 +12,4 @@ Dieser Digitale Garten ist ein Experiment, das auf dem PKM Summit 2026 ins Leben
 
 ---
 
-*Nordhausen 2026*
+*&copy; Maik Arnold 2026 | [Digital Garden](https://profmanagement.github.io/digital-garden)*
