@@ -1,21 +1,21 @@
 ---
-title: <% tp.file.title %>
-description: <% tp.system.prompt("Description (one-line summary)?") %>
+title: Hello World
+description: In this note, I'd like to start to think about my digital gardening strategy.
 
 # Authorship
 author: Maik
-written_by: Maik               # author name | ai-collab | ai-generated
+written_by: Maik         # 100% human | ai-collab | ai-generated
 
 # Publication
 status: draft                  # draft | published
 type: seedling                 # seedling | growing | evergreen
 
 # Classification
-category: <% tp.system.prompt("Category? (e.g. PKM, AI, Design, Strategy)") %>
+category: Digital Garden, Strategy
 tags: [ ]
 
 # Language & translation
-language: en                   # en | de
+language: en                   # en | nl
 translation:                   # Slug of the equivalent note in the other language (optional)
 
 # References
@@ -23,14 +23,14 @@ source:                        # URL or bibliographic reference (optional)
 related:                       # [[wikilinks]] to related notes (optional)
 
 # Versioning & dates
-created: <% tp.date.now("YYYY-MM-DD") %>
-modified: <% tp.date.now("YYYY-MM-DD") %>
+created: 2026-03-25
+modified: 2026-03-25
 version: v01
 ---
 
-# <% tp.file.title %>
+# Hello World
 
-<% tp.file.cursor() %>
+
 
 
 

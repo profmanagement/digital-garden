@@ -1,8 +1,8 @@
 ---
-title: Zoeken · Digital Garden
+title: Suche · Digital Garden
 ---
 
-# Zoeken
+# Suche
 
 <link href="../_pagefind/pagefind-ui.css" rel="stylesheet">
 <div id="search"></div>

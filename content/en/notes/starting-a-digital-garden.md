@@ -1,8 +1,8 @@
 ---
 title: On starting a digital garden
 description: What will i actually do here now i have created this
-author: Bram
-written_by: 100% human
+author: Maik
+written_by: Maik
 status: draft
 type: seedling
 category:

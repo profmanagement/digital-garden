@@ -1,9 +1,9 @@
 ---
-title: Notitie 1
-description: Voorbeeldnotitie — vervang door je eigen inhoud
+title: Notiz 1
+description: Beispielnotiz — ersetze durch eigene Inhalte
 
-author: Bram
-written_by: 100% human
+author: Maik
+written_by: Maik
 
 status: draft
 type: seedling
@@ -11,17 +11,17 @@ type: seedling
 category: PKM
 tags: [tag1, tag2, tag3]
 
-language: nl
-translation: 
+language: de
+translation:
 
-source: 
-related: 
+source:
+related:
 
 created: 2026-03-23
 modified: 2026-03-23
 version: v01
 ---
 
-# Notitie 1
+# Notiz 1
 
-*Placeholder — vervang dit met je eigen Obsidian-notitie.*
+*Platzhalter — ersetze dies mit deiner eigenen Obsidian-Notiz.*

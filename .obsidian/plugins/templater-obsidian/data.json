@@ -19,8 +19,8 @@
       "template": "content/templates/note-template-en.md"
     },
     {
-      "folder": "content/nl/notes",
-      "template": "content/templates/note-template-nl.md"
+      "folder": "content/de/notes",
+      "template": "content/templates/note-template-de.md"
     }
   ],
   "enable_file_templates": false,

@@ -1,27 +1,27 @@
 ---
-title: Notitie 2
-description: Voorbeeldnotitie — vervang door je eigen inhoud
+title: Notiz 2
+description: Beispielnotiz — ersetze durch eigene Inhalte
 
-author: Bram
-written_by: 100% human
+author: Maik
+written_by: Maik
 
 status: draft
 type: seedling
 
-category: 
-tags: 
+category:
+tags:
 
-language: nl
-translation: 
+language: de
+translation:
 
-source: 
-related: 
+source:
+related:
 
 created: 2026-03-23
 modified: 2026-03-23
 version: v01
 ---
 
-# Notitie 2
+# Notiz 2
 
-*Placeholder — vervang dit met je eigen Obsidian-notitie.*
+*Platzhalter — ersetze dies mit deiner eigenen Obsidian-Notiz.*

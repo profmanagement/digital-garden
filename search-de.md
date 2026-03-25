@@ -1,13 +1,13 @@
 ---
-title: Zoeken · Bram's Digital Garden
+title: Suche · Maik's Digital Garden
 ---
 
 <nav class="site-nav">
-  <span class="nav-lang"><a href="index.html">EN</a> · <a href="nl/index.html">NL</a></span>
-  <a class="nav-search" href="search-nl.html">🔍</a>
+  <span class="nav-lang"><a href="index.html">EN</a> · <a href="de/index.html">DE</a></span>
+  <a class="nav-search" href="search-de.html">🔍</a>
 </nav>
 
-# Zoeken
+# Suche
 
 <link href="_pagefind/pagefind-ui.css" rel="stylesheet">
 <div id="search"></div>

@@ -1,26 +1,23 @@
 ---
-title: Over mij
+title: Über mich
 ---
 
-# Over mij
+# Über mich
 
-Ik ben Bram, UX Strateeg en Systemic Designer uit Amsterdam.
-Ik combineer analytisch denken met een onderzoekende houding —
-in mijn werk én in mijn vrije tijd.
-
----
-
-## Wat ik doe
-
-Ik werk aan de snijvlakken van design, technologie en maatschappij.
-Levenslang leren, scherpe vragen stellen en de wereld actief verkennen zijn de rode draden in alles wat ik doe.
+Ich bin Maik.
 
 ---
 
-## Je eigen digitale tuin beginnen?
+## Was ich mache
 
-In deze [github repository](https://github.com/cooltunes/digital-garden) vindt je alles wat je nodig hebt.
+Schreibe hier etwas über dich und deine Arbeit.
 
-Enjoy!
+---
 
-[Bram](mailto:bram@clawlab.nl)
+## Deinen eigenen digitalen Garten starten?
+
+In diesem [GitHub-Repository](https://github.com/cooltunes/digital-garden) findest du alles, was du brauchst.
+
+Viel Spaß!
+
+[Maik](mailto:)

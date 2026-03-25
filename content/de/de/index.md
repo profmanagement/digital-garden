@@ -1,20 +1,20 @@
 ---
-title: Bram · Digital Garden
+title: Maik · Digital Garden
 ---
 
-# Welkom in mijn digitale tuin !
+# Willkommen in meinem digitalen Garten!
 
-Deze digitale tuin is een experiment gestart op de PKM Summit 2026.
-Als jij dit leest bevat deze hopelijk een veelheid aan gedachten, ideeën en doorverwijzingen naar wat mij inspireerde elders op het web. Vooralsnog zijn hier slechts enkele zaadjes geplant. 
+Dieser digitale Garten ist ein Experiment, gestartet auf dem PKM Summit 2026.
+Wenn du das liest, enthält er hoffentlich eine Vielzahl an Gedanken, Ideen und Verweisen auf das, was mich anderswo im Web inspiriert hat. Vorerst sind hier erst ein paar Samen gepflanzt.
 
-Wordt vervolgd...
+Wird fortgesetzt…
 
 
-## Notities
+## Notizen
 
-{Notities worden hier automatisch weergegeven}
+{Notizen werden hier automatisch angezeigt}
 
 
 ---
 
-*Amsterdam 2026*
+*Berlin 2026*

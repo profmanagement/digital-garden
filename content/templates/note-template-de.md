@@ -1,42 +1,40 @@
 ---
-title: 
-description:                   # Één zin over deze notitie, gebruikt in overzichten en zoekresultaten
+title:
+description:                   # Ein Satz über diese Notiz, verwendet in Übersichten und Suchergebnissen
 
-# Auteurschap
-author: Bram                   # Naam van de auteur (bijv. Bram, Gastnaam, AI-assistent)
-written_by: 100% human         # 100% human | ai-collab | ai-generated
+# Autorenschaft
+author: Maik                   # Name des Autors (z. B. Maik, Gastname, KI-Assistent)
+written_by: Maik               # Name des Autors oder: ai-collab | ai-generated
 
-# Publicatie
+# Publikation
 status: draft                  # draft | published
 type: seedling                 # seedling | growing | evergreen
 
-# Classificatie
-category:                      # Primair onderwerp (bijv. PKM, AI, Design, Strategie, Filosofie)
-tags:   [ ]                       # Vrije tags, kommagescheiden (bijv. obsidian, gereedschappen, creativiteit)
+# Klassifikation
+category:                      # Primäres Thema (z. B. PKM, KI, Design, Strategie, Philosophie)
+tags:   [ ]                    # Freie Tags, kommagetrennt (z. B. obsidian, werkzeuge, kreativität)
 
-# Taal & vertaling
-language: nl                   # en | nl
-translation:                   # Slug van de equivalente notitie in de andere taal (optioneel)
-                                 # Voorbeeld: translation: my-note linkt naar _site/en/my-note.html
+# Sprache & Übersetzung
+language: de                   # en | de
+translation:                   # Slug der entsprechenden Notiz in der anderen Sprache (optional)
+                                 # Beispiel: translation: my-note verlinkt auf _site/en/my-note.html
 
-# Bronnen
-source:                        # URL of bibliografische verwijzing die deze notitie inspireerde (optioneel)
-related:                       # [[wikilinks]] naar verwante notities in de tuin (optioneel)
+# Quellen
+source:                        # URL oder Quellenangabe, die diese Notiz inspiriert hat (optional)
+related:                       # [[wikilinks]] zu verwandten Notizen im Garten (optional)
 
-# Versiebeheer & datums
-created: JJJJ-MM-DD
-modified: JJJJ-MM-DD
-version: v01                   # Verhoog bij substantiële revisie
+# Versionierung & Datumsangaben
+created: JJJJ-MM-TT
+modified: JJJJ-MM-TT
+version: v01                   # Bei wesentlicher Überarbeitung erhöhen
 ---
 
-# Titel van de notitie
+# Titel der Notiz
 
-Schrijf je notitie hier. Gebruik `[[wikilinks]]` om naar andere notities te linken.
+Schreibe deine Notiz hier. Verwende `[[wikilinks]]`, um auf andere Notizen zu verlinken.
 
-## Related
-**"Song Title" by Artist**, short bit of info about the song.
-Listen on: [Apple Music](https://music.apple.com/) | [Spotify](https://open.spotify.com/track/) | [Youtube](https://www.youtube.com/watch)
+## Verwandte
 
 ---
 
-*Korte afsluitende gedachte of locatieregel (optioneel).*
+*Abschließender Gedanke oder Ortsangabe (optional).*

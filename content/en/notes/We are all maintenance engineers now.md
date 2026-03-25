@@ -1,7 +1,7 @@
 ---
 title: We are all maintenance engineers now
 description: It's not a question if your software will break, but when.
-author: Bram
+author: Maik
 written_by: 80% human
 status: draft
 type: seedling

@@ -4,11 +4,7 @@
 *(None)*
 
 ## Completed Tasks (recent)
-- [x] TASK-005: Note metadata, folder restructure, deploy.yml update
-- [x] DONE-006: Automated Note Listing & Styling
-- [x] DONE-007: Refine Automated Note Listing (Clickable Card)
-- [x] DONE-008: Refine Note Listing Hover Styles
-- [x] DONE-009: Note page title split bug + spacing & typography fix
+- [x] DONE-010: Switch second language NL → DE
 
 ## Backlog
 *(None)*
@@ -23,6 +19,7 @@
 - [x] DONE-007: Refine Automated Note Listing (Clickable Card)
 - [x] DONE-008: Refine Note Listing Hover Styles
 - [x] DONE-009: Note page title split bug + spacing & typography fix
+- [x] DONE-010: Switch second language NL → DE
 
 ## Documents
 - [PRD-01: Digital Garden](01_PRD/PRD-01_20260321_digital-garden_v01.md)
