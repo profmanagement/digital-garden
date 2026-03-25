@@ -1,19 +1,16 @@
 ---
 title: On starting a digital garden
-description: What will i actually do here now i have created this
+description: What will I actually do here now I have created this.
 author: Maik
 written_by: 100% human
-status: draft
+status: published
 type: seedling
-category:
+category: PKM
 tags:
   - digital-garden
   - blog
   - writing-process
   - creativity
-  - mondrian
-  - karel-appel
-  - wilderness
 language: en
 translation:
 source:
@@ -24,24 +21,17 @@ version: v01
 ---
 # On starting a digital garden
 
-I am walking outside, thinking about how I will start my first blog post here on the Digital Garden.
+This research started in September 2024 with an investigation of the main conceptual ideas of [Digital Gardening](https://maggieappleton.com/garden-history?ref=ideasurg.pub) described by the cultural anthropologist and lead design engineer at [**Normally**](https://normally.com/) [Maggie Appleton](https://maggieappleton.com/about). Appleton ([2020](https://profmanagement.github.io/digitalgarden/#ref-appleton2020Brief)) defines “digital gardening” as an individual practice for idea generation and collection, personal note-taking and knowledge management that is not following the conventions of the otherwise known techniques of personal blogging. Usually, small collections of personal knowledge are created on the web:
 
-I'm contemplating: what do I know about gardening? What gardens do I like? Is it something neat, well-organized, or just a wilderness in which you can find whatever you like and just let it grow?
+> “Rather than presenting a set of polished articles, displayed in reverse chronological order, these sites act more like free form, work-in-progress wikis” ([Appleton, 2020](https://profmanagement.github.io/digitalgarden/#ref-appleton2020Brief)).
 
-Something I learned quite early, if we look at Dutch art and design -- which is my inheritance as well. We had artists like Mondrian, who started his career painting  figuratively and then prune his worldview back to just some straight black lines and red, yellow and blue squares. On the other side of the spectrum we had people like Karel Appel, who said: "I'm just messing around." Very intuitive, tacit, free form, straight from the heart. 
-
-Those are also my personality traits, I think. I have both. Because my garden of eden, the garden in my head, is pretty much an intuitive wilderness. And yet I tend to construct also Mondrian paintings, because that gives you have the idea you somehow have control over the madness inside your own head and in the outside world. Even though you know it's a fictive control, because we're all just temporal low-entropy clusters in the eternal flow of energy and matter.
-
-Seeing, hearing, feeling, thinking, drawing, talking, writing, typing. It is still great to have all these different modes to experience the world from many different angles. But even when I start contemplating what I want to do here in this experimental digital world, where i can do whatever i want, I start thinking about formats first. That gives me ease of mind. Then I know what to do, and the whole thing becomes more like filling in a template. But maybe I should just use this thing as the gardens I like most: the wilderness gardens, where you can just discover whatever you like and pick a flower here and there.
-
-So, for now, I think I'll do that.
+In other words, a _garden_ is a flexible collection of evolving ideas connected through contextual associations rather than organised by publication date. These notes are usually incomplete, exploratory thoughts that develop and become rigid over time, but they are less polished compared to traditional personal websites.
 
 ### About this note
-This is an edited speech-to-text transcript. I think some guidelines are important. I will write or talk myself through it and edit it. I will not use any AI for the writing, only to clean up the "ums" and "uhs" that I just pronounced while talking, and then hand-edit it. So no AI involved there.
+This is hand-written note. I think some guidelines are important. That's why you find the reference 100% human. I will usually use AI only to clean up my writing, for proofreading and translation between the different languages in this digital garden. If I use AI for writing, this will be indicated in a percentage.
 
-I think I will close each post with at least some tidbits. There will always be a song reference. 
+I think I will close each post with at least some tidbits, e.g. a song, poem, saying, meme, or whatever comes to my mind. 
 
-
-## Related
+### Related
 **"Garden" by Magnapop**, a track from their 1992 self-titled debut EP, produced with Michael Stipe of R.E.M.  The song runs 2:21 and opens the record.
 Listen on: [Apple Music](https://music.apple.com/au/song/garden/600108540) | [Spotify](https://open.spotify.com/track/2narfj4Na3tmtTSb2gt2By)| [Youtube](https://www.youtube.com/watch?v=05sfvU0jmRE&list=PLVBYB3ynO7FbBP-J0lJySUymw-FWQmsek)
