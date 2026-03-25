@@ -9,7 +9,7 @@ Schaut regel
 
 ## Notizen
 
-{Notizen werden hier automatisch angezeigt}
+
 
 
 ---

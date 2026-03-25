@@ -2,11 +2,18 @@
 title: On starting a digital garden
 description: What will i actually do here now i have created this
 author: Maik
-written_by: Maik
+written_by: 100% human
 status: draft
 type: seedling
 category:
-tags: [digital-garden, blog, writing-process, creativity, mondrian, karel-appel, wilderness]
+tags:
+  - digital-garden
+  - blog
+  - writing-process
+  - creativity
+  - mondrian
+  - karel-appel
+  - wilderness
 language: en
 translation:
 source:
