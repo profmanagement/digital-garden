@@ -35,8 +35,7 @@
               "title": "Einen-digitalen-Garten-anlegen"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -220,11 +219,11 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "c198be8b0ed9b78e",
+  "active": "936b5c4a5e304bf1",
   "lastOpenFiles": [
-    "content/en/notes/starting-a-digital-garden.md",
-    "content/de/notes/Einen-digitalen-Garten-anlegen.md",
     "content/en/notes/We are all maintenance engineers now.md",
+    "content/de/notes/Einen-digitalen-Garten-anlegen.md",
+    "content/en/notes/starting-a-digital-garden.md",
     "content/de/notes/note-2.md",
     "content/de/de/index.md",
     "content/en/en/index.md",
