@@ -24,3 +24,11 @@ tags:
 **ai**: 
 <errorChunk>Model request failed: API key is not provided for the model: gemini-3.1-flash-lite-preview|google.</errorChunk>
 [Timestamp: 2026/03/25 21:49:08]
+
+**user**: can you tell me, why this does not fill the notes?{Notes will be automatically listed here}
+[Context: Notes: content/en/en/index.md]
+[Timestamp: 2026/03/25 22:24:36]
+
+**ai**: 
+<errorChunk>Model request failed: API key is not provided for the model: gemini-3.1-flash-lite-preview|google.</errorChunk>
+[Timestamp: 2026/03/25 22:24:36]

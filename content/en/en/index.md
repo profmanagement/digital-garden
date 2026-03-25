@@ -7,7 +7,7 @@ This digital garden is an experiment that started at the PKM Summit 2026 and was
 
 ## Notes
 
-{Notes will be automatically listed here}
+
 
 
 ---
