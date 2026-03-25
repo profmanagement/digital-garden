@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/de/pages/about.md",
+                "file": "content/de/de/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "about"
+              "title": "index"
+            }
+          },
+          {
+            "id": "05b95cc6319242ec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/en/en/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
             }
           },
           {
@@ -35,7 +49,8 @@
               "title": "about"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/de/pages/about.md",
+                "file": "content/en/en/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rückverweise auf about"
+              "title": "Rückverweise auf index"
             }
           },
           {
@@ -127,12 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/de/pages/about.md",
+                "file": "content/en/en/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Ausgehende Links von about öffnen"
+              "title": "Ausgehende Links von index öffnen"
             }
           },
           {
@@ -170,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/de/pages/about.md",
+                "file": "content/en/en/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Gliederung von about"
+              "title": "Gliederung von index"
             }
           },
           {
@@ -219,10 +234,17 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "31a41ff33a10c7a7",
+  "active": "05b95cc6319242ec",
   "lastOpenFiles": [
-    "content/en/pages/about.md",
+    "content/de/de/index.md",
+    "content/en/en/index.md",
+    "search-en.md",
+    "search-de.md",
+    "index.md",
+    "content/templates/note-template-en-old.md",
+    "content/templates/note-template-de.md",
     "content/de/pages/about.md",
+    "content/en/pages/about.md",
     "content/en/notes/We are all maintenance engineers now.md",
     "content/en/notes/starting-a-digital-garden.md",
     "content/de/pages/search.md",
@@ -241,15 +263,8 @@
     "copilot/copilot-custom-prompts/Emojify.md",
     "copilot/copilot-custom-prompts/Explain like I am 5.md",
     "copilot/copilot-custom-prompts/Simplify.md",
-    "copilot/copilot-custom-prompts/Summarize.md",
-    "copilot/copilot-custom-prompts/Translate to Chinese.md",
-    "copilot/copilot-custom-prompts/Fix grammar and spelling.md",
     "copilot/copilot-custom-prompts",
     "copilot",
-    "index.md",
-    "README.md",
-    "search-en.md",
-    "search-de.md",
     "_comms/INDEX.md.tmp.71705.1774424722552",
     "content/de/de",
     "content/de/pages",
