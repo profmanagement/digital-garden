@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/en/pages/about.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "about"
+              "title": "index"
             }
           }
         ]
@@ -193,6 +193,13 @@
   },
   "active": "df2ad7a553ae315e",
   "lastOpenFiles": [
+    "README.md",
+    "search-en.md",
+    "search-de.md",
+    "content/en/pages/search.md",
+    "content/en/pages/about.md",
+    "content/en/en/index.md",
+    "content/en/notes/Hello World.md",
     "index.md",
     "_comms/MANUAL-01_20260321_digital-garden-setup_v02.md",
     "content/de/notes/note-1.md",
@@ -200,13 +207,10 @@
     "content/templates/note-template-de.md",
     "content/templates/note-template-en.md",
     "content/templates/note-template-en-old.md",
-    "README.md",
-    "content/en/notes/Hello World.md",
     "content/en/notes/We are all maintenance engineers now.md",
     "content/en/notes/starting-a-digital-garden.md",
     "_comms/05_IDEAS/IDEA-01_20260323_search-enhancement_v01.md",
     "search-nl.md",
-    "search-de.md",
     "_comms/03_DONE/DONE-001_20260321_setup-workspace_v01.md",
     "_comms/02_TASK/TASK-010_20260325_nl-to-de-language-switch_v01.md",
     "_comms/02_TASK/TASK-009_20260324_note-page-title-spacing-fix_v01.md",
@@ -215,11 +219,7 @@
     "_comms/02_TASK/TASK-003_20260321_v2-enhancements_v01.md",
     "_comms/02_TASK/TASK-002_20260321_implement-core-files_v01.md",
     "_comms/02_TASK/TASK-001_20260321_setup-workspace_v01.md",
-    "_comms/01_PRD/PRD-01_20260321_digital-garden_v01.md",
-    "CLAUDE.md",
     "_comms/INDEX.md.tmp.71705.1774424722552",
-    "_comms/03_DONE/DONE-010_20260325_nl-to-de-language-switch_v01.md",
-    "content/de/de/index.md",
     "content/de/de",
     "content/de/pages",
     "content/de/notes",

@@ -1,14 +1,13 @@
 ---
-title: Bram · Digital Garden
+title: Maik · Digital Garden
+---
+# Maik
+
+Professor of Social Work Management and SoTL advocate.
+Engaging with management, culture, and social sciences —
+curious about how education, research, and digital transformation
+can serve people and organisations alike.
+
 ---
 
-# Bram
-
-UX Strategist and Systemic Designer based in Amsterdam.
-Solving societal and technical challenges —
-curious about what new technologies like GenAI
-can offer, without losing sight of the human.
-
----
-
-*Amsterdam · Lelystad*
+*Nordhausen · Germany*
