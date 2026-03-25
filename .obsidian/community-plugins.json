@@ -1,5 +1,6 @@
 [
   "templater-obsidian",
   "quickadd",
-  "obsidian-git"
+  "obsidian-git",
+  "copilot"
 ]

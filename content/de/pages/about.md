@@ -1,23 +1,52 @@
 ---
 title: Über mich
 ---
-
 # Über mich
 
-Ich bin Maik.
+Ich freue mich sehr, diesen digitalen Garten ins Leben zu rufen, in dem ich gemeinsam mit dir die Rolle des Personal Knowledge Managements (PKM) in Bildungskontexten erkunden möchte.
+
+Ich arbeite als Professor für Sozialwirtschaft an einer Hochschule – an der Schnittstelle von Lehre, Management, angewandter interkultureller Forschung, Hochschuldidaktik und Projektmanagement. Mein Hintergrund liegt in den Sozialwissenschaften, der Managementlehre und der Theologie. Besonders interessiert mich, wie PKM reflektiertes Handeln, akademisches Schreiben, Wissensproduktion und bedeutungsvolles Lernen unterstützen kann. Letztes Jahr habe ich einen weiteren Master im Bereich Hochschuldidaktik abgeschlossen – mit einer Thesis unter dem Titel „Digital Gardening as a Reflective Practice for Teaching Development: A Phenomenographic Analysis of Higher Education Teachers' Personal Knowledge Management."
 
 ---
 
-## Was ich mache
+## Warum ist PKM wichtig für die Lehre?
 
-Schreibe hier etwas über dich und deine Arbeit.
+PKM ist weit mehr als das Sammeln von Notizen oder die Nutzung einer bestimmten App. Es ist eine Art, mit Ideen und Informationen zu arbeiten, die mir hilft, das Wesentliche zu erkennen, Verbindungen zu vorhandenem Wissen herzustellen und dieses Wissen sinnvoll einzusetzen – um andere beim Lernen oder beim Entwickeln neuer Gewohnheiten zu unterstützen. PKM fördert unser Denken, Schreiben und Lernen – besonders in einer Zeit, die von Informationsüberflutung, verstreuten Plattformen und generativer KI geprägt ist.
+
+Ich sehe PKM als eine wichtige Praxis, um die Verantwortung für Lernprozesse und Wissensarbeit selbst zu übernehmen. Es geht nicht nur darum, Informationen zu speichern, sondern auch klarer zu denken, zielgerichteter zu schreiben und Ideen über die Zeit hinweg weiterzuentwickeln. PKM macht intellektuelles Wachstum sichtbar – für uns selbst und potenziell auch für andere.
+
+In der Hochschullehre sollte PKM meiner Überzeugung nach als flexible, reflektierte und zutiefst individuelle Praxis im Umgang mit Wissen vermittelt werden. Die eigentliche Herausforderung besteht nicht nur darin, PKM zu lehren, sondern es für Studierende als angehende Fachkräfte, Führungspersonen und Lehrende relevant und nützlich zu machen – Menschen, die Lernende in verschiedenen Phasen ihres Lernens begleiten.
 
 ---
 
-## Deinen eigenen digitalen Garten starten?
+## Was interessiert mich an PKM?
 
-In diesem [GitHub-Repository](https://github.com/cooltunes/digital-garden) findest du alles, was du brauchst.
+PKM ist für mich eng mit Lehrportfolios, akademischem Schreiben, Curriculumentwicklung, der Dokumentation meiner Lehrtätigkeit, dem Erwerb neuer Kompetenzen und einer reflektierten Bildungspraxis verknüpft. Besonders interessiert mich, wie PKM in der Hochschulbildung nicht als „Add-on" etabliert werden kann, sondern als bedeutungsvolle Praxis, die dazu beiträgt, bestehende Ungleichheiten im Bildungssystem zu verringern.
 
-Viel Spaß!
+Ich beschäftige mich regelmäßig mit Fragen wie:
+- Wie lässt sich PKM in Hochschule und akademische Arbeit integrieren?
+- Wie können digitale Kompetenz und KI-bezogene Kompetenzen Teil von PKM werden?
+- Wie kann PKM evidenzbasiertes Lehren unterstützen?
+- Wie können Studierende Notizenmachen, Wissensorganisation und Lerndesign durch „Tools for Thought" erlernen?
 
-[Maik](mailto:)
+In meiner eigenen Praxis arbeite ich mit digitalen Werkzeugen und Workflows und interessiere mich besonders dafür, wie Systeme wie Obsidian, Roam Research, Tana und andere wissensunterstützende Umgebungen zu nachhaltiger Wissensarbeit in der Wissenschaft beitragen können.
+
+---
+
+## **Welche Formen der Zusammenarbeit interessieren mich?**
+
+Ich freue mich sehr über den Austausch von Ideen, Konzepten und praktischen Ansätzen, um PKM auf realistische und sinnvolle Weise in die Hochschulbildung zu integrieren. Besonders interessiert mich die Zusammenarbeit in folgenden Bereichen:
+- Lehr- und Workshop-Design
+- PKM für akademisches Schreiben und reflektiertes Lernen
+- PKM und KI-Integration
+- Forschung zu PKM in Bildungskontexten, z. B. zu Digital-Gardening-Ansätzen
+- Hochschuldidaktische Personalentwicklung (z. B. Train-the-Trainer-Ansätze)
+
+___
+## Eigenen digitalen Garten starten?
+
+Dieser digitale Garten ist Open Source und frei zugänglich. In diesem [GitHub-Repository](https://github.com/cooltunes/digital-garden) findest du alles, was du brauchst, um loszulegen.
+
+Ich freue mich auf den Austausch!
+
+[Maik](https://.profmanagement.de)

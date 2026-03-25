@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/en/pages/about.md",
+                "file": "content/de/pages/about.md",
                 "mode": "source",
                 "source": false
               },
@@ -94,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "content/de/pages/about.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Rückverweise auf about"
             }
           },
           {
@@ -112,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "content/de/pages/about.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Ausgehende Links von about öffnen"
             }
           },
           {
@@ -145,7 +147,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "All properties"
+              "title": "Alle Eigenschaften"
             }
           },
           {
@@ -154,22 +156,33 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "content/de/pages/about.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Gliederung von about"
             }
           },
           {
-            "id": "a7b7d161fb968f44",
+            "id": "08fb7fdabea25c75",
             "type": "leaf",
             "state": {
               "type": "git-view",
               "state": {},
               "icon": "git-pull-request",
               "title": "Source Control"
+            }
+          },
+          {
+            "id": "480ff046a85da22e",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
             }
           }
         ],
@@ -181,51 +194,54 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false,
       "switcher:Schnellauswahl öffnen": false,
       "graph:Graph-Ansicht öffnen": false,
       "canvas:Neuen Canvas erstellen": false,
       "templates:Vorlage einfügen": false,
       "command-palette:Befehlspalette öffnen": false,
       "bases:Neue Base erstellen": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-git:Open Git source control": false
+      "copilot:Open Copilot Chat": false
     }
   },
   "active": "df2ad7a553ae315e",
   "lastOpenFiles": [
+    "content/en/pages/about.md",
+    "copilot/copilot-conversations/Kannst_Du_bitte_die_About_me_page_von_en_to@20260325_214755.md",
+    "copilot/copilot-conversations",
+    "copilot/copilot-custom-prompts/Clip Web Page.md",
+    "copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
+    "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
+    "copilot/copilot-custom-prompts/Rewrite as tweet.md",
+    "copilot/copilot-custom-prompts/Remove URLs.md",
+    "copilot/copilot-custom-prompts/Generate glossary.md",
+    "copilot/copilot-custom-prompts/Generate table of contents.md",
+    "copilot/copilot-custom-prompts/Make longer.md",
+    "copilot/copilot-custom-prompts/Make shorter.md",
+    "copilot/copilot-custom-prompts/Emojify.md",
+    "copilot/copilot-custom-prompts/Explain like I am 5.md",
+    "copilot/copilot-custom-prompts/Simplify.md",
+    "copilot/copilot-custom-prompts/Summarize.md",
+    "copilot/copilot-custom-prompts/Translate to Chinese.md",
+    "copilot/copilot-custom-prompts/Fix grammar and spelling.md",
+    "copilot/copilot-custom-prompts",
+    "copilot",
     "index.md",
     "README.md",
     "search-en.md",
     "search-de.md",
     "content/en/pages/search.md",
-    "content/en/pages/about.md",
     "content/en/en/index.md",
     "content/en/notes/Hello World.md",
     "_comms/MANUAL-01_20260321_digital-garden-setup_v02.md",
     "content/de/notes/note-1.md",
-    "content/de/notes/note-2.md",
-    "content/templates/note-template-de.md",
-    "content/templates/note-template-en.md",
-    "content/templates/note-template-en-old.md",
-    "content/en/notes/We are all maintenance engineers now.md",
-    "content/en/notes/starting-a-digital-garden.md",
-    "_comms/05_IDEAS/IDEA-01_20260323_search-enhancement_v01.md",
-    "search-nl.md",
-    "_comms/03_DONE/DONE-001_20260321_setup-workspace_v01.md",
-    "_comms/02_TASK/TASK-010_20260325_nl-to-de-language-switch_v01.md",
-    "_comms/02_TASK/TASK-009_20260324_note-page-title-spacing-fix_v01.md",
-    "_comms/02_TASK/TASK-005_20260323_note-metadata-restructure_v01.md",
-    "_comms/02_TASK/TASK-004_20260323_nav-and-url-fixes_v01.md",
-    "_comms/02_TASK/TASK-003_20260321_v2-enhancements_v01.md",
-    "_comms/02_TASK/TASK-002_20260321_implement-core-files_v01.md",
-    "_comms/02_TASK/TASK-001_20260321_setup-workspace_v01.md",
     "_comms/INDEX.md.tmp.71705.1774424722552",
     "content/de/de",
     "content/de/pages",
     "content/de/notes",
     "content/de/nl",
     "content/de",
-    "_comms/06_TROUBLESHOOTING",
-    "content/templates"
+    "_comms/06_TROUBLESHOOTING"
   ]
 }
