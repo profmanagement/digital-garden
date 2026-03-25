@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "71fa573d22d14e59",
+        "id": "778de7d505b3e37a",
         "type": "tabs",
         "children": [
           {
-            "id": "936b5c4a5e304bf1",
+            "id": "1f8ce7aeca2f07fa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/de/notes/Einen-digitalen-Garten-anlegen.md",
+                "file": "search-en.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Einen-digitalen-Garten-anlegen"
-            }
-          },
-          {
-            "id": "c198be8b0ed9b78e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/de/notes/Einen-digitalen-Garten-anlegen.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Einen-digitalen-Garten-anlegen"
+              "title": "search-en"
             }
           }
         ]
@@ -108,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/de/notes/Einen-digitalen-Garten-anlegen.md",
+                "file": "search-en.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rückverweise auf Einen-digitalen-Garten-anlegen"
+              "title": "Rückverweise auf search-en"
             }
           },
           {
@@ -127,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/de/notes/Einen-digitalen-Garten-anlegen.md",
+                "file": "search-en.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Ausgehende Links von Einen-digitalen-Garten-anlegen öffnen"
+              "title": "Ausgehende Links von search-en öffnen"
             }
           },
           {
@@ -170,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/de/notes/Einen-digitalen-Garten-anlegen.md",
+                "file": "search-en.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Gliederung von Einen-digitalen-Garten-anlegen"
+              "title": "Gliederung von search-en"
             }
           },
           {
@@ -219,23 +205,25 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "936b5c4a5e304bf1",
+  "active": "1f8ce7aeca2f07fa",
   "lastOpenFiles": [
-    "content/en/notes/We are all maintenance engineers now.md",
-    "content/de/notes/Einen-digitalen-Garten-anlegen.md",
-    "content/en/notes/starting-a-digital-garden.md",
-    "content/de/notes/note-2.md",
-    "content/de/de/index.md",
-    "content/en/en/index.md",
-    "search-en.md",
     "search-de.md",
     "index.md",
+    "content/de/de/index.md",
+    "content/en/en/index.md",
+    "content/en/pages/search.md",
+    "content/en/pages/about.md",
+    "README.md",
+    "CLAUDE.md",
+    "content/de/pages/search.md",
+    "content/de/notes/Einen-digitalen-Garten-anlegen.md",
+    "search-en.md",
+    "content/en/notes/We are all maintenance engineers now.md",
+    "content/en/notes/starting-a-digital-garden.md",
+    "content/de/notes/note-2.md",
     "content/templates/note-template-en-old.md",
     "content/templates/note-template-de.md",
     "content/de/pages/about.md",
-    "content/en/pages/about.md",
-    "content/de/pages/search.md",
-    "content/en/pages/search.md",
     "copilot/copilot-conversations/Kannst_Du_bitte_die_About_me_page_von_en_to@20260325_214755.md",
     "copilot/copilot-conversations",
     "copilot/copilot-custom-prompts/Clip Web Page.md",
@@ -246,8 +234,6 @@
     "copilot/copilot-custom-prompts/Generate glossary.md",
     "copilot/copilot-custom-prompts/Generate table of contents.md",
     "copilot/copilot-custom-prompts/Make longer.md",
-    "copilot/copilot-custom-prompts/Make shorter.md",
-    "copilot/copilot-custom-prompts/Emojify.md",
     "copilot/copilot-custom-prompts",
     "copilot",
     "_comms/INDEX.md.tmp.71705.1774424722552",

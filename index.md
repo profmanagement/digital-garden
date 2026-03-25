@@ -8,6 +8,6 @@ Engaging with management, culture, and social sciences —
 curious about how education, research, and digital transformation
 can serve people and organisations alike.
 
----
 
-*Nordhausen · Germany*
+---
+*&copy; Maik Arnold 2026 | [Digital Garden](https://profmanagement.github.io/digital-garden)*
