@@ -3,7 +3,7 @@ title: On starting a digital garden
 description: What will I actually do here now I have created this.
 author: Maik
 written_by: 100% human
-status: published
+status: draft
 type: seedling
 category: PKM
 tags:
@@ -28,7 +28,7 @@ This research started in September 2024 with an investigation of the main concep
 In other words, a _garden_ is a flexible collection of evolving ideas connected through contextual associations rather than organised by publication date. These notes are usually incomplete, exploratory thoughts that develop and become rigid over time, but they are less polished compared to traditional personal websites.
 
 ### About this note
-This is hand-written note. I think some guidelines are important. That's why you find the reference 100% human. I will usually use AI only to clean up my writing, for proofreading and translation between the different languages in this digital garden. If I use AI for writing, this will be indicated in a percentage.
+This is a handwritten note. I believe the principle of AI transparency is important—which is why it says “100% human” here. I generally use AI only to edit my texts, for proofreading, and for translations between the various languages of this digital garden. When I do use AI for writing, I indicate the estimated percentage.
 
 I think I will close each post with at least some tidbits, e.g. a song, poem, saying, meme, or whatever comes to my mind. 
 
