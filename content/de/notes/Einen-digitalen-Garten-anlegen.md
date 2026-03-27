@@ -28,7 +28,7 @@ Meine Auseinandersetzung mit Digitalen Gärten begann im September 2024 mit eine
 Ein _Garten_ ist eine flexible Sammlung sich entwickelnder Gedanken, die durch inhaltliche Zusammenhänge miteinander verbunden sind und nicht zwingend nach Veröffentlichungsdatum geordnet werden. Die Notizen sind meist unfertig, explorativ und reifen über die Zeit, sind aber weniger ausgearbeitet als klassische persönliche Websites.
 
 ### Zu dieser Notiz
-Dies ist eine handgeschriebene Notiz. Ich halte den Grundsatz der KI-Transparenz für wichtig – deshalb steht hier der Hinweis „100% human". KI setze ich in der Regel nur zum Überarbeiten meiner Texte, zum Korrekturlesen und für Übersetzungen zwischen den verschiedenen Sprachen dieses digitalen Gartens ein. Wenn ich KI für's Schreiben verwende, gebe ich das als geschätzten Prozentsatz an.
+Dies ist eine handgeschriebene Notiz. Ich halte den Grundsatz der KI-Transparenz für wichtig – deshalb steht hier der Hinweis „80% human". KI setze ich in der Regel nur zum Überarbeiten meiner Texte, zum Korrekturlesen und für Übersetzungen zwischen den verschiedenen Sprachen dieses digitalen Gartens ein. Wenn ich KI für's Schreiben verwende, gebe ich das als geschätzten Prozentsatz an.
 
 Ich werde jeden Beitrag mit einem kleinen Fundstück abschließen – einem Song, einem Gedicht, einem Zitat, einem Meme oder was mir gerade in den Sinn kommt.
 

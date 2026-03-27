@@ -23,7 +23,7 @@ version: v01
 ---
 # Presenting on Digital Gardening at ICEDU 2026
 
-Today I presented a paper at the [ICEDU 2026](https://educationconference.tiikm.com/) conference in Bali, Indonesia virtually — and the feedback was genuinely encouraging. My paper discussed **"Knowledge Governance in the Age of GenAI: How Digital Gardening Transforms University Teachers' Academic Development"** and draws on my master's thesis completed at University of Hamburg last year (Arnold, 2025). This is related to my interest in exploring Personal Knowledge Management (PKM).
+Today I presented a paper at the [ICEDU 2026](https://educationconference.tiikm.com/) conference in Bali, Indonesia virtually — and the feedback was genuinely encouraging. My paper discussed **"Knowledge Governance in the Age of GenAI: How Digital Gardening Transforms University Teachers' Academic Development"** and draws on my master's thesis completed at University of Hamburg last year (Arnold, 2025). This links to my research in the field Personal Knowledge Management (PKM).
 
 The core question I was trying to answer: how do university educators actually *experience* digital gardening — not as an abstract concept, but as a lived practice for professional development? And what does that mean for their capacity to govern their own knowledge in an era of generative AI?
 
@@ -34,7 +34,7 @@ I adopted a **phenomenographic approach** (Marton, 1981), which is well suited t
 The analysis produced an **outcome space** of six categories of description — a developmental spectrum from instrumental use to existential philosophy:
 
 **Figure 1.** Six Categories of Description (author's own illustration)
-![[Pasted image 20260327143552.png]]
+![Figure 1: Six Categories of Description](../images/icedu2026-figure1.png)
 
 **Table 1.** Brief Summary of the Development Stages (author's own research)
 
@@ -58,7 +58,7 @@ Digital gardening, I argued, is one of the few PKM practices that naturally cult
 
 The discussion after the presentation was inspiring and surfaced some genuinely rich examples from participants' own practice.
 
-One participant shared that they had used AI to find literary sources for a book they co-authored — a concrete instance of **teacher agency in action**. That example clicked well with the digital gardening argument: finding resources and collecting them in one place is at the heart of the practice. Done consistently, on a daily basis, it creates the conditions for new book ideas to emerge organically. It is not just curation — it is generative accumulation.
+One participant shared that they had used AI to find literary sources for a book they co-authored — a concrete instance of **teacher agency in action**. That example clicked well with the digital gardening argument: finding resources and collecting them in one place is at the heart of the practice. Done consistently, on a daily basis, it creates the conditions for new book ideas to emerge organically. It is not just generative accumulation — it is curation.
 
 There were also sharp questions about **entry barriers and required competences**. One participant asked what key competences are needed to participate in digital gardening, and what barriers participants in DG had encountered. The most practical answer from the floor: the first step is finding a tool for thought you can commit to — Obsidian, Tana, Logseq, Roam Research — and becoming genuinely familiar with it. After that, the harder work is developing a personal strategy and structure. The tool is the easy part.
 

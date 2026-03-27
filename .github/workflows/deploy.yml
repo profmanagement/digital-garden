@@ -27,6 +27,7 @@ jobs:
         run: |
           mkdir -p _site/en _site/de
           cp style.css _site/style.css
+          [ -d images ] && cp -r images _site/images
 
           # ── Helpers ────────────────────────────────────────────────────────
 
@@ -35,6 +36,7 @@ jobs:
           # [[target]]       → [target](target.html)
           preprocess() {
             sed -E \
+              -e 's/!\[\[([^\]]+)\]\]/![\1](..\/images\/\1)/g' \
               -e 's/\[\[([^|\]]+)\|([^\]]+)\]\]/[\2](\1.html)/g' \
               -e 's/\[\[([^\]]+)\]\]/[\1](\1.html)/g' \
               "$1"

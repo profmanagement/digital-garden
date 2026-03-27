@@ -23,18 +23,18 @@ version: v01
 ---
 # Vortrag über Digital Gardening auf der ICEDU 2026
 
-Heute habe ich auf der [ICEDU 2026](https://educationconference.tiikm.com/) in Bali, Indonesien, virtuell einen Beitrag präsentiert — und das Feedback war ausgesprochen ermutigend. Mein Paper trägt den Titel **„Knowledge Governance in the Age of GenAI: How Digital Gardening Transforms University Teachers' Academic Development"** und basiert auf meiner Masterarbeit, die ich letztes Jahr an der Universität Hamburg abgeschlossen habe (Arnold, 2025). Es schließt an mein Interesse an Personal Knowledge Management (PKM) an.
+Heute habe ich auf der [ICEDU 2026](https://educationconference.tiikm.com/) in Bali, Indonesien, virtuell einen Beitrag präsentiert — und das Feedback war ausgesprochen ermutigend. Mein Paper trägt den Titel **„Knowledge Governance in the Age of GenAI: How Digital Gardening Transforms University Teachers' Academic Development"** und basiert auf meiner Masterarbeit, die ich letztes Jahr an der Universität Hamburg abgeschlossen habe (Arnold, 2025). Es schließt an meine Forschung im Bereich Personal Knowledge Management (PKM) an.
 
-Die zentrale Frage, der ich nachgegangen bin: Wie *erleben* Hochschullehrende Digital Gardening — nicht als abstraktes Konzept, sondern als gelebte Praxis professioneller Entwicklung? Und was bedeutet das für ihre Fähigkeit, ihr eigenes Wissen im Zeitalter generativer KI eigenverantwortlich zu gestalten?
+Die zentrale Frage, der ich nachgegangen bin: Wie *erleben* Hochschullehrende Digital Gardening — nicht als abstraktes Konzept, sondern als gelebte Praxis eigener Professionalisierung? Und was bedeutet das für ihre Fähigkeit, ihr eigenes Wissen im Zeitalter generativer KI eigenverantwortlich zu gestalten?
 
 ## Was die Studie ergab
 
 Ich habe einen **phänomenografischen Ansatz** gewählt (Marton, 1981), der besonders geeignet ist, die qualitativ unterschiedlichen Arten abzubilden, wie Menschen ein Phänomen erleben. Die Stichprobe war klein, aber bewusst zusammengestellt und bot hinreichende Variation: sechs Experteninterviews mit Lehrenden aus Deutschland, den Niederlanden, Finnland und Italien aus drei Disziplinen — Lehrererbildung, Design Studies und Informatik.
 
-Die Analyse ergab einen **Ergebnisraum** mit sechs Beschreibungskategorien — ein Entwicklungsspektrum vom instrumentellen Gebrauch bis zur existenziellen Philosophie:
+Die Analyse ergab einen **Outcome Space (Ergebnisraum)** mit sechs Beschreibungskategorien — ein Entwicklungsspektrum vom instrumentellen Gebrauch von DG bis zur existenziellen Philosophie:
 
 **Abbildung 1.** Sechs Beschreibungskategorien (eigene Darstellung)
-![[Pasted image 20260327143552.png]]
+![Abbildung 1: Sechs Beschreibungskategorien](../images/icedu2026-figure1.png)
 
 **Tabelle 1.** Kurzzusammenfassung der Entwicklungsstufen (eigene Forschung)
 
@@ -59,7 +59,7 @@ Digital Gardening, so mein Argument, ist eine der wenigen PKM-Praktiken, die die
 
 Die Diskussion nach dem Vortrag war inspirierend und brachte einige wirklich gehaltvolle Beispiele aus der eigenen Praxis der Teilnehmenden hervor.
 
-Eine Teilnehmerin berichtete, dass sie KI genutzt hat, um literarische Quellen für ein Buch zu finden, das sie mitverfasst hat — ein konkretes Beispiel für **Teacher Agency in Aktion**. Dieses Beispiel passte gut zum Digital-Gardening-Argument: Ressourcen zu finden und an einem Ort zu sammeln ist der Kern der Praxis. Wenn man das konsequent, täglich tut, entstehen die Voraussetzungen, aus denen neue Buchideen organisch erwachsen. Es ist nicht nur Kuration — es ist generative Akkumulation.
+Eine Teilnehmerin berichtete, dass sie KI genutzt hat, um literarische Quellen für ein Buch zu finden, das sie mitverfasst hat — ein konkretes Beispiel für eine **aktivierende Lehrpraxis**. Dieses Beispiel passte gut zum Digital-Gardening-Argument: Ressourcen zu finden und an einem Ort zu sammeln ist der Kern der Praxis. Wenn man das konsequent, täglich tut, entstehen die Voraussetzungen, aus denen neue Buchideen organisch erwachsen. Es ist nicht nur generative Wissensakkumulation — es auch Kuration.
 
 Es gab auch pointierte Fragen zu **Einstiegshürden und erforderlichen Kompetenzen**. Ein Teilnehmer fragte, welche Schlüsselkompetenzen für die Teilnahme am Digital Gardening nötig sind und welche Barrieren Teilnehmende in der Praxis erlebt haben. Die pragmatischste Antwort aus dem Plenum: Der erste Schritt ist, ein Tool for Thought zu finden, zu dem man sich wirklich bekennen kann — Obsidian, Tana, Logseq, Roam Research — und damit wirklich vertraut zu werden. Danach kommt die eigentlich schwierige Arbeit: eine persönliche Strategie und Struktur zu entwickeln. Das Werkzeug ist der leichte Teil.
 
@@ -67,7 +67,7 @@ Eine weitere Teilnehmerin berichtete, dass sie KI nutzt, um Lernwebsites für ih
 
 Eine theoretisch schärfer gestellte Frage aus dem Plenum: Wie fördert Digital Gardening konkret die **Wissensgovernance-Kompetenz** — insbesondere die Fähigkeit, Informationen kritisch zu bewerten und in KI-vermittelten Lernumgebungen verantwortliche Entscheidungen zu treffen? Das ist, glaube ich, die richtige Frage, die weiterverfolgt werden sollte. Die Praxis schafft einen langsamen, reflexiven Kontakt mit den eigenen Quellen und dem eigenen Denken. Der Garten denkt nicht für einen — er macht das eigene Denken sichtbar, und das ist die Voraussetzung dafür, es kritisch zu bewerten.
 
-Es gab auch ehrliche Fragen zur Skalierbarkeit: Phänomenografie mit N=6 ist methodisch angemessen, aber die Befunde sind deskriptiv, nicht kausal. Größere, diversere Stichproben — und Längsschnittstudien, die verfolgen, wie sich Lehrende im Ergebnisraum bewegen — sind die naheliegenden nächsten Schritte.
+Es gab auch kritische Fragen zur Skalierbarkeit: Phänomenografie mit N=6 ist methodisch angemessen, aber die Befunde sind deskriptiv, nicht kausal. Größere, diversere Stichproben — und Längsschnittstudien, die verfolgen, wie sich Lehrende im Ergebnisraum bewegen — sind die naheliegenden nächsten Schritte.
 
 ## Praktische Implikationen, die mich beschäftigen
 

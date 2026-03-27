@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/de/notes/icedu2026-digital-gardening-paper.md",
+                "file": "content/en/notes/icedu2026-digital-gardening-paper.md",
                 "mode": "source",
                 "source": false
               },
@@ -208,8 +208,10 @@
   "active": "1f8ce7aeca2f07fa",
   "lastOpenFiles": [
     "content/de/notes/Einen-digitalen-Garten-anlegen.md",
-    "content/de/notes/icedu2026-digital-gardening-paper.md",
     "content/en/notes/icedu2026-digital-gardening-paper.md",
+    "content/de/notes/icedu2026-digital-gardening-paper.md",
+    "images/icedu2026-figure1.png",
+    "images",
     "Pasted image 20260327143552.png",
     "content/en/notes/starting-a-digital-garden.md",
     "search-en.md",
@@ -234,7 +236,6 @@
     "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
     "copilot/copilot-custom-prompts/Rewrite as tweet.md",
     "copilot/copilot-custom-prompts/Remove URLs.md",
-    "copilot/copilot-custom-prompts/Generate glossary.md",
     "copilot/copilot-custom-prompts",
     "copilot",
     "_comms/INDEX.md.tmp.71705.1774424722552",
@@ -242,7 +243,6 @@
     "content/de/pages",
     "content/de/notes",
     "content/de/nl",
-    "content/de",
-    "_comms/06_TROUBLESHOOTING"
+    "content/de"
   ]
 }
