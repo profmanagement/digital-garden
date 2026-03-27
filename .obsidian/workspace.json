@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "search-en.md",
+                "file": "content/en/notes/starting-a-digital-garden.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "search-en"
+              "title": "starting-a-digital-garden"
             }
           }
         ]
@@ -207,6 +207,9 @@
   },
   "active": "1f8ce7aeca2f07fa",
   "lastOpenFiles": [
+    "content/de/notes/Einen-digitalen-Garten-anlegen.md",
+    "content/en/notes/starting-a-digital-garden.md",
+    "search-en.md",
     "search-de.md",
     "index.md",
     "content/de/de/index.md",
@@ -216,10 +219,7 @@
     "README.md",
     "CLAUDE.md",
     "content/de/pages/search.md",
-    "content/de/notes/Einen-digitalen-Garten-anlegen.md",
-    "search-en.md",
     "content/en/notes/We are all maintenance engineers now.md",
-    "content/en/notes/starting-a-digital-garden.md",
     "content/de/notes/note-2.md",
     "content/templates/note-template-en-old.md",
     "content/templates/note-template-de.md",

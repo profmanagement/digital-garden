@@ -21,7 +21,7 @@ version: v01
 ---
 # On starting a digital garden
 
-This research started in September 2024 with an investigation of the main conceptual ideas of [Digital Gardening](https://maggieappleton.com/garden-history?ref=ideasurg.pub) described by the cultural anthropologist and lead design engineer at [**Normally**](https://normally.com/) [Maggie Appleton](https://maggieappleton.com/about). Appleton ([2020](https://profmanagement.github.io/digitalgarden/#ref-appleton2020Brief)) defines “digital gardening” as an individual practice for idea generation and collection, personal note-taking and knowledge management that is not following the conventions of the otherwise known techniques of personal blogging. Usually, small collections of personal knowledge are created on the web:
+This research started in September 2024 with an investigation of the main conceptual ideas of [Digital Gardening](https://maggieappleton.com/garden-history?ref=ideasurg.pub) described by the cultural anthropologist and lead design engineer at [GitHub Next](https://githubnext.com/) [Maggie Appleton](https://maggieappleton.com/about). Appleton ([2020](https://profmanagement.github.io/digitalgarden/#ref-appleton2020Brief)) defines “digital gardening” as an individual practice for idea generation and collection, personal note-taking and knowledge management that is not following the conventions of the otherwise known techniques of personal blogging. Usually, small collections of personal knowledge are created on the web:
 
 > “Rather than presenting a set of polished articles, displayed in reverse chronological order, these sites act more like free form, work-in-progress wikis” ([Appleton, 2020](https://profmanagement.github.io/digitalgarden/#ref-appleton2020Brief)).
 
