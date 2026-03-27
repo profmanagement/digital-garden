@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/en/notes/starting-a-digital-garden.md",
+                "file": "content/en/notes/icedu2026-digital-gardening-paper.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "starting-a-digital-garden"
+              "title": "icedu2026-digital-gardening-paper"
             }
           }
         ]
@@ -207,8 +207,10 @@
   },
   "active": "1f8ce7aeca2f07fa",
   "lastOpenFiles": [
-    "content/de/notes/Einen-digitalen-Garten-anlegen.md",
+    "Pasted image 20260327143552.png",
     "content/en/notes/starting-a-digital-garden.md",
+    "content/en/notes/icedu2026-digital-gardening-paper.md",
+    "content/de/notes/Einen-digitalen-Garten-anlegen.md",
     "search-en.md",
     "search-de.md",
     "index.md",
@@ -232,8 +234,6 @@
     "copilot/copilot-custom-prompts/Rewrite as tweet.md",
     "copilot/copilot-custom-prompts/Remove URLs.md",
     "copilot/copilot-custom-prompts/Generate glossary.md",
-    "copilot/copilot-custom-prompts/Generate table of contents.md",
-    "copilot/copilot-custom-prompts/Make longer.md",
     "copilot/copilot-custom-prompts",
     "copilot",
     "_comms/INDEX.md.tmp.71705.1774424722552",
