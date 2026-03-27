@@ -57,16 +57,33 @@ hr {
   margin: 2rem 0;
 }
 
-ul {
+ul, ol {
+  padding-left: 0;
+  margin-bottom: 1rem;
   list-style: none;
-  padding: 0;
 }
-ul li {
+ul li, ol li {
+  position: relative;
+  padding-left: 1.5em;
   margin-bottom: 0.5rem;
 }
 ul li::before {
-  content: "→ ";
-  color: var(--accent);
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--text);
+}
+ol {
+  counter-reset: ol-counter;
+}
+ol li {
+  counter-increment: ol-counter;
+}
+ol li::before {
+  content: counter(ol-counter) ".";
+  position: absolute;
+  left: 0;
+  color: var(--text);
 }
 
 em {
@@ -157,14 +174,37 @@ em {
   color: var(--text);
 }
 
+/* ── Tables (APA 7 style) ──────────────────────────────────────────────── */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0 2rem;
+  font-size: 1rem;
+}
+thead tr {
+  border-top: 2px solid var(--text);
+  border-bottom: 1px solid var(--text);
+}
+tbody tr:last-child {
+  border-bottom: 2px solid var(--text);
+}
+th {
+  text-align: left;
+  font-weight: normal;
+  font-style: italic;
+  padding: 0.3rem 0.6rem 0.3rem 0;
+}
+td {
+  text-align: left;
+  padding: 0.3rem 0.6rem 0.3rem 0;
+  vertical-align: top;
+}
+
 /* ── Auto-nav list (homepage) ──────────────────────────────────────────── */
 
 .auto-nav {
   margin-bottom: 2.5rem;
-}
-.auto-nav ul li::before {
-  content: "→ ";
-  color: var(--accent);
 }
 
 /* ── Note cards (homepage listing) ────────────────────────────────────── */
