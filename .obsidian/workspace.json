@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/en/notes/icedu2026-digital-gardening-paper.md",
+                "file": "content/de/notes/icedu2026-digital-gardening-paper.md",
                 "mode": "source",
                 "source": false
               },
@@ -88,25 +88,6 @@
         "id": "a81ae51172e18095",
         "type": "tabs",
         "children": [
-          {
-            "id": "f652cf43a567e69f",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "search-en.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Rückverweise auf search-en"
-            }
-          },
           {
             "id": "65a07f21c14ffaac",
             "type": "leaf",
@@ -186,7 +167,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -205,7 +186,7 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "1f8ce7aeca2f07fa",
+  "active": "08fb7fdabea25c75",
   "lastOpenFiles": [
     "content/de/notes/Einen-digitalen-Garten-anlegen.md",
     "content/en/notes/icedu2026-digital-gardening-paper.md",

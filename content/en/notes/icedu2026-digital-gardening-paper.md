@@ -34,7 +34,7 @@ I adopted a **phenomenographic approach** (Marton, 1981), which is well suited t
 The analysis produced an **outcome space** of six categories of description — a developmental spectrum from instrumental use to existential philosophy:
 
 **Figure 1.** Six Categories of Description (author's own illustration)
-![Figure 1: Six Categories of Description](../images/icedu2026-figure1.png)
+![Figure 1: Six Categories of Description](../images/icedu2026-figure1.png){width=75%}
 
 **Table 1.** Brief Summary of the Development Stages (author's own research)
 

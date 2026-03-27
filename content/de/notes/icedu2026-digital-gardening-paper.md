@@ -34,7 +34,7 @@ Ich habe einen **phänomenografischen Ansatz** gewählt (Marton, 1981), der beso
 Die Analyse ergab einen **Outcome Space (Ergebnisraum)** mit sechs Beschreibungskategorien — ein Entwicklungsspektrum vom instrumentellen Gebrauch von DG bis zur existenziellen Philosophie:
 
 **Abbildung 1.** Sechs Beschreibungskategorien (eigene Darstellung)
-![Abbildung 1: Sechs Beschreibungskategorien](../images/icedu2026-figure1.png)
+![Abbildung 1: Sechs Beschreibungskategorien](../images/icedu2026-figure1.png){width=75%}
 
 **Tabelle 1.** Kurzzusammenfassung der Entwicklungsstufen (eigene Forschung)
 
