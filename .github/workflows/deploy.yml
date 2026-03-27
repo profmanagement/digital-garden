@@ -54,8 +54,8 @@ jobs:
             echo '<!DOCTYPE html>'
             echo '<html lang="en"><head><meta charset="utf-8">'
             echo '<meta http-equiv="refresh" content="0;url=en/">'
-            echo '<title>Digital Garden</title>'
-            echo '</head><body><a href="en/">Digital Garden</a></body></html>'
+            echo '<title>🪴 Digital Garden</title>'
+            echo '</head><body><a href="en/">🪴 Digital Garden</a></body></html>'
           } > _site/index.html
 
           # ── Generate notes listing fragments ──────────────────────────────
@@ -125,7 +125,7 @@ jobs:
           # See _comms/06_TROUBLESHOOTING/ for the reason.
           {
             echo '<nav class="site-nav">'
-            echo '  <a class="nav-logo" href="index.html">Digital Garden</a>'
+            echo '  <a class="nav-logo" href="index.html">🪴 Digital Garden</a>'
             echo '  <span class="nav-links">'
             echo '    <a href="index.html">HOME</a>'
             echo '    <span class="nav-sep">|</span>'
@@ -155,7 +155,7 @@ jobs:
           # ── German homepage → _site/de/index.html ──────────────────────────
           {
             echo '<nav class="site-nav">'
-            echo '  <a class="nav-logo" href="index.html">Digital Garden</a>'
+            echo '  <a class="nav-logo" href="index.html">🪴 Digital Garden</a>'
             echo '  <span class="nav-links">'
             echo '    <a href="index.html">HOME</a>'
             echo '    <span class="nav-sep">|</span>'
@@ -190,7 +190,7 @@ jobs:
             pt=$(get_title "$f")
             {
               echo '<nav class="site-nav">'
-              echo '  <a class="nav-logo" href="index.html">Digital Garden</a>'
+              echo '  <a class="nav-logo" href="index.html">🪴 Digital Garden</a>'
               echo '  <span class="nav-links">'
               echo '    <a href="index.html">HOME</a>'
               echo '    <span class="nav-sep">|</span>'
@@ -220,7 +220,7 @@ jobs:
             pt=$(get_title "$f")
             {
               echo '<nav class="site-nav">'
-              echo '  <a class="nav-logo" href="index.html">Digital Garden</a>'
+              echo '  <a class="nav-logo" href="index.html">🪴 Digital Garden</a>'
               echo '  <span class="nav-links">'
               echo '    <a href="index.html">HOME</a>'
               echo '    <span class="nav-sep">|</span>'
@@ -267,7 +267,7 @@ jobs:
 
             {
               echo '<nav class="site-nav">'
-              echo '  <a class="nav-logo" href="index.html">Digital Garden</a>'
+              echo '  <a class="nav-logo" href="index.html">🪴 Digital Garden</a>'
               echo '  <span class="nav-links">'
               echo '    <a href="index.html">HOME</a>'
               echo '    <span class="nav-sep">|</span>'
@@ -330,7 +330,7 @@ jobs:
 
             {
               echo '<nav class="site-nav">'
-              echo '  <a class="nav-logo" href="index.html">Digital Garden</a>'
+              echo '  <a class="nav-logo" href="index.html">🪴 Digital Garden</a>'
               echo '  <span class="nav-links">'
               echo '    <a href="index.html">HOME</a>'
               echo '    <span class="nav-sep">|</span>'
