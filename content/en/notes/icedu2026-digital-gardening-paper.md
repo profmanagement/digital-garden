@@ -14,7 +14,7 @@ tags:
   - conference
   - GenAI
 language: en
-translation: icedu2026-digital-gardening-paper.md
+translation: icedu2026-digital-gardening-paper
 source:
 related:
 created: 2026-03-27
