@@ -27,7 +27,7 @@ version: v01
 
 A conversation with Guia Carmona which I met at the PKM Summit 2026 sparked a question that keeps spinning in my head: at what point does a private practice of thinking in public become a contribution to something collective?
 
-Guia pointed to a tension in PKM that she had felt but has not yet been clearly investigated. She noticed a quote from my [reflection note](20260401_from-pkm-to-ckm) on the PKM Summit – that PKM practitioners are "something closer to existential philosophers" (see the other post) – and pushed back gently: "if thinking is this personal, this individual, doesn't that mean we are forgetting a big part of life?" When do the collective spaces come in, and what do they look like?
+Guia pointed to a tension in PKM that she had felt but has not yet been clearly investigated. She noticed a quote from my [reflection note](20260331_pkm-summit-2026-reflections) on the PKM Summit – that PKM practitioners are "something closer to existential philosophers" (see the other post) – and pushed back gently: "if thinking is this personal, this individual, doesn't that mean we are forgetting a big part of life?" When do the collective spaces come in, and what do they look like?
 
 ## Framing the question(s)
 
