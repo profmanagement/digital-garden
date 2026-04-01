@@ -13,7 +13,7 @@ tags:
   - sensemaking
   - philosophy
 language: en
-translation: PKM-Summit-2026-Reflexionen
+translation: 20260331_PKM-Summit-2026-Reflexionen
 source:
 related:
   - "[[On starting a digital garden]]"

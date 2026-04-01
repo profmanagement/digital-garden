@@ -13,7 +13,7 @@ tags:
   - sensemaking
   - philosophie
 language: de
-translation: pkm-summit-2026-reflections
+translation: 20260331_pkm-summit-2026-reflections
 source:
 related:
   - "[[Einen digitalen Garten anlegen]]"
