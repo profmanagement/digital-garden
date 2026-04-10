@@ -12,7 +12,7 @@ tags:
   - schreibprozess
   - kreativität
 language: de
-translation: starting-a-digital-garden
+translation: 20260323_starting-a-digital-garden
 source:
 related:
 created: 2026-03-23

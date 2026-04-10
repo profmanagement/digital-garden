@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2e364bdd9cdf1de8",
+        "id": "088f8f71603a9a6b",
         "type": "tabs",
         "children": [
           {
-            "id": "cf1beb09aef731e1",
+            "id": "f0efd5c5534a4d93",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -201,8 +201,21 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "cf1beb09aef731e1",
+  "active": "08fb7fdabea25c75",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "pkm-summit-2026-reflections.md",
+    "content/en/notes/pages/search.md",
+    "content/en/notes/pages/about.md",
+    "content/en/notes/pages",
+    "content/en/notes/20260401_from-pkm-to-ckm.md",
+    "content/en/notes/20260331_pkm-summit-2026-reflections.md",
+    "content/en/notes/20260327_icedu2026-digital-gardening-paper.md",
+    "content/en/notes/20260323_starting-a-digital-garden.md",
+    "content/de/notes/20260401_von-pkm-zu-ckm.md",
+    "content/de/notes/20260331_PKM-Summit-2026-Reflexionen.md",
+    "content/de/notes/20260327_icedu2026-digital-gardening-paper.md",
+    "content/de/notes/20260323_Einen-digitalen-Garten-anlegen.md",
     "content/de/notes/vom-wiki-llm-zum-reasoning-linter.md",
     "content/en/notes/from-wiki-llm-to-reasoning-linter.md.tmp.46378.1775860561709",
     "content/de/notes/PKM-Summit-2026-Reflexionen.md",
@@ -221,25 +234,12 @@
     "content/en/en/index.md",
     "content/en/pages/search.md",
     "content/en/pages/about.md",
-    "README.md",
-    "CLAUDE.md",
-    "content/de/pages/search.md",
-    "content/en/notes/We are all maintenance engineers now.md",
-    "content/de/notes/note-2.md",
-    "content/templates/note-template-en-old.md",
-    "content/templates/note-template-de.md",
-    "content/de/pages/about.md",
-    "copilot/copilot-conversations/Kannst_Du_bitte_die_About_me_page_von_en_to@20260325_214755.md",
     "copilot/copilot-conversations",
-    "copilot/copilot-custom-prompts/Clip Web Page.md",
-    "copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
-    "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
     "copilot/copilot-custom-prompts",
     "copilot",
     "_comms/INDEX.md.tmp.71705.1774424722552",
     "content/de/de",
     "content/de/pages",
-    "content/de/notes",
-    "content/de/nl"
+    "content/de/notes"
   ]
 }
