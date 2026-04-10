@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Maik" />
+  <meta name="description" content="Two new layers on top of my wiki LLM — a Discourse Graph implementation and Mike Caulfield’s Deep Background superprompt — to cover the gap between retrieving information and evaluating it." />
+  <title>From wiki LLM to reasoning linter: adding discourse maps and claim checking to my setup</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html">🪴 Digital Garden</a>
+  <span class="nav-links">
+    <a href="index.html">HOME</a>
+    <span class="nav-sep">|</span>
+    <a href="about.html">ABOUT</a>
+  </span>
+  <span class="nav-right">
+    <span class="nav-lang"><a href="from-wiki-llm-to-reasoning-linter.html">EN</a> &middot; <a href="../de/vom-wiki-llm-zum-reasoning-linter.html">DE</a></span>
+    <a class="nav-search" href="search.html">&#x1F50D;</a>
+  </span>
+</nav>
+<p><a class="nav-back" href="index.html">&larr; Back</a></p>
+<p class="note-category-label">PKM</p>
+<h1 id="from-wiki-llm-to-reasoning-linter-adding-discourse-maps-and-claim-checking-to-my-setup">From wiki LLM to reasoning linter: adding discourse maps and claim checking to my setup</h1>
+<p class="note-byline">Maik &middot; 2026-04-10 &middot; 80% human</p>
+<p>This week, I added two new layers on top of the wiki LLM I built last week following the Andrej Karpathy approach. One is a Joal Chan’s and Matt Akamatsu’s Discourse Graph implementation, the other is Mike Caulfield’s Deep Background superprompt. Together they cover something I kept bumping into: the gap between retrieving information and evaluating it.</p>
+<h2 id="the-problem-i-kept-hitting">The problem I kept hitting</h2>
+<p>The wiki LLM is good at surfacing material from my notes, slide decks, and lecture transcripts. What it does not do — and retrieval is just not designed for this — is tell me whether the reasoning in that material holds up.</p>
+<p>When I started using the setup to draft OER material, the bottleneck was not finding content. It was figuring out which parts of my source material were claims and which parts were evidence. That sounds like a clean distinction until you try to enforce it on actual lecture notes. Then it gets complicated.</p>
+<h2 id="discourse-graphs-separating-claims-from-observations">Discourse graphs: separating claims from observations</h2>
+<p>The Discourse Graph model, developed by Joel Chan and Matt Akamatsu, treats claims and evidence as separate, linkable units. Distinguishing an empirical observation from a proposed answer leaves room for multiple interpretations of the same data — which matters when you are synthesising across sources rather than summarising one.</p>
+<p>I set up the Obsidian plugin this week. The difficult part, which I did not anticipate, is the initial tagging. Pulling a claim apart from its evidence inside a paragraph of running prose turns out to be harder to detect than it looks. And this is not a tool problem, it is a consequence from the Toulmin logic. The Toulmin framework makes the claim-warrant-backing structure explicit, and until you think in those categories naturally, the distinctions resist each other.</p>
+<p>That resistance is probably worth sitting with. It forces a re-read of my own material that skimming does not.</p>
+<h2 id="deep-background-a-linter-for-scientific-reasoning">Deep Background: a linter for scientific reasoning</h2>
+<p>The second addition is Mike Caulfield’s Deep Background superprompt — a lengthy instruction block you paste into a Claude or ChatGPT session to change how the model approaches a claim. The prompt draws on the SIFT method and organises output around verified facts, errors and corrections, source assessment, and notes on the information environment.</p>
+<p>The framing I keep returning to is linting. In software development, a linter checks code against a set of rules before it runs — it catches structural problems, not just typos. Deep Background does something similar for scientific reasoning: it checks an argument before you build on it. Are the claims actually verified? Are the sources doing what they appear to be doing? Is there a contradictory reading worth surfacing?</p>
+<p>Standard LLMs do not do this on their own. They synthesise well, but they are not reflexively sceptical of the material they are working from. The superprompt adds that scepticism as a layer.</p>
+<h2 id="what-this-adds-to-the-setup">What this adds to the setup</h2>
+<p>My goal with all of this is to develop OER material from lecture notes, slides, and transcripts without losing reasoning quality in the translation. The wiki LLM takes care of retrieval. Discourse graphs handle structure — separating what was claimed from what was observed. Deep Background runs health checks on the reasoning chain before I build on it.</p>
+<p>The Toulmin step is still slow and mostly manual. Deep Background sessions are long and need a paid model with search enabled. But the three-layer setup now covers something that was missing from the LLM workflows I had been using: a way to check whether the argument I am building actually holds, not just whether it sounds coherent.</p>
+<h2 id="what-i-have-not-worked-out-yet">What I have not worked out yet</h2>
+<p>There is no smooth pipeline from Discourse Graph nodes into OER output format yet. Right now it is still copy-paste between tools. And I am not sure the linting metaphor fully holds — real linting is deterministic, claim checking with an LLM is not. But the framing helps me think about what I am actually doing at each step.</p>
+<h2 id="related">Related</h2>
+<p><strong>“Both Sides, Now” by Joni Mitchell</strong> — from <em>Clouds</em> (1969). Written at 23 as a meditation on fantasy and reality — clouds, love, life, seen from both directions and still not fully understood. Which is more or less what working with claims and evidence feels like on a good day. The Discourse Graph and Deep Background force you to hold the claim and the counter-evidence at the same time before concluding anything.</p>
+<p>Listen on: <a href="https://open.spotify.com/track/3NW1YMA8kfNVTzGJCGBS8m">Spotify</a> | <a href="https://music.apple.com/us/album/clouds/74769392">Apple Music</a> | <a href="https://www.youtube.com/results?search_query=Joni+Mitchell+Both+Sides+Now+Johnny+Cash+Show+1969">YouTube — live on The Johnny Cash Show, 1969</a></p>
+<footer class="note-footer"><small>2026-04-10 &middot; modified 2026-04-10 &middot; v01</small></footer>
+</body>
+</html>

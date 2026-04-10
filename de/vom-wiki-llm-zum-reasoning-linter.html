@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Maik" />
+  <meta name="description" content="Zwei neue Schichten über meinem wiki LLM — eine Discourse-Graph-Implementierung und Mike Caulfields Deep-Background-Superprompt — um die Lücke zwischen Informationsabruf und Informationsbewertung zu schließen." />
+  <title>Vom wiki LLM zum Reasoning-Linter: Discourskaarten und Claimprüfung in meinem Setup</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html">🪴 Digital Garden</a>
+  <span class="nav-links">
+    <a href="index.html">HOME</a>
+    <span class="nav-sep">|</span>
+    <a href="about.html">ÜBER MICH</a>
+  </span>
+  <span class="nav-right">
+    <span class="nav-lang"><a href="../en/from-wiki-llm-to-reasoning-linter.html">EN</a> &middot; <a href="vom-wiki-llm-zum-reasoning-linter.html">DE</a></span>
+    <a class="nav-search" href="search.html">&#x1F50D;</a>
+  </span>
+</nav>
+<p><a class="nav-back" href="index.html">&larr; Zurück</a></p>
+<p class="note-category-label">PKM</p>
+<h1 id="vom-wiki-llm-zum-reasoning-linter-discourskaarten-und-claimprüfung-in-meinem-setup">Vom wiki LLM zum Reasoning-Linter: Discourskaarten und Claimprüfung in meinem Setup</h1>
+<p class="note-byline">Maik &middot; 2026-04-10 &middot; 80% human</p>
+<p>Diese Woche habe ich zwei neue Schichten auf das wiki LLM aufgebaut, das ich letzte Woche nach dem Ansatz von Andrej Karpathy entwickelt habe. Die eine ist eine Discourse-Graph-Implementierung von Joel Chan und Matt Akamatsu, die andere ist Mike Caulfields Deep-Background-Superprompt. Zusammen decken sie etwas ab, auf das ich immer wieder gestoßen bin: die Lücke zwischen dem Abrufen von Informationen und deren Bewertung.</p>
+<h2 id="das-problem-auf-das-ich-immer-wieder-stieß">Das Problem, auf das ich immer wieder stieß</h2>
+<p>Das wiki LLM ist gut darin, Material aus meinen Notizen, Folien und Vorlesungstranskripten zu finden. Was es nicht tut — und Retrieval ist dafür schlicht nicht konzipiert — ist mir zu sagen, ob die Argumentation in diesem Material standhält.</p>
+<p>Als ich begann, das Setup für die Entwicklung von OER-Material zu nutzen, lag der Engpass nicht im Finden von Inhalten. Es war das Herausarbeiten, welche Teile meines Quellmaterials Behauptungen waren und welche Evidenz. Das klingt nach einer sauberen Unterscheidung, bis man sie auf echte Vorlesungsnotizen anwenden möchte. Dann wird es kompliziert.</p>
+<h2 id="discoursgrafen-behauptungen-von-beobachtungen-trennen">Discoursgrafen: Behauptungen von Beobachtungen trennen</h2>
+<p>Das Discourse-Graph-Modell von Joel Chan und Matt Akamatsu behandelt Behauptungen und Evidenz als separate, verlinkbare Einheiten. Eine empirische Beobachtung von einer vorgeschlagenen Antwort zu unterscheiden lässt Raum für mehrere Interpretationen derselben Daten — was wichtig ist, wenn man über Quellen hinweg synthetisiert statt eine einzelne zusammenzufassen.</p>
+<p>Ich habe das Obsidian-Plugin diese Woche eingerichtet. Das schwierige Teil, das ich nicht vorhergesehen hatte, ist das initiale Tagging. Eine Behauptung von ihrer Evidenz in einem Absatz fließenden Textes zu lösen, stellt sich als schwieriger heraus als es aussieht. Das ist kein Toolproblem — es ist eine Konsequenz der Toulmin-Logik. Das Toulmin-Framework macht die Struktur von Claim-Warrant-Backing explizit, und solange man nicht von Natur aus in diesen Kategorien denkt, widersetzen sich die Unterscheidungen.</p>
+<p>Dieser Widerstand ist wahrscheinlich das Absitzen wert. Er erzwingt eine Neulektüre des eigenen Materials, die flüchtiges Lesen nicht auslöst.</p>
+<h2 id="deep-background-ein-linter-für-wissenschaftliches-denken">Deep Background: ein Linter für wissenschaftliches Denken</h2>
+<p>Die zweite Ergänzung ist Mike Caulfields Deep-Background-Superprompt — ein langer Anweisungsblock, den man in eine Claude- oder ChatGPT-Sitzung einfügt, um zu verändern, wie das Modell eine Behauptung angeht. Der Prompt baut auf der SIFT-Methode auf und organisiert die Ausgabe um verifizierte Fakten, Fehler und Korrekturen, Quellenbewertung und Hinweise auf das Informationsumfeld.</p>
+<p>Das Bild, zu dem ich immer wieder zurückkehre, ist Linting. In der Softwareentwicklung prüft ein Linter Code gegen einen Regelsatz, bevor er ausgeführt wird — er erkennt strukturelle Probleme, nicht nur Tippfehler. Deep Background tut etwas Ähnliches für wissenschaftliches Denken: es prüft ein Argument, bevor man darauf aufbaut. Sind die Behauptungen tatsächlich verifiziert? Tun die Quellen, was sie zu tun scheinen? Gibt es eine widersprüchliche Lesart, die es wert wäre, aufzuzeigen?</p>
+<p>Standard-LLMs tun das nicht von alleine. Sie synthetisieren gut, sind aber nicht reflexiv skeptisch gegenüber dem Material, mit dem sie arbeiten. Der Superprompt fügt diese Skepsis als Schicht hinzu.</p>
+<h2 id="was-das-dem-setup-hinzufügt">Was das dem Setup hinzufügt</h2>
+<p>Mein Ziel dabei ist, OER-Material aus Vorlesungsnotizen, Folien und Transkripten zu entwickeln, ohne dabei Argumentationsqualität in der Übersetzung zu verlieren. Das wiki LLM übernimmt den Abruf. Discoursgrafen regeln die Struktur — sie trennen, was behauptet wurde, von dem, was beobachtet wurde. Deep Background führt Gesundheitschecks an der Argumentationskette durch, bevor ich darauf aufbaue.</p>
+<p>Der Toulmin-Schritt ist noch langsam und größtenteils manuell. Deep-Background-Sitzungen sind lang und benötigen ein bezahltes Modell mit aktivierter Suchfunktion. Aber das dreilagige Setup deckt nun etwas ab, das in den LLM-Workflows fehlte, die ich bisher verwendet hatte: eine Möglichkeit zu prüfen, ob das Argument, das ich aufbaue, tatsächlich trägt — nicht nur ob es kohärent klingt.</p>
+<h2 id="was-ich-noch-nicht-gelöst-habe">Was ich noch nicht gelöst habe</h2>
+<p>Es gibt noch keine reibungslose Pipeline von Discourse-Graph-Knoten in das OER-Ausgabeformat. Im Moment ist es noch Copy-Paste zwischen den Tools. Und ich bin nicht sicher, ob die Linting-Metapher vollständig trägt — echtes Linting ist deterministisch, Claimprüfung mit einem LLM ist es nicht. Aber das Bild hilft mir, nachzudenken, was ich bei jedem Schritt eigentlich tue.</p>
+<p>Ich werde hier weiter Notizen machen, wie sich das entwickelt.</p>
+<hr />
+<h2 id="verwandte-themen">Verwandte Themen</h2>
+<p><strong>„Both Sides, Now” von Joni Mitchell</strong> — aus <em>Clouds</em> (1969). Mit 23 geschrieben als Meditation über Fantasie und Wirklichkeit — Wolken, Liebe, Leben, von beiden Seiten betrachtet und noch immer nicht vollständig verstanden. Was ungefähr so ist, wie die Arbeit mit Behauptungen und Evidenz an einem guten Tag sich anfühlt. Discourse Graph und Deep Background zwingen dazu, die Behauptung und das Gegenbeweismaterial gleichzeitig zu halten, bevor man zu einem Schluss kommt.</p>
+<p>Hören auf: <a href="https://open.spotify.com/track/3NW1YMA8kfNVTzGJCGBS8m">Spotify</a> | <a href="https://music.apple.com/us/album/clouds/74769392">Apple Music</a> | <a href="https://www.youtube.com/results?search_query=Joni+Mitchell+Both+Sides+Now+Johnny+Cash+Show+1969">YouTube — live bei The Johnny Cash Show, 1969</a></p>
+<footer class="note-footer"><small>2026-04-10 &middot; geändert 2026-04-10 &middot; v01</small></footer>
+</body>
+</html>
