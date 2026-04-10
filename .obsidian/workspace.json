@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "778de7d505b3e37a",
+        "id": "2e364bdd9cdf1de8",
         "type": "tabs",
         "children": [
           {
-            "id": "1f8ce7aeca2f07fa",
+            "id": "cf1beb09aef731e1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/de/notes/PKM-Summit-2026-Reflexionen.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "PKM-Summit-2026-Reflexionen"
+              "title": "Neuer Tab"
             }
           }
         ]
@@ -190,7 +186,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 294.5
+    "width": 302.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -205,10 +201,12 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "1f8ce7aeca2f07fa",
+  "active": "cf1beb09aef731e1",
   "lastOpenFiles": [
-    "content/en/notes/pkm-summit-2026-reflections.md",
+    "content/de/notes/vom-wiki-llm-zum-reasoning-linter.md",
+    "content/en/notes/from-wiki-llm-to-reasoning-linter.md.tmp.46378.1775860561709",
     "content/de/notes/PKM-Summit-2026-Reflexionen.md",
+    "content/en/notes/pkm-summit-2026-reflections.md",
     "content/en/notes/icedu2026-digital-gardening-paper.md",
     "content/de/notes/icedu2026-digital-gardening-paper.md",
     "content/de/notes/Einen-digitalen-Garten-anlegen.md",
@@ -236,14 +234,12 @@
     "copilot/copilot-custom-prompts/Clip Web Page.md",
     "copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
     "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
-    "copilot/copilot-custom-prompts/Rewrite as tweet.md",
     "copilot/copilot-custom-prompts",
     "copilot",
     "_comms/INDEX.md.tmp.71705.1774424722552",
     "content/de/de",
     "content/de/pages",
     "content/de/notes",
-    "content/de/nl",
-    "content/de"
+    "content/de/nl"
   ]
 }
