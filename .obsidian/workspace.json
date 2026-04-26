@@ -205,8 +205,11 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "f0efd5c5534a4d93",
+  "active": "08fb7fdabea25c75",
   "lastOpenFiles": [
+    "content/en/pages/search.md",
+    "content/en/pages/about.md",
+    "content/en/pages",
     "content/de/notes/vom-wiki-llm-zum-reasoning-linter.md",
     "content/de/notes/20260410_vom-wiki-llm-zum-reasoning-linter.md",
     "content/en/notes/20260410_from-wiki-llm-to-reasoning-linter.md",
@@ -236,14 +239,11 @@
     "images",
     "Pasted image 20260327143552.png",
     "content/en/notes/starting-a-digital-garden.md",
-    "search-en.md",
-    "search-de.md",
     "copilot/copilot-conversations",
     "copilot/copilot-custom-prompts",
     "copilot",
     "_comms/INDEX.md.tmp.71705.1774424722552",
     "content/de/de",
-    "content/de/pages",
-    "content/de/notes"
+    "content/de/pages"
   ]
 }
