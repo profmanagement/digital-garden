@@ -16,7 +16,7 @@ tags:
   - PKM
   - AI
 language: en
-translation: vom-wiki-llm-zum-reasoning-linter
+translation: 20260410_vom-wiki-llm-zum-reasoning-linter
 source:
 related:
   - "[[wiki-llm]]"
