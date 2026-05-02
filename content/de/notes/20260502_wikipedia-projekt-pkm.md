@@ -22,7 +22,7 @@ version: v01
 
 # Neues WikiProjekt für Personal Knowledge Management auf Wikipedia 
 
-Die deutschsprachige [Wikipedia](de.wikipedia.org) hat bereits viele Artikel, die dem Thema Persönlichen Wissensmanagement (PKM) zugeordnet werden können. Einige zentrale Artikel existieren bereits wie z.B. *Persönliches Wissensmanagement*, *Zettelkasten*, *Informationskompetenz*, sind aber oft unvollständig ausgearbeitet, methodisch veraltet oder unzureichend belegt. Demgegenüber fehlen andere relevante Konzepte, Ansätze und verwandte Themen.
+Die deutschsprachige [Wikipedia](de.wikipedia.org) hat bereits viele Artikel, die dem Thema Persönlichen Wissensmanagement (PKM) zugeordnet werden können. Einige zentrale Artikel existieren bereits wie z.B. **Persönliches Wissensmanagement**, **Zettelkasten**, **Informationskompetenz**, sind aber oft unvollständig ausgearbeitet, methodisch veraltet oder unzureichend belegt. Demgegenüber fehlen andere relevante Konzepte, Ansätze und verwandte Themen.
 
 Heute habe ich das **[WikiProjekt Personal Knowledge Management](https://de.wikipedia.org/wiki/Wikipedia:WikiProjekt_Personal_Knowledge_Management)** angelegt, um, zusammen mit anderen Interessierten, diese Lücken systematisch zu schließen.
 

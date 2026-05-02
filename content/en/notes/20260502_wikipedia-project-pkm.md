@@ -22,7 +22,7 @@ version: v01
 
 # New WikiProject for Personal Knowledge Management on Wikipedia
 
-[Wikipedia](https://en.wikipedia.org) already has many articles that can be assigned to the topic of Personal Knowledge Management (PKM). Some key articles already exist — such as *Personal knowledge management*, *Zettelkasten*, *Information literacy* — but are often incomplete, methodologically outdated, or insufficiently sourced. By contrast, other relevant concepts, approaches, and related topics are missing entirely.
+[Wikipedia](https://en.wikipedia.org) already has many articles that can be assigned to the topic of Personal Knowledge Management (PKM). Some key articles already exist — such as **Personal knowledge management**, **Zettelkasten**, **Information literacy** — but are often incomplete, methodologically outdated, or insufficiently sourced. By contrast, other relevant concepts, approaches, and related topics are missing entirely.
 
 Today I created the **[WikiProject Personal Knowledge Management](https://en.wikipedia.org/wiki/User:Maikarnold)** to systematically close these gaps, together with other interested contributors.
 
