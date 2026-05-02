@@ -26,8 +26,6 @@ Die deutschsprachige [Wikipedia](de.wikipedia.org) hat bereits viele Artikel, di
 
 Heute habe ich das **[WikiProjekt Personal Knowledge Management](https://de.wikipedia.org/wiki/Wikipedia:WikiProjekt_Personal_Knowledge_Management)** angelegt, um, zusammen mit anderen Interessierten, diese Lücken systematisch zu schließen.
 
-**Abb. 1**. Screenshot Neues WikiProjekt PKM
-
 ![Abb. 1. Screenshot Neues WikiProjekt PKM](../images/wikipedia-pkm-project_de.png){width=100%}
 
 Das Projekt koordiniert die Arbeit an bestehenden und neuen Artikeln zu folgenden Bereichen:

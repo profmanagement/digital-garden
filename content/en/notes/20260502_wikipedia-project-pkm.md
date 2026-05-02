@@ -26,8 +26,6 @@ version: v01
 
 Today I created the **[WikiProject Personal Knowledge Management](https://en.wikipedia.org/wiki/User:Maikarnold)** to systematically close these gaps, together with other interested contributors.
 
-**Figure 1**. Screenshot New WikiProject PKM
-
 ![Figure 1: Screenshot New WikiProject PKM](../images/wikipedia-pkm-project_en.png){width=100%}
 
 The project coordinates work on existing and new articles in the following areas:
