@@ -20,6 +20,7 @@ body {
   padding: 2.5rem 1.5rem 4rem;
   max-width: var(--max-width);
   margin: 0 auto;
+  position: relative;
 }
 
 h1 {
@@ -330,6 +331,43 @@ td {
   font-size: 0.8rem;
   color: #bbb;
   font-family: Georgia, serif;
+}
+
+/* ── Sidenotes ─────────────────────────────────────────────────────────── */
+
+.sidenote {
+  position: absolute;
+  left: calc(100% + 2rem);
+  width: 210px;
+  font-size: 0.78rem;
+  font-family: Georgia, serif;
+  line-height: 1.55;
+  color: #999;
+  border-left: 1px solid #ddd;
+  padding-left: 0.9rem;
+}
+
+.sidenote-number {
+  font-size: 0.65rem;
+  color: #bbb;
+  vertical-align: super;
+  line-height: 0;
+  margin-right: 0.25rem;
+}
+
+.sidenote p {
+  margin: 0;
+}
+
+.sidenote a {
+  color: #999;
+}
+
+/* On narrow viewports the JS skips rendering; footnotes stay at page bottom */
+@media (max-width: 1149px) {
+  .sidenote {
+    display: none;
+  }
 }
 
 /* ── Note Summary (Index Page) ─────────────────────────────────────────── */
