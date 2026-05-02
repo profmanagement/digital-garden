@@ -333,6 +333,14 @@ td {
   font-family: Georgia, serif;
 }
 
+/* ── Images ────────────────────────────────────────────────────────────── */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ── Sidenotes ─────────────────────────────────────────────────────────── */
 
 .sidenote {

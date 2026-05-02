@@ -28,7 +28,7 @@ Today I created the **[WikiProject Personal Knowledge Management](https://en.wik
 
 **Figure 1**. Screenshot New WikiProject PKM
 
-![Figure 1: Screenshot New WikiProject PKM](../images/wikipedia-pkm-project_en.png)
+![Figure 1: Screenshot New WikiProject PKM](../images/wikipedia-pkm-project_en.png){width=100%}
 
 The project coordinates work on existing and new articles in the following areas:
 
