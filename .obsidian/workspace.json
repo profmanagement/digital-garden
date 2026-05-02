@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/en/notes/20260502_wikipedia-project-pkm.md",
+                "file": "content/de/notes/20260502_wikipedia-projekt-pkm.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20260502_wikipedia-project-pkm"
+              "title": "20260502_wikipedia-projekt-pkm"
             }
           }
         ]
@@ -207,8 +207,8 @@
   },
   "active": "f0efd5c5534a4d93",
   "lastOpenFiles": [
-    "content/de/notes/20260502_wikipedia-projekt-pkm.md",
     "content/en/notes/20260502_wikipedia-project-pkm.md",
+    "content/de/notes/20260502_wikipedia-projekt-pkm.md",
     "de.wikipedia.org.md",
     "images/wikipedia-pkm-project_de.png",
     "images/wikipedia-pkm-project_en.png",
