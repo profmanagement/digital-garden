@@ -15,15 +15,15 @@ Replace all Dutch (nl) language infrastructure with German (de) throughout the p
 
 ## Steps
 - [x] Create TASK file
-- [ ] Rename content directories (git mv)
-- [ ] Rename template file
-- [ ] Update deploy.yml
-- [ ] Update Obsidian QuickAdd config
-- [ ] Update Obsidian Templater config
-- [ ] Update template file content
-- [ ] Update existing note frontmatter
-- [ ] Update INDEX.md
-- [ ] Write DONE file
+- [x] Rename content directories (git mv)
+- [x] Rename template file
+- [x] Update deploy.yml
+- [x] Update Obsidian QuickAdd config
+- [x] Update Obsidian Templater config
+- [x] Update template file content
+- [x] Update existing note frontmatter
+- [x] Update INDEX.md
+- [x] Write DONE file
 
 ## Files to modify
 - `.github/workflows/deploy.yml`

@@ -62,19 +62,19 @@ Node.js via `actions/setup-node@v4` in the Actions runner — acceptable, cloud-
 ---
 
 ## Steps
-- [ ] Feature 1: Auto nav menu
-  - [ ] Pre-generate `_nav_en_index.html`, `_nav_nl_index.html`, `_nav_en_page.html`, `_nav_nl_page.html` in deploy.yml
-  - [ ] Pass `--include-before-body` to all Pandoc calls
-  - [ ] Remove hardcoded nav/list from `index.md`, `nl/index.md`
-  - [ ] Remove hardcoded back links from all 6 content `.md` files
-- [ ] Feature 2: Wikilinks
-  - [ ] Write `.pandoc/wikilinks.lua` (secondary Lua filter)
-  - [ ] Add sed preprocessing function in deploy.yml
-  - [ ] Add `--lua-filter .pandoc/wikilinks.lua` to all Pandoc calls
-- [ ] Feature 3: Search
-  - [ ] Add `actions/setup-node@v4` to deploy.yml
-  - [ ] Add `npx pagefind --site _site` build step
-  - [ ] Create `search-en.md` and `search-nl.md`
+- [x] Feature 1: Auto nav menu
+  - [x] Pre-generate `_nav_en_index.html`, `_nav_nl_index.html`, `_nav_en_page.html`, `_nav_nl_page.html` in deploy.yml
+  - [x] Pass `--include-before-body` to all Pandoc calls
+  - [x] Remove hardcoded nav/list from `index.md`, `nl/index.md`
+  - [x] Remove hardcoded back links from all 6 content `.md` files
+- [x] Feature 2: Wikilinks
+  - [x] Write `.pandoc/wikilinks.lua` (secondary Lua filter)
+  - [x] Add sed preprocessing function in deploy.yml
+  - [x] Add `--lua-filter .pandoc/wikilinks.lua` to all Pandoc calls
+- [x] Feature 3: Search
+  - [x] Add `actions/setup-node@v4` to deploy.yml
+  - [x] Add `npx pagefind --site _site` build step
+  - [x] Create `search-en.md` and `search-nl.md`
 
 ## Files to create / modify
 | Action | Path |

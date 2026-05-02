@@ -13,11 +13,11 @@ Four targeted fixes to the live site following the v2 deploy.
 4. **Full nav on content pages + back link below** — content pages now show the complete nav bar first, then `← Back` as a second line below it.
 
 ## Steps
-- [ ] Create `en/index.md` (EN homepage, moved from root `index.md`)
-- [ ] Create `en/search.md` (updated Pagefind paths)
-- [ ] Create `nl/search.md`
-- [ ] Rewrite `deploy.yml`: flatten output to `_site/en/` and `_site/nl/`, root redirect, new nav HTML fragments, title fix
-- [ ] Update `style.css`: proper `.site-nav` flex layout, `.nav-logo`, `.nav-links`, `.nav-right`, `.nav-back`, `.auto-nav`
+- [x] Create `en/index.md` (EN homepage, moved from root `index.md`)
+- [x] Create `en/search.md` (updated Pagefind paths)
+- [x] Create `nl/search.md`
+- [x] Rewrite `deploy.yml`: flatten output to `_site/en/` and `_site/nl/`, root redirect, new nav HTML fragments, title fix
+- [x] Update `style.css`: proper `.site-nav` flex layout, `.nav-logo`, `.nav-links`, `.nav-right`, `.nav-back`, `.auto-nav`
 
 ## Files
 | Action | Path |

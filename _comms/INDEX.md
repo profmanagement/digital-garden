@@ -4,7 +4,9 @@
 *(None)*
 
 ## Completed Tasks (recent)
+- [x] DONE-009: Note page title split bug + spacing & typography fix
 - [x] DONE-010: Switch second language NL → DE
+- [x] DONE-011: Sidenotes — Fußnoten als Randnotizen
 
 ## Backlog
 *(None)*
@@ -20,6 +22,7 @@
 - [x] DONE-008: Refine Note Listing Hover Styles
 - [x] DONE-009: Note page title split bug + spacing & typography fix
 - [x] DONE-010: Switch second language NL → DE
+- [x] DONE-011: Sidenotes — Fußnoten als Randnotizen
 
 ## Documents
 - [PRD-01: Digital Garden](01_PRD/PRD-01_20260321_digital-garden_v01.md)

@@ -17,13 +17,13 @@ Create all source files required to run the Digital Garden pipeline: homepage, s
 
 ## Steps
 - [x] Create TASK file
-- [ ] Create `index.md`
-- [ ] Create `style.css`
-- [ ] Create `.github/workflows/deploy.yml`
-- [ ] Create `content/over-mij.md`
-- [ ] Create `content/notitie-1.md`
-- [ ] Create `content/notitie-2.md`
-- [ ] Create DONE-002 and update INDEX.md
+- [x] Create `index.md`
+- [x] Create `style.css`
+- [x] Create `.github/workflows/deploy.yml`
+- [x] Create `content/over-mij.md`
+- [x] Create `content/notitie-1.md`
+- [x] Create `content/notitie-2.md`
+- [x] Create DONE-002 and update INDEX.md
 
 ## Files
 | Action | Path |

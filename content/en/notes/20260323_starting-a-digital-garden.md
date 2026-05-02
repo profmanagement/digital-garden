@@ -21,9 +21,11 @@ version: v01
 ---
 # On starting a digital garden
 
-This research started in September 2024 with an investigation of the main conceptual ideas of [Digital Gardening](https://maggieappleton.com/garden-history?ref=ideasurg.pub) described by the cultural anthropologist and lead design engineer at [GitHub Next](https://githubnext.com/) [Maggie Appleton](https://maggieappleton.com/about). Appleton ([2020](https://profmanagement.github.io/digitalgarden/#ref-appleton2020Brief)) defines “digital gardening” as an individual practice for idea generation and collection, personal note-taking and knowledge management that is not following the conventions of the otherwise known techniques of personal blogging. Usually, small collections of personal knowledge are created on the web:
+This research started in September 2024 with an investigation of the main conceptual ideas of [Digital Gardening](https://maggieappleton.com/garden-history?ref=ideasurg.pub) described by the cultural anthropologist and lead design engineer at [GitHub Next](https://githubnext.com/) [Maggie Appleton](https://maggieappleton.com/about).[^1] Appleton ([2020](https://profmanagement.github.io/digitalgarden/#ref-appleton2020Brief)) defines “digital gardening” as an individual practice for idea generation and collection, personal note-taking and knowledge management that is not following the conventions of the otherwise known techniques of personal blogging. Usually, small collections of personal knowledge are created on the web:
 
 > “Rather than presenting a set of polished articles, displayed in reverse chronological order, these sites act more like free form, work-in-progress wikis” ([Appleton, 2020](https://profmanagement.github.io/digitalgarden/#ref-appleton2020Brief)).
+
+[^1]: Maggie Appleton, *A Brief History & Ethos of the Digital Garden*, 2020. maggieappleton.com/garden-history
 
 In other words, a _garden_ is a flexible collection of evolving ideas connected through contextual associations rather than organised by publication date. These notes are usually incomplete, exploratory thoughts that develop and become rigid over time, but they are less polished compared to traditional personal websites.
 

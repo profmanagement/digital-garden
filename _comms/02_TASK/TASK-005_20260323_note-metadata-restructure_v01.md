@@ -26,11 +26,11 @@ Align the build pipeline with the new `content/` subdirectory layout, introduce 
 ## Steps
 
 - [x] Write TASK-005 file
-- [ ] Create note templates (EN + NL)
-- [ ] Update all 4 placeholder note files with full frontmatter
-- [ ] Update EN and NL index pages (remove `{Please list…}` placeholder)
-- [ ] Add CSS: `.notes-list`, `.note-card`, `.note-category-label`, `.note-byline`, `.note-footer`
-- [ ] Rewrite `deploy.yml`:
+- [x] Create note templates (EN + NL)
+- [x] Update all 4 placeholder note files with full frontmatter
+- [x] Update EN and NL index pages (remove `{Please list…}` placeholder)
+- [x] Add CSS: `.notes-list`, `.note-card`, `.note-category-label`, `.note-byline`, `.note-footer`
+- [x] Rewrite `deploy.yml`:
   - New source paths for index, pages, notes
   - `build_notes_listing` function (sorted by `created`)
   - Inject notes listing via awk post-processing on index pages
@@ -38,9 +38,9 @@ Align the build pipeline with the new `content/` subdirectory layout, introduce 
   - Per-note nav with translation-aware language link
   - Note page metadata injection (category label + byline) via awk
   - Note footer via `--include-after-body`
-- [ ] Create `_comms/05_IDEAS/IDEA-01_20260323_search-enhancement_v01.md`
-- [ ] Update `_comms/INDEX.md`
-- [ ] Write DONE-005
+- [x] Create `_comms/05_IDEAS/IDEA-01_20260323_search-enhancement_v01.md`
+- [x] Update `_comms/INDEX.md`
+- [x] Write DONE-005
 
 ## Files
 

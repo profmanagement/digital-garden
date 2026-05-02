@@ -15,7 +15,7 @@ Set up the project directory structure and move the initial PRD according to CLA
 - [x] Move and rename PRD to `_comms/01_PRD/PRD-01_20260321_digital-garden_v01.md`.
 - [x] Create `_comms/INDEX.md`.
 - [x] Create this TASK file.
-- [ ] Create DONE file.
+- [x] Create DONE file.
 
 ## Files
 - `_comms/` (directory)

@@ -28,6 +28,7 @@ jobs:
           mkdir -p _site/en _site/de
           cp style.css _site/style.css
           [ -d images ] && cp -r images _site/images
+          cp sidenotes.js _site/sidenotes.js
 
           # ── Helpers ────────────────────────────────────────────────────────
 
@@ -287,6 +288,7 @@ jobs:
             [ -n "$note_modified" ] && footer_text="${footer_text:+${footer_text} &middot; modified ${note_modified}}"
             [ -n "$note_version" ] && footer_text="${footer_text:+${footer_text} &middot; }${note_version}"
             echo "<footer class=\"note-footer\"><small>${footer_text}</small></footer>" > _note_footer.html
+            echo '<script src="../sidenotes.js"></script>' >> _note_footer.html
 
             preprocess "$f" | pandoc \
               --standalone \
@@ -349,6 +351,7 @@ jobs:
             [ -n "$note_modified" ] && footer_text="${footer_text:+${footer_text} &middot; geändert ${note_modified}}"
             [ -n "$note_version" ] && footer_text="${footer_text:+${footer_text} &middot; }${note_version}"
             echo "<footer class=\"note-footer\"><small>${footer_text}</small></footer>" > _note_footer.html
+            echo '<script src="../sidenotes.js"></script>' >> _note_footer.html
 
             preprocess "$f" | pandoc \
               --standalone \
