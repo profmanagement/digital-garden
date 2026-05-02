@@ -25,7 +25,7 @@ version: v01
 
 # Warum wir öffentlich schreiben — und warum Perfektionismus dabei im Weg steht
 
-Informationen fluten uns — durch Nachrichtenfeeds, Werbung, Benachrichtigungen, algorithmische Timelines. Die Aufmerksamkeitsökonomie — ein Begriff, den Herbert Simon 1971 einführte, um zu beschreiben, wie ein Überfluss an Information eine Knappheit an Aufmerksamkeit erzeugt (Simon, 1971) — behandelt menschliche Aufmerksamkeit als knappe Ressource, die es zu erfassen, zu halten und zu monetarisieren gilt. Alles ist auf Engagement optimiert, was meist bedeutet: auf Reaktion, Unterhaltung, Konsum — aber weniger auf Reflexion und tiefergehende (ggf. persönliche) Auseinandersetzung.
+Informationen fluten uns — durch Nachrichtenfeeds, Werbung, Benachrichtigungen, algorithmische Timelines. Die Aufmerksamkeitsökonomie — ein Begriff, den Herbert Simon 1971 einführte, um zu beschreiben, wie ein Überfluss an Information eine Knappheit an Aufmerksamkeit erzeugt (Simon, 1971)[^1] — behandelt menschliche Aufmerksamkeit als knappe Ressource, die es zu erfassen, zu halten und zu monetarisieren gilt. Alles ist auf Engagement optimiert, was meist bedeutet: auf Reaktion, Unterhaltung, Konsum — aber weniger auf Reflexion und tiefergehende (ggf. persönliche) Auseinandersetzung.
 
 Und dennoch: Ich fühle den Drang, öffentlich zu schreiben, hier in meinem Digitalen Garden; nicht um zu konkurrieren, aber weil das Formulieren von Gedanken — und das Hinterlassen dieser Gedanken an einem Ort, wo andere zufällig darauf stoßen können — sich wie eine Gegenbewegung anfühlt, die ihren eigenen Wert haben kann.
 
@@ -59,6 +59,7 @@ Appleton, M. (2020). A Brief History & Ethos of the Digital Garden: A newly revi
 
 Simon, H. A. (1971). Designing organizations for an information-rich world. In M. Greenberger (Ed.), *Computers, communication, and the public interest* (pp. 37–72). Johns Hopkins Press. [https://www.nmh-p.de/wp-content/uploads/Simon-H.A._Designing-organizations-for-an-information-rich-world.pdf](https://www.nmh-p.de/wp-content/uploads/Simon-H.A._Designing-organizations-for-an-information-rich-world.pdf)
 
+[^1]:Simon, H. A. (1971). Designing organizations for an information-rich world. In M. Greenberger (Ed.), *Computers, communication, and the public interest* (pp. 37–72). Johns Hopkins Press. [https://www.nmh-p.de/wp-content/uploads/Simon-H.A._Designing-organizations-for-an-information-rich-world.pdf](https://www.nmh-p.de/wp-content/uploads/Simon-H.A._Designing-organizations-for-an-information-rich-world.pdf)
 ---
 
 *Eine Notiz an mich selbst, geschrieben im April 2026.*
