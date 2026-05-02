@@ -28,7 +28,7 @@ Heute habe ich das **[WikiProjekt Personal Knowledge Management](https://de.wiki
 
 **Abb. 1**. Screenshot Neues WikiProjekt PKM
 
-![Abb. 1. Screenshot Neues WikiProjekt PKM](wikipedia-pkm-project_de.png)
+![Abb. 1. Screenshot Neues WikiProjekt PKM](../images/wikipedia-pkm-project_de.png)
 
 Das Projekt koordiniert die Arbeit an bestehenden und neuen Artikeln zu folgenden Bereichen:
 
