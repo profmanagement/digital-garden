@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/en/notes/20260510_everything-claude-code.md",
+                "file": "content/de/notes/20260410_vom-wiki-llm-zum-reasoning-linter.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20260510_everything-claude-code"
+              "title": "20260410_vom-wiki-llm-zum-reasoning-linter"
             }
           }
         ]
@@ -207,29 +207,30 @@
   },
   "active": "f0efd5c5534a4d93",
   "lastOpenFiles": [
-    "content/de/notes/20260510_everything-claude-code.md",
     "content/en/notes/20260410_from-wiki-llm-to-reasoning-linter.md",
+    "content/de/notes/20260410_vom-wiki-llm-zum-reasoning-linter.md",
+    "content/de/notes/20260401_von-pkm-zu-ckm.md",
+    "content/de/notes/20260331_PKM-Summit-2026-Reflexionen.md",
+    "content/de/notes/20260327_icedu2026-digital-gardening-paper.md",
+    "content/en/notes/20260331_pkm-summit-2026-reflections.md",
+    "content/en/notes/20260327_icedu2026-digital-gardening-paper.md",
+    "content/en/notes/20260510_everything-claude-code.md",
+    "20260410_from-wiki-llm-to-reasoning-linter.html.md",
+    "content/de/notes/20260510_everything-claude-code.md",
     "images/ecc-hero.png",
     "images/aios-architecture.png",
     "content/en/notes/20260401_from-pkm-to-ckm.md",
     "content/en/notes/20260426_why-we-write-publicly.md",
     "content/en/notes/20260502_wikipedia-project-pkm.md",
-    "content/en/notes/20260510_everything-claude-code.md",
     "Pasted image 20260510203908.png",
     "Pasted image 20260510203239.png",
     "content/de/notes/20260502_wikipedia-projekt-pkm.md",
     "content/de/notes/20260426_warum-wir-oeffentlich-schreiben.md",
-    "content/de/notes/20260410_vom-wiki-llm-zum-reasoning-linter.md",
-    "content/de/notes/20260401_von-pkm-zu-ckm.md",
-    "content/de/notes/20260327_icedu2026-digital-gardening-paper.md",
     "content/de/notes/20260323_Einen-digitalen-Garten-anlegen.md",
-    "content/de/notes/20260331_PKM-Summit-2026-Reflexionen.md",
     "_comms/03_DONE/DONE-012_20260510_ecc-garden-note_v01.md",
     "_comms/02_TASK/TASK-012_20260510_ecc-garden-note_v01.md",
     "images/wikipedia-pkm-project_de.png",
     "images/wikipedia-pkm-project_en.png",
-    "content/en/notes/20260327_icedu2026-digital-gardening-paper.md",
-    "content/en/notes/20260331_pkm-summit-2026-reflections.md",
     "de.wikipedia.org.md",
     "CLAUDE.md",
     "index.md",

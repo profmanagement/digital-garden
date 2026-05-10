@@ -1,5 +1,5 @@
 ---
-title: "Vom wiki LLM zum Reasoning-Linter: Discourskaarten und Claimprüfung in meinem Setup"
+title: "Vom wiki LLM zum Reasoning-Linter: Discourse Maps und Claimprüfung in meinem Setup"
 description: Zwei neue Schichten über meinem wiki LLM — eine Discourse-Graph-Implementierung und Mike Caulfields Deep-Background-Superprompt — um die Lücke zwischen Informationsabruf und Informationsbewertung zu schließen.
 author: Maik
 written_by: 80% human
