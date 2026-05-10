@@ -39,7 +39,7 @@ Im Projektbestand sind Kernartikel und sogenannte [Stubs](https://en.wikipedia.o
 
 Das Projekt befindet sich aktuell im Aufbau. Wer im Themenfeld forscht, lehrt oder sich einfach dafür interessiert und schon erste Erfahrungen mit dem Editieren auf Wikipedia gesammelt hat, ist herzlich eingeladen: Beiträge und Unterstützung jeder Größenordnung sind willkommen — ein Beleg, ein Abschnitt, ein neuer Artikel. Bei Interesse freue ich mich über eine [E-Mail](https://de.wikipedia.org/wiki/Spezial:E-Mail_senden/Maikarnold).
 
-## Verwandte
+## Verwandte Inhalte
 **„The Whole Wide World" von Wreckless Eric**, 1977. Ein Song über das Suchen — passend für jeden, der ein Wissenssystem aufbaut.
 Anhören: [YouTube](https://www.youtube.com/watch?v=4ipbQzCD5sA) | [Spotify](https://open.spotify.com/track/4AHU8QRdwCUWxPC53cw4Hh)
 

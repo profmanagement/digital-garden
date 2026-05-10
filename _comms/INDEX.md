@@ -4,9 +4,9 @@
 *(None)*
 
 ## Completed Tasks (recent)
-- [x] DONE-009: Note page title split bug + spacing & typography fix
 - [x] DONE-010: Switch second language NL → DE
 - [x] DONE-011: Sidenotes — Fußnoten als Randnotizen
+- [x] DONE-012: Kurzbeitrag — Everything Claude Code (DE + EN)
 
 ## Backlog
 *(None)*

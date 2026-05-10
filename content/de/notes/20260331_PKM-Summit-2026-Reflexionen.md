@@ -43,5 +43,5 @@ Diese Notiz ist Teil dieses Commitments.
 ### Zu dieser Notiz
 Diese Notiz ist Teil des nächsten [notizlab](https://notizlab.de/)-Newsletters, für den wir alle unsere Erfahrungen beim PKM Summit 2026 reflektiert haben.
 
-### Related
+### Verwandte Inhalte
 **[Songs of the Gardens](https://www.univ.ox.ac.uk/news/songs-gardens/)** — Eine Anthologie von 1925 mit Liedern aus den Londoner Pleasure Gardens des 18. Jahrhunderts (Vauxhall, Ranelagh, Marylebone), zusammengestellt vom Komponisten und Musikkritiker Philip Heseltine, der unter dem Pseudonym Peter Warlock publizierte. Die Gärten waren die Freizeitparks und Treffpunkte ihrer Zeit — Promenaden, Pavillons, Puppentheater, Feuerwerk und Musik. 1764 gab der junge Mozart ein Konzert im Rotunda-Saal in Ranelagh. Warlock entdeckte die veröffentlichten Lieder im British Museum und rettete sie vor der Vergessenheit. Die Anthologie befindet sich in der Sammlung des University College Oxford.

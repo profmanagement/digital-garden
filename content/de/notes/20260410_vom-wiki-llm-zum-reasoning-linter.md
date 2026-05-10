@@ -70,7 +70,7 @@ Ich werde hier weiter Notizen machen, wie sich das entwickelt.
 
 ---
 
-## Verwandte Themen
+## Verwandte Inhalte
 
 **„Both Sides, Now" von Joni Mitchell** — aus *Clouds* (1969). Mit 23 geschrieben als Meditation über Fantasie und Wirklichkeit — Wolken, Liebe, Leben, von beiden Seiten betrachtet und noch immer nicht vollständig verstanden. Was ungefähr so ist, wie die Arbeit mit Behauptungen und Evidenz an einem guten Tag sich anfühlt. Discourse Graph und Deep Background zwingen dazu, die Behauptung und das Gegenbeweismaterial gleichzeitig zu halten, bevor man zu einem Schluss kommt.
 
