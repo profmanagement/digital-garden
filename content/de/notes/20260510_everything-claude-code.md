@@ -26,13 +26,11 @@ version: v01
 
 Seit einiger Weile beschäftigt mich die Frage, wie ich Teile von Routineaufgaben und zur Unterstützung der Kreativität in Forschung und Lehre ein Agentic OS bzw. OS-Kernel für die Forschung einsetzen kann. Es sollte in der Lage sein, valide Workflows mit definierten Skills ausführen können und über lernfähige Bibliotheken mit Skills, Plugins, Routinen etc. (sog. research stacks) verfügen. Das hat gewisse Ähnlichkeiten mit der Architektur von AIOS, einem „AI Agent Operating System, which embeds large language model (LLM) into the operating system and facilitates the development and deployment of LLM-based AI Agents" ([Agiresearch/Aios auf GitHub](https://github.com/agiresearch/AIOS)).
 
-![[aios-architecture.png]]
-Abb. 1. Architektur von AIOS ([agiresearch](https://github.com/agiresearch/AIOS/blob/main/docs/assets/aios-figs/details.png))
+![Abb. 1. Architektur von AIOS](../images/aios-architecture.png){width=100%}
 
 Im Rahmen der Recherche bin ich auf [Everything Claude Code](https://github.com/anthropics/everything-claude-code) (ECC) gestoßen, das eine Sammlung von 75 Skills, 71 Agents, 33 Hooks und unzähligen Commands in Claude Code einbringt. Das Repo ist in der Lage, professionelle Forschungsaufgaben semi-autonom auszuführen.
 
-![[ecc-hero.png]]
-Abb. 2. Everything Claude Code ([affaan-m](https://github.com/affaan-m/everything-claude-code/blob/main/assets/hero.png))
+![Abb. 2. Everything Claude Code](../images/ecc-hero.png){width=100%}
 
 ## Plan first, code later — als Plugin
 
@@ -56,7 +54,7 @@ Beides funktioniert am zuverlässigsten, wenn die Person dahinter versteht, *war
 
 ## Verwandte Inhalte
 
-Eine ähnliche Fragestellung hatte ich schon einmal in dem Beitrag [[20260410_vom-wiki-llm-zum-reasoning-linter|Vom wiki LLM zum Reasoning-Linter]] – KI als Denkpartner, nicht Denkersatz – entwickelt. 
+Eine ähnliche Fragestellung hatte ich schon einmal in dem Beitrag [Vom wiki LLM zum Reasoning-Linter](20260410_vom-wiki-llm-zum-reasoning-linter.html) – KI als Denkpartner, nicht Denkersatz – entwickelt. 
 
 ---
 
