@@ -26,12 +26,13 @@ version: v01
 
 Seit einiger Weile beschäftigt mich die Frage, wie ich Teile von Routineaufgaben und zur Unterstützung der Kreativität in Forschung und Lehre ein Agentic OS bzw. OS-Kernel für die Forschung einsetzen kann. Es sollte in der Lage sein, valide Workflows mit definierten Skills ausführen können und über lernfähige Bibliotheken mit Skills, Plugins, Routinen etc. (sog. research stacks) verfügen. Das hat gewisse Ähnlichkeiten mit der Architektur von AIOS, einem „AI Agent Operating System, which embeds large language model (LLM) into the operating system and facilitates the development and deployment of LLM-based AI Agents" ([Agiresearch/Aios auf GitHub](https://github.com/agiresearch/AIOS)).
 
-![[Pasted image 20260510203239.png]]
+![[aios-architecture.png]]
 Abb. 1. Architektur von AIOS ([agiresearch](https://github.com/agiresearch/AIOS/blob/main/docs/assets/aios-figs/details.png))
 
 Im Rahmen der Recherche bin ich auf [Everything Claude Code](https://github.com/anthropics/everything-claude-code) (ECC) gestoßen, das eine Sammlung von 75 Skills, 71 Agents, 33 Hooks und unzähligen Commands in Claude Code einbringt. Das Repo ist in der Lage, professionelle Forschungsaufgaben semi-autonom auszuführen.
 
-![[Pasted image 20260510203908.png]]Abb. 2. Everything Claude Code ([affaan-m](https://github.com/affaan-m/everything-claude-code/blob/main/assets/hero.png))
+![[ecc-hero.png]]
+Abb. 2. Everything Claude Code ([affaan-m](https://github.com/affaan-m/everything-claude-code/blob/main/assets/hero.png))
 
 ## Plan first, code later — als Plugin
 
