@@ -24,7 +24,14 @@ version: v01
 
 # One Step Closer to a Personal Agentic OS for Research and Teaching
 
-For some time now I've been thinking about how to deploy an agentic OS — or rather an OS kernel for research — to handle parts of routine tasks and support creativity in research and teaching. It should be capable of executing valid workflows with defined skills, and have access to learnable libraries of skills, plugins, routines, and so on (so-called research stacks). In the course of my research I came across [Everything Claude Code](https://github.com/anthropics/everything-claude-code) (ECC), which brings a collection of 75 skills, 71 agents, 33 hooks, and countless commands to Claude Code. The repo is capable of executing professional research tasks semi-autonomously.
+For some time now I've been thinking about how to deploy an agentic OS — or rather an OS kernel for research — to handle parts of routine tasks and support creativity in research and teaching. It should be capable of executing valid workflows with defined skills, and have access to learnable libraries of skills, plugins, routines, and so on (so-called research stacks). This has some similarities with the Architecture of AIOS, an "AI Agent Operating System, which embeds large language model (LLM) into the operating system and facilitates the development and deployment of LLM-based AI Agents" ([Agiresearch/Aios on GitHub](https://github.com/agiresearch/AIOS)).
+
+![[Pasted image 20260510203239.png]]
+Fig. 1. Architecture of AIOS ([agiresearch](https://github.com/agiresearch/AIOS/blob/main/docs/assets/aios-figs/details.png))
+
+In the course of my research I came across [Everything Claude Code](https://github.com/anthropics/everything-claude-code) (ECC), which brings a collection of 75 skills, 71 agents, 33 hooks, and countless commands to Claude Code. The repo is capable of executing professional research tasks semi-autonomously.
+
+![[Pasted image 20260510203908.png]]Fig. 2. Everything Claude Code ([affaan-m](https://github.com/affaan-m/everything-claude-code/blob/main/assets/hero.png))
 
 ## Plan first, code later — as a plugin
 
@@ -48,7 +55,7 @@ Both work best when the person behind them understands *why* the structure is th
 
 ## Related
 
-I explored a similar question before in [[20260410_from-wiki-llm-to-reasoning-linter]] — AI as thinking partner, not thinking replacement.
+I explored a similar question before in [[20260410_from-wiki-llm-to-reasoning-linter|From wiki LLM to reasoning linter]] — AI as thinking partner, not thinking replacement.
 
 ---
 
