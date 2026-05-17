@@ -42,8 +42,10 @@ Es gibt aber eine Möglichkeit: die Extraktion von Informationen durch strukturi
 Der Discourse Graph ist nicht nur ein ontologisches Wissenskonzept, sondern eine praktische Methode für die systematische Extraktion und Vernetzung von Wissen aus unstrukturierten Quellen. Die Idee: Zerlege jeden Text in granulare, vernetzte Einheiten anstatt alles als Block zu betrachten.
 
 Die **fünf Kernkomponenten** des Discourse Graph habe ich wie folgt auf mein Wiki angewendet:
+
 ### 1. **Quellen (Sources)**
 Das Primärdokument selbst. Wer hat es geschrieben? Wann? In welchem Kontext? Dies ist der Anker für alle nachgelagerten Informationen.
+
 ### 2. **Evidenzen (Evidence)**
 Alle verwertbaren Informationen aus der Quelle: 
 - Methodische Details (Forschungsdesign, Sample Size, Instrumente)
@@ -51,12 +53,16 @@ Alle verwertbaren Informationen aus der Quelle:
 - Empirische Befunde (Ergebnisse, Metriken, Beobachtungen)
 
 **Wichtig:** Evidenzen sind *Fakten oder Beobachtungen*, noch keine Interpretationen.
+
 ### 3. **Claims (Behauptungen/Erkenntnisse)**
 Die Schlussfolgerungen, die die Autoren aus den Evidenzen ziehen: "Wenn Evidenz X zeigt, dann folgt Aussage Y". Claims sind die wissenschaftlichen Erkenntnisse, die das Paper propagiert.
+
 ### 4. **Fragen (Questions)**
 Die wissenschaftlichen Fragen, die der Text beantwortet oder aufwirft. Diese entstehen **induktiv** aus den Evidenzen und Claims. Sie bilden den Forschungsraum ab.
+
 ### 5. **Konzepte (Concepts)**
 Übergeordnete Ideen, Theorien, Konstrukte, die mehrere Claims und Evidenzen verbinden. Sie sind die "Bausteine" meines Wissensgraphen.
+
 
 Diese Struktur nennt sich auch **Atomisierung** oder **Granularisierung** von Wissen. Jede Einheit ist klein genug, um isoliert verständlich zu sein, aber groß genug, um einen Informationsgehalt zu haben.
 
