@@ -48,8 +48,11 @@ The primary document itself. Who wrote it? When? In what context? This anchors a
 
 ### 2. **Evidence**
 All usable information from the source:
+
 - Methodological details (research design, sample size, instruments)
+
 - Theoretical foundations (concepts, frameworks)
+
 - Empirical findings (results, metrics, observations)
 
 **Important:** Evidence is *facts or observations*, not yet interpretations.
@@ -68,11 +71,17 @@ This structure is also called **atomization** or **granularization** of knowledg
 ### Theoretical Background: Toulmin's Argument Pattern
 
 This structure builds on [Stephen Toulmin's argumentation theory](https://searchworks.stanford.edu/view/13362780) (*The Uses of Argument*, 1958). Toulmin showed that valid arguments don't consist merely of "thesis + proof," but of:
+
 - **Claim** (assertion)
+
 - **Data/Evidence** (support)
+
 - **Warrant** (why evidence supports the claim)
+
 - **Backing** (support for the warrant)
+
 - **Qualifier** (limitation, certainty)
+
 - **Rebuttal** (counter-arguments)
 
 The Discourse Graph is a practical application of this model to knowledge networking and proves very useful for analyzing scientific texts.

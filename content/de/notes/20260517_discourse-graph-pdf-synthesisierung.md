@@ -48,8 +48,11 @@ Das Primärdokument selbst. Wer hat es geschrieben? Wann? In welchem Kontext? Di
 
 ### 2. **Evidenzen (Evidence)**
 Alle verwertbaren Informationen aus der Quelle: 
+
 - Methodische Details (Forschungsdesign, Sample Size, Instrumente)
+
 - Theoretische Grundlagen (Konzepte, Frameworks)
+
 - Empirische Befunde (Ergebnisse, Metriken, Beobachtungen)
 
 **Wichtig:** Evidenzen sind *Fakten oder Beobachtungen*, noch keine Interpretationen.
@@ -69,11 +72,17 @@ Diese Struktur nennt sich auch **Atomisierung** oder **Granularisierung** von Wi
 ### Der theoretische Hintergrund: Toulmin's Argument Pattern
 
 Diese Struktur fußt auf [Stephen Toulmin's Argumentationstheorie](https://searchworks.stanford.edu/view/13362780) (*The Uses of Argument*, 1958). Toulmin zeigte, dass gültige Argumente nicht nur aus "These + Beweis" bestehen, sondern aus:
+
 - **Claim** (Behauptung)
+
 - **Data/Evidence** (Belege)
+
 - **Warrant** (Garantie, warum die Evidenz den Claim stützt)
+
 - **Backing** (Untermauerung der Garantie)
+
 - **Qualifier** (Einschränkung, Sicherheit)
+
 - **Rebuttal** (Gegenargumente)
 
 Der Discourse Graph ist eine praktische Anwendung dieses Modells auf die Wissensvernetzung und sehr nützlich für die Analyse von wissenschaftlichen Texten.
