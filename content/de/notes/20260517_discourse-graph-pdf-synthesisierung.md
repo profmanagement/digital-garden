@@ -181,15 +181,15 @@ Außerdem braucht es noch eine ausgefeiltere Grammatik für die **Relationen** z
 
 Es gibt Verbindungen zu folgenden anderen Beiträgen in diesem Digital Garden:
 
-- [**Von PKM zu CKM**](/de/notes/20260401_von-pkm-zu-ckm.html): Collaborative Knowledge Management statt Personal Knowledge Management — genau das, was ein Wissensgraph ermöglicht.
+- [**Von PKM zu CKM**](20260401_von-pkm-zu-ckm.html): Collaborative Knowledge Management statt Personal Knowledge Management — genau das, was ein Wissensgraph ermöglicht.
 
-- [**Wikipedia-Projekt: PKM**](/de/notes/20260502_wikipedia-projekt-pkm.html): Die Idee, öffentliches Wissen strukturiert zu kuratieren.
+- [**Wikipedia-Projekt: PKM**](20260502_wikipedia-projekt-pkm.html): Die Idee, öffentliches Wissen strukturiert zu kuratieren.
 
-- [**Warum wir öffentlich schreiben**](/de/notes/20260426_warum-wir-oeffentlich-schreiben.html): Weil öffentliches Wissen durch Vernetzung wertvoller wird.
+- [**Warum wir öffentlich schreiben**](20260426_warum-wir-oeffentlich-schreiben.html): Weil öffentliches Wissen durch Vernetzung wertvoller wird.
 
-- [**Vom Wiki-LLM zum Reasoning Linter**](/de/notes/20260410_vom-wiki-llm-zum-reasoning-linter.html): Die technische Realisation — automatisierter "Linting" von Argumentationen.
+- [**Vom Wiki-LLM zum Reasoning Linter**](20260410_vom-wiki-llm-zum-reasoning-linter.html): Die technische Realisation — automatisierter "Linting" von Argumentationen.
 
-- [**Everything Claude Code**](/de/notes/20260510_everything-claude-code.html): Die Werkzeuge, um das zu automatisieren.
+- [**Everything Claude Code**](20260510_everything-claude-code.html): Die Werkzeuge, um das zu automatisieren.
 
 ## Nächste Schritte: Was kommt nach dem Graph?
 

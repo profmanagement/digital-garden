@@ -179,15 +179,15 @@ I also need more sophisticated **relation grammar** between knowledge types. Rel
 
 This connects to several other posts in this digital garden:
 
-- [**From PKM to CKM**](/en/notes/20260401_from-pkm-to-ckm.html): Collaborative Knowledge Management instead of Personal Knowledge Management—exactly what a knowledge graph enables.
+- [**From PKM to CKM**](20260401_from-pkm-to-ckm.html): Collaborative Knowledge Management instead of Personal Knowledge Management—exactly what a knowledge graph enables.
 
-- [**Wikipedia Project: PKM**](/en/notes/20260502_wikipedia-project-pkm.html): The idea of structurally curating public knowledge.
+- [**Wikipedia Project: PKM**](20260502_wikipedia-project-pkm.html): The idea of structurally curating public knowledge.
 
-- [**Why We Write Publicly**](/en/notes/20260426_why-we-write-publicly.html): Because public knowledge becomes more valuable through networking.
+- [**Why We Write Publicly**](20260426_why-we-write-publicly.html): Because public knowledge becomes more valuable through networking.
 
-- [**From Wiki-LLM to Reasoning Linter**](/en/notes/20260410_from-wiki-llm-to-reasoning-linter.html): The technical realization—automated "linting" of arguments.
+- [**From Wiki-LLM to Reasoning Linter**](20260410_from-wiki-llm-to-reasoning-linter.html): The technical realization—automated "linting" of arguments.
 
-- [**Everything Claude Code**](/en/notes/20260510_everything-claude-code.html): The tools to automate this.
+- [**Everything Claude Code**](20260510_everything-claude-code.html): The tools to automate this.
 
 ## Next Steps: What Comes After the Graph?
 
