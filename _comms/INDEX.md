@@ -1,12 +1,12 @@
 # Project Index
 
 ## Active Tasks
-*(None)*
+- [ ] TASK-013: Blogpost — Discourse Graph & PDF-Synthesisierung (DE ✓ | EN ✓)
 
 ## Completed Tasks (recent)
-- [x] DONE-010: Switch second language NL → DE
-- [x] DONE-011: Sidenotes — Fußnoten als Randnotizen
 - [x] DONE-012: Kurzbeitrag — Everything Claude Code (DE + EN)
+- [x] DONE-011: Sidenotes — Fußnoten als Randnotizen
+- [x] DONE-010: Switch second language NL → DE
 
 ## Backlog
 *(None)*
