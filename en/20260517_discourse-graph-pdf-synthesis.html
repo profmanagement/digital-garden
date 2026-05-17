@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Maik" />
+  <meta name="description" content="How to systematically evaluate PDFs using Claude Code and LLM automation, leveraging scientific methods (Discourse Graph, Strauss-Corbin) to extract genuine insights from information noise." />
+  <title>Knowledge Synthesis from PDFs: Discourse Graph &amp; Structured Parsing with Claude Code</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html">🪴 Digital Garden</a>
+  <span class="nav-links">
+    <a href="index.html">HOME</a>
+    <span class="nav-sep">|</span>
+    <a href="about.html">ABOUT</a>
+  </span>
+  <span class="nav-right">
+    <span class="nav-lang"><a href="20260517_discourse-graph-pdf-synthesis.html">EN</a> &middot; <a href="../de/20260517_discourse-graph-pdf-synthesisierung.html">DE</a></span>
+    <a class="nav-search" href="search.html">&#x1F50D;</a>
+  </span>
+</nav>
+<p><a class="nav-back" href="index.html">&larr; Back</a></p>
+<p class="note-category-label">Research</p>
+<h1 id="knowledge-synthesis-from-pdfs-in-the-llm-wiki-discourse-graph-structured-parsing-with-claude-code">Knowledge Synthesis from PDFs in the LLM Wiki: Discourse Graph &amp; Structured Parsing with Claude Code</h1>
+<p class="note-byline">Maik &middot; 2026-05-17 &middot; 95% human</p>
+<h2 id="the-problem-information-overload-in-scientific-papers">The Problem: Information Overload in Scientific Papers</h2>
+<p>When building an “ingest workflow” for scientific papers (PDFs) into my LLM wiki, I realized summaries that contain <strong>everything</strong> are counterproductive. Instead, I needed to extract only genuinely relevant information. The context “clogs” processing, creating enormous noise. Many details in a paper are simply irrelevant to specific research questions, but the model doesn’t know that on its own.</p>
+<p>In the analogue world, the solution is straightforward: linear reading, highlighting, extracting. Time-consuming. Error-prone. Not scalable.</p>
+<p>But there is an approach: extracting information through structured parsing using the <a href="https://discoursegraphs.com/">Discourse Graph</a> methodology.</p>
+<h2 id="the-discourse-graph-a-method-for-structured-knowledge-synthesis">The Discourse Graph: A Method for Structured Knowledge Synthesis</h2>
+<p>The Discourse Graph is not merely an ontological knowledge concept—it’s a practical method for systematically extracting and linking knowledge from unstructured sources. The idea: decompose every text into granular, interconnected units rather than treating it as a monolithic block.</p>
+<p>I applied the <strong>five core components</strong> of the Discourse Graph to my wiki as follows:</p>
+<h3 id="sources">1. <strong>Sources</strong></h3>
+<p>The primary document itself. Who wrote it? When? In what context? This anchors all downstream information.</p>
+<h3 id="evidence">2. <strong>Evidence</strong></h3>
+<p>All usable information from the source: - Methodological details (research design, sample size, instruments) - Theoretical foundations (concepts, frameworks) - Empirical findings (results, metrics, observations)</p>
+<p><strong>Important:</strong> Evidence is <em>facts or observations</em>, not yet interpretations.</p>
+<h3 id="claims-assertionsfindings">3. <strong>Claims (Assertions/Findings)</strong></h3>
+<p>The conclusions authors draw from evidence: “If evidence X shows, then statement Y follows.” Claims are the scientific findings a paper propagates.</p>
+<h3 id="questions">4. <strong>Questions</strong></h3>
+<p>The scientific questions the text answers or raises. These emerge <strong>inductively</strong> from evidence and claims. They map the research space.</p>
+<h3 id="concepts">5. <strong>Concepts</strong></h3>
+<p>Overarching ideas, theories, constructs linking multiple claims and evidence. They are the “building blocks” of my knowledge graph.</p>
+<p>This structure is also called <strong>atomization</strong> or <strong>granularization</strong> of knowledge. Each unit is small enough to be understood in isolation, yet large enough to carry information content.</p>
+<h3 id="theoretical-background-toulmins-argument-pattern">Theoretical Background: Toulmin’s Argument Pattern</h3>
+<p>This structure builds on <a href="https://searchworks.stanford.edu/view/13362780">Stephen Toulmin’s argumentation theory</a> (<em>The Uses of Argument</em>, 1958). Toulmin showed that valid arguments don’t consist merely of “thesis + proof,” but of: - <strong>Claim</strong> (assertion) - <strong>Data/Evidence</strong> (support) - <strong>Warrant</strong> (why evidence supports the claim) - <strong>Backing</strong> (support for the warrant) - <strong>Qualifier</strong> (limitation, certainty) - <strong>Rebuttal</strong> (counter-arguments)</p>
+<p>The Discourse Graph is a practical application of this model to knowledge networking and proves very useful for analyzing scientific texts.</p>
+<hr />
+<h2 id="the-implementation-structured-parsing-with-claude-code">The Implementation: Structured Parsing with Claude Code</h2>
+<p>I developed this workflow iteratively. Rather than simply loading PDFs and generating summaries, I implemented structured parsing in the LLM wiki. As I outlined in my <a href="/de/notes/20260410_vom-wiki-llm-zum-reasoning-linter">earlier work on the Wiki-LLM to Reasoning Linter</a>, the pipeline looks like this:</p>
+<pre><code>PDF Input
+    ↓
+[1] Structured Parsing
+    → Text sections &amp; segments
+    → Each segment indexable &amp; linked
+    ↓
+[2] Evidence Extraction
+    → Methodological evidence
+    → Theoretical evidence
+    → Results-based evidence
+    ↓
+[3] Claim Identification
+    → Claims based on evidence
+    → Claims as interpretations/conclusions
+    ↓
+[4] Question Generation (inductive)
+    → Which questions does this text answer?
+    → Which new questions emerge?
+    ↓
+[5] Knowledge Graph Assembly
+    → Bidirectional links between all components
+    → Define relation types
+    → Graph storage (Tana, ObsidianMD, Neo4j, etc.)
+    ↓
+Output: Queryable Knowledge Graph</code></pre>
+<p>Fig. 1: The Pipeline (Flowchart) (author’s own)</p>
+<p>This yields several advantages:</p>
+<ol type="1">
+<li><p><strong>Structures, not summaries</strong>: The process doesn’t generate “The paper says X,” but rather “Evidence A supports Claim B, which answers Question C.”</p></li>
+<li><p><strong>Context reduction through granularity</strong>: Each segment is small enough to stay focused on its point.</p></li>
+<li><p><strong>Linking as quality assurance</strong>: If evidence and claim can’t be linked, something’s missing.</p></li>
+<li><p><strong>Bidirectional connections</strong>: I can ask not only “Which claims does this evidence support?” but also “What evidence do I have for this claim?”</p></li>
+</ol>
+<h3 id="claude-code-for-automation">Claude Code for Automation</h3>
+<p>I developed a Python parsing pattern (imperfect, but a solid start):</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> parse_pdf_to_discourse_graph(pdf_path):</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1. Decompose PDF into segments</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    segments <span class="op">=</span> extract_segments(pdf_path)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2. For each segment: identify evidence</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> segment <span class="kw">in</span> segments:</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        evidences <span class="op">=</span> extract_evidences(segment, types<span class="op">=</span>[</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>            <span class="st">&quot;methodological&quot;</span>,</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>            <span class="st">&quot;theoretical&quot;</span>, </span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>            <span class="st">&quot;empirical&quot;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        ])</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 3. Derive claims from evidence</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        claims <span class="op">=</span> derive_claims(segment, evidences)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 4. Generate questions inductively</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>        questions <span class="op">=</span> generate_questions(segment, evidences, claims)</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 5. Store in graph with relations</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>        save_to_knowledge_graph({</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>            <span class="st">&quot;source&quot;</span>: pdf_metadata,</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>            <span class="st">&quot;segment&quot;</span>: segment,</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>            <span class="st">&quot;evidences&quot;</span>: evidences,</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>            <span class="st">&quot;claims&quot;</span>: claims,</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>            <span class="st">&quot;questions&quot;</span>: questions,</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>            <span class="st">&quot;links&quot;</span>: create_bidirectional_links(...)</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>        })</span></code></pre></div>
+<h3 id="planned-extensions-beyond-claims">Planned Extensions: <em>Beyond Claims</em></h3>
+<p>Future note types can extend beyond claims, evidence, questions, and concepts:</p>
+<ul>
+<li><p><strong>Hypotheses</strong>: Conjectures derived from the data—not just what the paper says, but what it <em>could mean</em>.</p></li>
+<li><p><strong>Didactical Patterns</strong>: For educational development and learning research, didactical concepts also matter.</p></li>
+<li><p><strong>Methodological Innovations</strong>: New methods emerging from the findings.</p></li>
+</ul>
+<p>I also need more sophisticated <strong>relation grammar</strong> between knowledge types. Relations should describe not just “these things are linked,” but <em>how</em> they’re linked.</p>
+<h3 id="related-content">Related Content</h3>
+<p>This connects to several other posts in this digital garden:</p>
+<ul>
+<li><p><a href="/de/notes/20260401_von-pkm-zu-ckm"><strong>From PKM to CKM</strong></a>: Collaborative Knowledge Management instead of Personal Knowledge Management—exactly what a knowledge graph enables.</p></li>
+<li><p><a href="/de/notes/20260502_wikipedia-projekt-pkm"><strong>Wikipedia Project: PKM</strong></a>: The idea of structurally curating public knowledge.</p></li>
+<li><p><a href="/de/notes/20260426_warum-wir-oeffentlich-schreiben"><strong>Why We Write Publicly</strong></a>: Because public knowledge becomes more valuable through networking.</p></li>
+<li><p><a href="/de/notes/20260410_vom-wiki-llm-zum-reasoning-linter"><strong>From Wiki-LLM to Reasoning Linter</strong></a>: The technical realization—automated “linting” of arguments.</p></li>
+<li><p><a href="/de/notes/20260510_everything-claude-code"><strong>Everything Claude Code</strong></a>: The tools to automate this.</p></li>
+</ul>
+<h2 id="next-steps-what-comes-after-the-graph">Next Steps: What Comes After the Graph?</h2>
+<ol type="1">
+<li><p><strong>Granularization as Standard</strong>: What if academic research expected scholars to publish findings in granular form rather than writing books and papers?</p></li>
+<li><p><strong>Research as Graph Query</strong>: Instead of “Write a review,” researchers could frame tasks like: “Create a query on the graph: Which evidence supports thesis X? Which concepts are controversial? Where are the gaps?”</p></li>
+<li><p><strong>Automated Synthesis</strong>: With LLMs, I can not only read papers but query the graph directly and <em>generate</em> syntheses. Rather than writing them manually, a pre-structured text with an evaluation of existing findings can be created as inspiration for new writing.</p></li>
+<li><p><strong>Interdisciplinary Insight</strong>: When I link knowledge graphs across disciplines, new insights emerge simply through the <em>architecture</em> of the graph itself, alongside manual thinking.</p></li>
+</ol>
+<p>All this sounds like information extraction from scientific texts can be fully automated—work machines will eventually handle. Yes, I do hope to offload <strong>certain</strong> manual tasks. Yet we as researchers remain responsible for quality assurance. Results must be verified in the end. That’s probably an idea for a later post.</p>
+<h2 id="literature-resources">Literature &amp; Resources</h2>
+<ul>
+<li><strong>Discourse Graph</strong>: <a href="https://github.com/DiscourseGraphs/discourse-graph">GitHub Repository</a> | <a href="https://www.protocol.ai/blog/discourse-graph-qa/">Protocol Labs: “Discourse Graphs and the Future of Science”</a></li>
+<li><strong>Toulmin, Stephen</strong>: <em>The Uses of Argument</em> (1958) — <a href="https://plato.stanford.edu/entries/toulmin-logic/">Stanford Encyclopedia of Philosophy</a></li>
+<li><strong>Open-Source Knowledge Graphs</strong>: <a href="https://github.com/totogo/awesome-knowledge-graph">GitHub - Awesome Knowledge Graph</a></li>
+</ul>
+<hr />
+<p><em>Created: 2026-05-17 · v01</em></p>
+<footer class="note-footer"><small>2026-05-17 &middot; modified 2026-05-17 &middot; v01</small></footer>
+<script src="../sidenotes.js"></script>
+</body>
+</html>
