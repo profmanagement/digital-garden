@@ -88,7 +88,7 @@ The Discourse Graph is a practical application of this model to knowledge networ
 
 ## The Implementation: Structured Parsing with Claude Code
 
-I developed this workflow iteratively. Rather than simply loading PDFs and generating summaries, I implemented structured parsing in the LLM wiki. As I outlined in my [earlier work on the Wiki-LLM to Reasoning Linter](/de/notes/20260410_vom-wiki-llm-zum-reasoning-linter), the pipeline looks like this:
+I developed this workflow iteratively. Rather than simply loading PDFs and generating summaries, I implemented structured parsing in the LLM wiki. As I outlined in my [earlier work on the Wiki-LLM to Reasoning Linter](20260410_vom-wiki-llm-zum-reasoning-linter.html), the pipeline looks like this:
 
 ```
 PDF Input
