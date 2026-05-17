@@ -86,8 +86,6 @@ This structure builds on [Stephen Toulmin's argumentation theory](https://search
 
 The Discourse Graph is a practical application of this model to knowledge networking and proves very useful for analyzing scientific texts.
 
----
-
 ## The Implementation: Structured Parsing with Claude Code
 
 I developed this workflow iteratively. Rather than simply loading PDFs and generating summaries, I implemented structured parsing in the LLM wiki. As I outlined in my [earlier work on the Wiki-LLM to Reasoning Linter](/de/notes/20260410_vom-wiki-llm-zum-reasoning-linter), the pipeline looks like this:

@@ -87,8 +87,6 @@ Diese Struktur fußt auf [Stephen Toulmin's Argumentationstheorie](https://searc
 
 Der Discourse Graph ist eine praktische Anwendung dieses Modells auf die Wissensvernetzung und sehr nützlich für die Analyse von wissenschaftlichen Texten.
 
----
-
 ## Die Implementierung: Strukturiertes Parsing mit Claude Code
 
 Den folgenden Workflow habe ich sukzessive entwickelt. Statt PDFs einfach zu laden und eine Zusammenfassung zu erstellen, kann man im LLM Wiki ein strukturiertes Parsing umsetzen. Wie ich in meinem bereits beschriebenen System (siehe hier [Vom Wiki-LLM zum Reasoning Linter](/de/notes/20260410_vom-wiki-llm-zum-reasoning-linter)) dargelegt habe, sieht die Pipeline wie folgt aus:
