@@ -33,7 +33,9 @@ For years, I have been collecting notes, literature references, quotes, ideas, a
 
 Yet I increasingly catch myself having this frustrating thought:
 
-> I know that I noted something important about this at some point. But I have no idea anymore how I thought about it back then, under what term, with which tags, and especially in which vault I stored it. Where should I even start to search?
+> I know that I noted something important about this at some point. But I have no idea 
+> anymore how I thought about it back then, under what term, with which tags, and especially 
+> in which vault I stored it. Where should I even start to search?
 
 The problem is not that the information or idea has been lost. It's already located somewhere in my tool for thought. The problem is rather that I can't search precisely because I can no longer remember the note—because it's somehow slumbering in the sea of my second brains.
 
@@ -77,7 +79,8 @@ Many modern knowledge systems rely on bidirectional linking. These are undoubted
 
 But they solve a different problem:
 
-> Links help me get from one known note to another. *But*: they don't help me remember that the other note exists in the first place.
+> Links help me get from one known note to another. 
+> *But*: they don't help me remember that the other note exists in the first place.
 
 This sounds like a minor point, but it may be the decisive one.
 

@@ -33,7 +33,9 @@ Seit Jahren sammle ich Notizen, Literaturhinweise, Zitate, Ideen und Beobachtung
 
 Trotzdem ertappe ich mich immer häufiger bei diesem frustrierenden Gedanken:
 
-> Ich weiß, dass ich dazu irgendwann einmal etwas Wichtiges notiert habe. Aber ich habe  keine Ahnung mehr, wie ich damals darüber gedacht habe, unter welchem Begriff, mit welchen Tags und vor allem in welchem Vault ich es gespeichert habe. Wo soll ich anfangen zu suchen?
+> Ich weiß, dass ich dazu irgendwann einmal etwas Wichtiges notiert habe. Aber ich habe 
+> keine Ahnung mehr, wie ich damals darüber gedacht habe, unter welchem Begriff, mit welchen 
+> Tags und vor allem in welchem Vault ich es gespeichert habe. Wo soll ich anfangen zu suchen?
 
 Das Problem ist nicht, dass die Information oder Idee verloren gegangen wäre. Sie befinden sich schon an einem bestimmten Ort in meinem Tool for Thought. Das Problem ist vielmehr, dass ich gar nicht präzise suchen kann, weil ich mich nicht mehr an die Notiz erinnern kann, weil sie irgendwie im Meer meiner Second Brains vor sich hin schlummern.
 
@@ -77,7 +79,8 @@ Viele moderne Wissenssysteme setzen auf bidirektionale Verlinkungen. Diese sind 
 
 Aber sie lösen ein anderes Problem: 
 
-> Links helfen mir dabei, von einer bekannten Notiz zu einer anderen zu gelangen. *Aber*: Sie helfen mir nicht dabei, mich daran zu erinnern, dass die andere Notiz überhaupt existiert.
+> Links helfen mir dabei, von einer bekannten Notiz zu einer anderen zu gelangen. 
+> *Aber*: Sie helfen mir nicht dabei, mich daran zu erinnern, dass die andere Notiz überhaupt existiert.
 
 Das klingt nach einer Kleinigkeit, ist aber möglicherweise das Entscheidende.
 
