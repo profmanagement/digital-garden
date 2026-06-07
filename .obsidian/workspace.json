@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/de/notes/20260607_das-retrieval-paradox.md",
+                "file": "content/en/notes/20260607_the-retrieval-paradox.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20260607_das-retrieval-paradox"
+              "title": "20260607_the-retrieval-paradox"
             }
           }
         ]
@@ -207,8 +207,9 @@
   },
   "active": "594d0f8412cba6ff",
   "lastOpenFiles": [
-    "content/de/notes/20260517_discourse-graph-pdf-synthesisierung.md",
     "content/de/notes/20260607_das-retrieval-paradox.md",
+    "content/en/notes/20260607_the-retrieval-paradox.md",
+    "content/de/notes/20260517_discourse-graph-pdf-synthesisierung.md",
     "Knowledge Management.md",
     "content/en/notes/20260517_discourse-graph-pdf-synthesis.md",
     "content/de/notes/20260510_everything-claude-code.md",
@@ -238,7 +239,6 @@
     "images/wikipedia-pkm-project_en.png",
     "de.wikipedia.org.md",
     "CLAUDE.md",
-    "index.md",
     "style.css.tmp.31045.1777751722320",
     "sidenotes.js",
     "content/en/pages",
