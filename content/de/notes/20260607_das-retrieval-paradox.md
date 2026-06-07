@@ -121,12 +121,18 @@ In diesem Sinne ist das eigentliche Problem in der Wissensarbeit mit Tools for T
 
 ---
 
-**Verwandte Konzepte:** [[Knowledge Management]], [[Tools for Thought]], [[Personal Knowledge Management]], [[Retrieval]], [[Memory]], [[Digital Gardening]]
+## Verwandte Beiträge
+
+- [**Von PKM zu CKM**](20260401_von-pkm-zu-ckm.html): Warum persönliches Wissensmanagement kollaborativ werden muss.
+- [**Warum wir öffentlich schreiben**](20260426_warum-wir-oeffentlich-schreiben.html): Wie öffentliches Schreiben die Abrufbarkeit von Wissen verbessert.
+- [**Everything Claude Code**](20260510_everything-claude-code.html): Tools zur Automatisierung von Wissenssynthese und Retrieval.
 
 ## Referenzen
 
 Godden, D. R., & Baddeley, A. D. (1975). Context-dependent memory in two natural environments: On land and underwater. *British Journal of Psychology*, 66(3), 325–331. https://doi.org/10.1111/j.2044-8295.1975.tb01468.x
 
+Kluge, A., & Gronau, N. (2018). Intentional forgetting in organizations: The importance of elimination of retrieval cues for forgetting. *Frontiers in Psychology*, 9, 2129. https://doi.org/10.3389/fpsyg.2018.02129
+
 Tulving, E., & Pearlstone, Z. (1966). Availability versus accessibility of information in memory for words. *Journal of Verbal Learning and Verbal Behavior*, 5(4), 381–391. https://doi.org/10.1016/S0022-5371(66)80048-8
 
-Tulving, E., & Thomson, D. M. (1973). Encoding specificity and retrieval processes in episodic memory. *Psychological Review*, 80(5), 352–373. https://psycnet-apa-org.wikipedialibrary.idm.oclc.org/doi/10.1037/h0020071
+Tulving, E., & Thomson, D. M. (1973). Encoding specificity and retrieval processes in episodic memory. *Psychological Review*, 80(5), 352–373. https://doi.org/10.1037/h0020071
