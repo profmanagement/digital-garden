@@ -93,6 +93,23 @@ em {
   font-size: 0.9rem;
 }
 
+blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1.25rem;
+  border-left: 3px solid var(--accent);
+  color: #555;
+  font-style: italic;
+  line-height: 1.7;
+}
+
+blockquote p {
+  margin-bottom: 0.5rem;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
 /* ── Nav bar ───────────────────────────────────────────────────────────── */
 
 .site-nav {
