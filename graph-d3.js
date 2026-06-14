@@ -1,6 +1,6 @@
 /**
- * Graph View - D3.js Based (Quartz-inspired)
- * Renders interactive knowledge graph with zoom, pan, and click-to-navigate
+ * Graph View - D3.js Based with Filters (Quartz-inspired)
+ * Renders interactive knowledge graph with zoom, pan, filters, and click-to-navigate
  */
 
 (function() {
@@ -14,7 +14,13 @@
   let simulation = null;
   let svg = null;
   let graphData = null;
+  let allNodes = [];
+  let allLinks = [];
   let isInitialized = false;
+  let activeFilters = {
+    types: new Set(),
+    categories: new Set()
+  };
 
   // Get current note slug from URL
   const currentSlug = (() => {
@@ -52,11 +58,118 @@
         return;
       }
 
+      allNodes = graphData.nodes;
+      allLinks = graphData.links || [];
+
+      // Initialize all filters as active by default
+      allNodes.forEach(node => {
+        activeFilters.types.add(node.type);
+        if (node.category) activeFilters.categories.add(node.category);
+      });
+
+      createFilterUI();
       renderGraph();
       isInitialized = true;
     } catch (error) {
       console.error('Error initializing graph:', error);
     }
+  }
+
+  /**
+   * Create filter UI in the legend
+   */
+  function createFilterUI() {
+    const legend = graphModal.querySelector('.graph-legend');
+    if (!legend) return;
+
+    // Create filters section
+    const filterSection = document.createElement('div');
+    filterSection.className = 'graph-filters';
+    filterSection.style.cssText = 'margin-top: 12px; padding-top: 12px; border-top: 1px solid #ddd;';
+
+    // Type filters
+    const types = [...new Set(allNodes.map(n => n.type).filter(Boolean))].sort();
+    const typeLabel = document.createElement('div');
+    typeLabel.style.cssText = 'font-size: 11px; font-weight: bold; margin-bottom: 6px;';
+    typeLabel.textContent = 'Types:';
+    filterSection.appendChild(typeLabel);
+
+    types.forEach(type => {
+      const label = document.createElement('label');
+      label.style.cssText = 'display: flex; align-items: center; font-size: 10px; margin-bottom: 4px; cursor: pointer;';
+
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.checked = true;
+      checkbox.style.cssText = 'margin-right: 6px; cursor: pointer;';
+      checkbox.addEventListener('change', () => {
+        if (checkbox.checked) {
+          activeFilters.types.add(type);
+        } else {
+          activeFilters.types.delete(type);
+        }
+        updateGraph();
+      });
+
+      const dot = document.createElement('span');
+      dot.textContent = '●';
+      dot.style.cssText = `color: ${typeColors[type]}; margin-right: 4px;`;
+
+      label.appendChild(checkbox);
+      label.appendChild(dot);
+      label.appendChild(document.createTextNode(type));
+      filterSection.appendChild(label);
+    });
+
+    // Category filters
+    const categories = [...new Set(allNodes.map(n => n.category).filter(Boolean))].sort();
+    if (categories.length > 0) {
+      const categoryLabel = document.createElement('div');
+      categoryLabel.style.cssText = 'font-size: 11px; font-weight: bold; margin-top: 8px; margin-bottom: 6px;';
+      categoryLabel.textContent = 'Categories:';
+      filterSection.appendChild(categoryLabel);
+
+      categories.forEach(category => {
+        const label = document.createElement('label');
+        label.style.cssText = 'display: flex; align-items: center; font-size: 10px; margin-bottom: 4px; cursor: pointer;';
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.checked = true;
+        checkbox.style.cssText = 'margin-right: 6px; cursor: pointer;';
+        checkbox.addEventListener('change', () => {
+          if (checkbox.checked) {
+            activeFilters.categories.add(category);
+          } else {
+            activeFilters.categories.delete(category);
+          }
+          updateGraph();
+        });
+
+        label.appendChild(checkbox);
+        label.appendChild(document.createTextNode(category));
+        filterSection.appendChild(label);
+      });
+    }
+
+    legend.appendChild(filterSection);
+  }
+
+  /**
+   * Filter nodes and links based on active filters
+   */
+  function getFilteredData() {
+    const filteredNodes = allNodes.filter(node =>
+      activeFilters.types.has(node.type) &&
+      (!node.category || activeFilters.categories.has(node.category))
+    );
+
+    const filteredNodeIds = new Set(filteredNodes.map(n => n.id));
+    const filteredLinks = allLinks.filter(link =>
+      filteredNodeIds.has(link.source) && filteredNodeIds.has(link.target)
+    );
+
+    return { nodes: filteredNodes, links: filteredLinks };
   }
 
   /**
@@ -86,21 +199,44 @@
     // Create group for zoom/pan
     const g = svg.append('g');
 
+    drawGraph(g, width, height);
+  }
+
+  /**
+   * Update graph when filters change
+   */
+  function updateGraph() {
+    if (!svg) return;
+
+    const width = container.clientWidth;
+    const height = container.clientHeight;
+    const g = svg.select('g');
+    g.selectAll('*').remove();
+
+    drawGraph(g, width, height);
+  }
+
+  /**
+   * Draw the graph with current filters
+   */
+  function drawGraph(g, width, height) {
+    const { nodes, links } = getFilteredData();
+
     // Transform data
-    const nodes = graphData.nodes.map(node => ({
+    const graphNodes = nodes.map(node => ({
       ...node,
       id: node.id,
       isCurrent: currentSlug === node.id
     }));
 
-    const links = graphData.links.map(link => ({
+    const graphLinks = links.map(link => ({
       source: link.source,
       target: link.target
     }));
 
     // Create force simulation
-    simulation = d3.forceSimulation(nodes)
-      .force('link', d3.forceLink(links).id(d => d.id).distance(80))
+    simulation = d3.forceSimulation(graphNodes)
+      .force('link', d3.forceLink(graphLinks).id(d => d.id).distance(80))
       .force('charge', d3.forceManyBody().strength(-300))
       .force('center', d3.forceCenter(width / 2, height / 2))
       .force('collision', d3.forceCollide().radius(25));
@@ -108,7 +244,7 @@
     // Create links
     const link = g.append('g')
       .selectAll('line')
-      .data(links)
+      .data(graphLinks)
       .enter()
       .append('line')
       .attr('stroke', '#ccc')
@@ -117,7 +253,7 @@
     // Create nodes
     const node = g.append('g')
       .selectAll('circle')
-      .data(nodes)
+      .data(graphNodes)
       .enter()
       .append('circle')
       .attr('r', d => d.isCurrent ? 12 : 8)
@@ -135,7 +271,7 @@
     // Add labels on hover
     const labels = g.append('g')
       .selectAll('text')
-      .data(nodes)
+      .data(graphNodes)
       .enter()
       .append('text')
       .attr('text-anchor', 'middle')
@@ -194,7 +330,7 @@
 
       svg.transition()
         .duration(750)
-        .call(zoom.transform,
+        .call(d3.zoom().transform,
           d3.zoomIdentity.translate(translateX, translateY).scale(scale)
         );
     }, 500);
