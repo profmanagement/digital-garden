@@ -9,6 +9,8 @@
     {"id": "20260614_beyond-filing-cabinet", "label": "Beyond the Filing Cabinet: Do Organisation Methods Actually Solve the Retrieval Paradox?", "category": "PKM", "type": "growing", "url": "20260614_beyond-filing-cabinet.html"}
   ],
   "links": [
-
+    {"source": "20260510_everything-claude-code", "target": "20260410_from-wiki-llm-to-reasoning-linter"},
+    {"source": "20260517_discourse-graph-pdf-synthesis", "target": "20260510_everything-claude-code"},
+    {"source": "20260607_the-retrieval-paradox", "target": "20260510_everything-claude-code"}
   ]
 }
