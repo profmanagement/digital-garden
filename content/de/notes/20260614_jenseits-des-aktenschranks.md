@@ -54,7 +54,9 @@ Es stellt sich heraus: Die meisten tun weder das eine noch das andere. Die meist
 | Zettelkasten (Luhmann) | Emergente Verknüpfungen zwischen atomaren Notizen | ◐ | ◐ | „Kommunikationspartner" surfaced unerwartete Beziehungen. Erkennung als Nebeneffekt; surfaced nur nahe Nachbarn von Einstiegspunkten. |
 | Semantische / KI-Oberflächengestaltung | Bedeutung + proaktive Neuexposition (Embeddings, RAG) | ● | ● | Passt auf *Bedeutung*, tolleriert Unterschiede zwischen Gegenwart und Vergangenheit im Vokabular. Proaktive Neuexposition beantwortet die zentrale Frage des Paradox. |
 
-**Tabelle 1 Anmerkung.** Legend: ● = starke Unterstützung; ◐ = teilweise Unterstützung; ○ = schwach oder konzeptionell nicht adressiert. Evaluierungskriterien: (1) *Encoding–Retrieval-Match*—überbrückt die Methode Lücken, wenn aktuelle Suchhinweise von früheren Codierungen abweichen? (2) *Erkennung versus Navigation*—unterstützt sie zu realisieren, dass eine vergessene Notiz existiert (Erkennung), oder nur effizientes Reisen, wenn bereits bekannt (Navigation)? Tabelle mit Claude AI unter Anleitung des Autors erstellt; analytische Perspektive, Bewertung und Schlussfolgerungen sind des Autors eigen.
+*Hinweis*: Diese Vergleichstabelle wurde unter meiner Anleitung mit Claude im Cowork-Modus unter Verwendung von Opus 4.8 erstellt. Grundlage war eine Analyse der unten aufgeführten Literatur. Die Bewertungslogik, die konzeptionelle Rahmung und die Schlussfolgerungen stammen von mir. Das Modell wurde eingesetzt, um das Quellenmaterial zusammenzutragen und die beiden von mir definierten Bewertungskriterien anzuwenden.
+
+*Legende: ● = starke Unterstützung; ◐ = teilweise Unterstützung; ○ = schwach oder konzeptionell nicht adressiert.
 
 ## Wie man die Tabelle verstehen kann
 
