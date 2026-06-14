@@ -5,7 +5,8 @@
     {"id": "20260502_wikipedia-projekt-pkm", "label": "Neues WikiProjekt für Personal Knowledge Management auf Wikipedia", "category": "PKM", "type": "seedling", "url": "20260502_wikipedia-projekt-pkm.html"},
     {"id": "20260510_everything-claude-code", "label": "Auf dem Weg zu einem Agentic OS — Erste Schritte mit dem Everything Claude Code Repo", "category": "KI", "type": "seedling", "url": "20260510_everything-claude-code.html"},
     {"id": "20260517_discourse-graph-pdf-synthesisierung", "label": "Wissenssynthese aus PDFs: Discourse Graph & strukturiertes Parsing mit Claude Code", "category": "Forschung", "type": "seedling", "url": "20260517_discourse-graph-pdf-synthesisierung.html"},
-    {"id": "20260607_das-retrieval-paradox", "label": "Das Retrieval-Paradox: Warum mich meine Tools for Thought zunehmend frustrieren", "category": "PKM", "type": "seedling", "url": "20260607_das-retrieval-paradox.html"}
+    {"id": "20260607_das-retrieval-paradox", "label": "Das Retrieval-Paradox: Warum mich meine Tools for Thought zunehmend frustrieren", "category": "PKM", "type": "seedling", "url": "20260607_das-retrieval-paradox.html"},
+    {"id": "20260614_jenseits-des-aktenschranks", "label": "Jenseits des Aktenschranks: Lösen Organisationsmethoden das Retrieval-Paradox wirklich?", "category": "PKM", "type": "growing", "url": "20260614_jenseits-des-aktenschranks.html"}
   ],
   "links": [
 

@@ -6,6 +6,26 @@
     <description>Notes on knowledge management, learning, and digital gardening</description>
     <language>de</language>
     <item>
+      <title>Jenseits des Aktenschranks: Lösen Organisationsmethoden das Retrieval-Paradox wirklich?</title>
+      <link>https://profmanagement.github.io/digital-garden/de/20260614_jenseits-des-aktenschranks.html</link>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+      <author>Maik@example.com (Maik)</author>
+      <category>PKM</category>
+      <description><![CDATA[<h1 id="jenseits-des-aktenschranks-lösen-organisationsmethoden-das-retrieval-paradox-wirklich">Jenseits des Aktenschranks: Lösen Organisationsmethoden das Retrieval-Paradox wirklich?</h1>
+<p class="note-byline">Maik &middot; 2026-06-14 &middot; 60% human</p>
+<h2 id="wo-der-letzte-post-endete">Wo der letzte Post endete</h2>
+<p>In meiner letzten Notiz über das <a href="https://profmanagement.github.io/digital-garden/de/20260607_das-retrieval-paradox.html">Retrieval-Paradox</a> habe ich argumentiert, dass die Unsicherheit in meinem PKM und meinem „second brain” nicht in der Speicherung liegt – die Notizen sind immer noch dort, wo sie sein sollten – sondern in der Lücke zwischen der Art, wie ich eine Notiz in der Vergangenheit codiert habe, und der Art, wie ich versuche, sie in der Gegenwart abzurufen. Tulving und Thompsons (1973) Encoding-Specificity-Prinzip besagt, dass der Abruf gelingt, wenn aktuelle Hinweise einfach den Hinweisen ähneln, die beim Codieren vorhanden waren. Es kommt oft vor, dass sich meine Hinweise Monate später geändert haben – die Notiz bleibt <em>verfügbar, aber nicht zugänglich</em>. Und ich habe noch eine weitere Behauptung gemacht, die hier wichtig ist: Links lösen <strong>Navigation</strong> (von einer bekannten Note zu einer anderen bekannten Note), aber das Paradox lebt einen Schritt früher, bei der <strong>Erkennung</strong> – zu realisieren, dass eine relevante Notiz überhaupt existiert.</p>
+<p>Nach Diskussionen schlug mir ein lieber Kollege vor, die <strong>LATCH-Methode</strong> zu betrachten als möglichen zukünftigen Weg zur Lösung dieses Problems. Das spornte mich dazu an, ein wenig über PKM-Organisationsschemata zu recherchieren. Dieser Post ist das Ergebnis, aber nicht im Sinne von „hier sind fünf Wege, um dein Leben besser zu organisieren”, sondern als Test. Eine Organisationsmethode adressiert mein Retrieval-Paradox nur, wenn sie mindestens eines von zwei Dingen tut – <em>die Encoding-Retrieval-Lücke überbrücken</em>, oder <em>Erkennung statt nur Navigation unterstützen</em>.</p>
+<ol type="1">
+<li><strong>Encoding–Retrieval-Match</strong> – Hilft die Methode, wenn sich mein <em>aktueller</em> Suchhinweis vom <em>vergangenen</em> Begriff, Tag oder Kontext unterscheidet, unter dem ich es abgelegt habe? Oder geht sie davon aus, dass ich mich bereits an die Dimension erinnere, unter der ich es gespeichert habe?</li>
+<li><strong>Erkennung vs. Navigation</strong> – Hilft die Methode mir zu <em>erkennen, dass eine vergessene Notiz existiert</em> (Erkennung/Abruf)? Oder hilft sie mir nur, <em>effizient zu navigieren</em>, wenn ich bereits weiß, wonach ich suche (Navigation)?</li>
+</ol>
+<p>Es stellt sich heraus: Die meisten tun weder das eine noch das andere. Die meisten Organisationsansätze sind für etwas anderes gebaut. Einige sind Speicherarchitekturen, die nur das Kostüm einer Abruflösung tragen.</p>
+<h2 id="der-vergleich">Der Vergleich</h2>
+<p><strong>Tabelle 1</st]]></description>
+      <guid>https://profmanagement.github.io/digital-garden/de/20260614_jenseits-des-aktenschranks.html</guid>
+    </item>
+    <item>
       <title>Das Retrieval-Paradox: Warum mich meine Tools for Thought zunehmend frustrieren</title>
       <link>https://profmanagement.github.io/digital-garden/de/20260607_das-retrieval-paradox.html</link>
       <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
