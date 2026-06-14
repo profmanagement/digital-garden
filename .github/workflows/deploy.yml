@@ -446,44 +446,49 @@ jobs:
           generate_graph() {
             local lang="$1"
             local graph_file="_site/${lang}/graph-data.json"
+            local temp_meta="/tmp/notes_meta_${lang}.txt"
 
             echo "Generating graph for $lang..."
 
             # Step 1: Collect note metadata (exclude drafts)
-            declare -A notes_meta
+            rm -f "$temp_meta"
             while IFS= read -r f; do
               [ -f "$f" ] || continue
               slug=$(basename "${f%.md}")
-              title=$(grep -m1 "^title:" "$f" | sed 's/^title:[[:space:]]*//' | tr -d '"')
-              category=$(grep -m1 "^category:" "$f" | sed 's/^category:[[:space:]]*//' | tr -d '"')
-              type=$(grep -m1 "^type:" "$f" | sed 's/^type:[[:space:]]*//' | tr -d '"')
-              status=$(grep -m1 "^status:" "$f" | sed 's/^status:[[:space:]]*//' | tr -d '"')
+              title=$(grep -m1 "^title:" "$f" | sed 's/^title:[[:space:]]*//' | tr -d '"' | sed 's/|/_/g')
+              category=$(grep -m1 "^category:" "$f" | sed 's/^category:[[:space:]]*//' | tr -d '"' | sed 's/|/_/g')
+              note_type=$(grep -m1 "^type:" "$f" | sed 's/^type:[[:space:]]*//' | tr -d '"' | sed 's/|/_/g')
+              note_status=$(grep -m1 "^status:" "$f" | sed 's/^status:[[:space:]]*//' | tr -d '"' | sed 's/|/_/g')
 
               # Skip drafts
-              [ "$status" = "draft" ] && continue
+              [ "$note_status" = "draft" ] && continue
               [ -z "$title" ] && continue
 
-              notes_meta["$slug"]="$title|$category|$type"
+              echo "${slug}|${title}|${category}|${note_type}" >> "$temp_meta"
+              echo "  ✓ $slug (type: $note_type)"
             done < <(find "content/${lang}/notes" -name "*.md" -type f)
 
             # Step 2: Collect all wikilinks
-            all_links=""
+            local temp_links="/tmp/links_${lang}.txt"
+            rm -f "$temp_links"
             while IFS= read -r f; do
               [ -f "$f" ] || continue
-              status=$(grep -m1 "^status:" "$f" | sed 's/^status:[[:space:]]*//' | tr -d '"')
-              [ "$status" = "draft" ] && continue
+              note_status=$(grep -m1 "^status:" "$f" | sed 's/^status:[[:space:]]*//' | tr -d '"')
+              [ "$note_status" = "draft" ] && continue
 
-              while read link; do
+              extract_wikilinks "$f" | while read link; do
                 source="${link%→*}"
                 target="${link#*→}"
 
-                # Only include if both nodes exist
-                [[ -n "${notes_meta[$target]}" ]] && all_links="${all_links}${source}→${target}"$'\n'
-              done < <(extract_wikilinks "$f")
+                # Only include if both nodes exist in notes
+                if grep -q "^${target}|" "$temp_meta" 2>/dev/null; then
+                  echo "${source}→${target}" >> "$temp_links"
+                fi
+              done
             done < <(find "content/${lang}/notes" -name "*.md" -type f)
 
             # Deduplicate links
-            all_links=$(echo "$all_links" | sort -u | grep -v '^$')
+            sort -u "$temp_links" > "${temp_links}.uniq" 2>/dev/null
 
             # Step 3: Build JSON output
             {
@@ -492,13 +497,13 @@ jobs:
 
               # Output nodes
               first=true
-              for slug in $(for k in "${!notes_meta[@]}"; do echo "$k"; done | sort); do
-                IFS='|' read -r title category type <<< "${notes_meta[$slug]}"
+              sort "$temp_meta" 2>/dev/null | while IFS='|' read -r slug title category note_type; do
+                [ -z "$slug" ] && continue
                 [[ "$first" == true ]] || echo ","
                 # Escape quotes in title
                 title_esc="${title//\"/\\\"}"
                 printf '    {"id": "%s", "label": "%s", "category": "%s", "type": "%s", "url": "%s.html"}' \
-                  "$slug" "$title_esc" "$category" "$type" "$slug"
+                  "$slug" "$title_esc" "$category" "$note_type" "$slug"
                 first=false
               done
 
@@ -508,19 +513,20 @@ jobs:
 
               # Output links
               first=true
-              while read edge; do
-                [ -z "$edge" ] && continue
-                source="${edge%→*}"
-                target="${edge#*→}"
+              sort -u "${temp_links}.uniq" 2>/dev/null | while IFS='→' read -r source target; do
+                [ -z "$source" ] && continue
                 [[ "$first" == true ]] || echo ","
                 printf '    {"source": "%s", "target": "%s"}' "$source" "$target"
                 first=false
-              done <<< "$all_links"
+              done
 
               echo ""
               echo "  ]"
               echo "}"
             } > "$graph_file"
+
+            # Cleanup
+            rm -f "$temp_meta" "$temp_links" "${temp_links}.uniq"
 
             echo "✓ Generated graph: $graph_file ($(grep -o '"id"' "$graph_file" | wc -l) nodes)"
           }
