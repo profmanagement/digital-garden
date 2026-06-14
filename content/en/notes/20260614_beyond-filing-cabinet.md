@@ -17,7 +17,7 @@ tags:
   - para
   - johnny-decimal
 language: en
-translation:
+translation: 20260614_jenseits-des-aktenschranks
 source:
 related:
   - 20260607_the-retrieval-paradox
