@@ -150,7 +150,7 @@ jobs:
             -o _site/en/index.html
 
           # Inject feed discovery link into <head>
-          sed -i 's|</head>|  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">\n</head>|' _site/en/index.html
+          sed -i '/<\/head>/i\  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">' _site/en/index.html
 
           # Inject notes listing right after <h2 id="notes"> (awk one-liner)
           awk '/<h2 id="notes">/{print; while((getline line < "_notes_listing_en.html") > 0) print line; close("_notes_listing_en.html"); next}1' \
