@@ -528,6 +528,14 @@ jobs:
           generate_graph "en"
           generate_graph "de"
 
+          # Debug: Show generated graph files
+          echo ""
+          echo "=== Graph Files Generated ==="
+          ls -lh _site/*/graph-data.json 2>/dev/null || echo "No graph files found"
+          echo ""
+          echo "=== EN Graph Preview ==="
+          head -20 _site/en/graph-data.json 2>/dev/null || echo "EN graph not found"
+
       # ── RSS Feeds ────────────────────────────────────────────────────────
       - name: Generate RSS feeds
         run: |
