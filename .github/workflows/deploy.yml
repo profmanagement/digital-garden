@@ -464,24 +464,24 @@ jobs:
               notes_meta["$slug"]="$title|$category|$type"
             done < <(find "content/${lang}/notes" -name "*.md" -type f)
 
-            # Step 2: Collect all wikilinks (only include valid targets)
-            declare -A links_unique
+            # Step 2: Collect all wikilinks
+            all_links=""
             while IFS= read -r f; do
               [ -f "$f" ] || continue
               status=$(grep -m1 "^status:" "$f" | sed 's/^status:[[:space:]]*//' | tr -d '"')
               [ "$status" = "draft" ] && continue
 
-              extract_wikilinks "$f" | while read link; do
+              while read link; do
                 source="${link%→*}"
                 target="${link#*→}"
 
                 # Only include if both nodes exist
-                [[ -n "${notes_meta[$target]}" ]] || continue
-
-                # Store unique edge (source→target)
-                links_unique["${source}→${target}"]=1
-              done
+                [[ -n "${notes_meta[$target]}" ]] && all_links="${all_links}${source}→${target}"$'\n'
+              done < <(extract_wikilinks "$f")
             done < <(find "content/${lang}/notes" -name "*.md" -type f)
+
+            # Deduplicate links
+            all_links=$(echo "$all_links" | sort -u | grep -v '^$')
 
             # Step 3: Build JSON output
             {
@@ -506,13 +506,14 @@ jobs:
 
               # Output links
               first=true
-              for edge in "${!links_unique[@]}"; do
+              while read edge; do
+                [ -z "$edge" ] && continue
                 source="${edge%→*}"
                 target="${edge#*→}"
                 [[ "$first" == true ]] || echo ","
                 printf '    {"source": "%s", "target": "%s"}' "$source" "$target"
                 first=false
-              done
+              done <<< "$all_links"
 
               echo ""
               echo "  ]"
