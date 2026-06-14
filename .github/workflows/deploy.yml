@@ -460,12 +460,15 @@ jobs:
               note_type=$(grep -m1 "^type:" "$f" | sed 's/^type:[[:space:]]*//' | tr -d '"' | sed 's/|/_/g')
               note_status=$(grep -m1 "^status:" "$f" | sed 's/^status:[[:space:]]*//' | tr -d '"' | sed 's/|/_/g')
 
+              # Extract tags (handle YAML array format)
+              tags=$(sed -n '/^tags:/,/^[a-z]/p' "$f" | grep -oE '^\s*-\s+(.+)$' | sed 's/^\s*-\s*//' | tr '\n' ',' | sed 's/,$//' | sed 's/,/;/g')
+
               # Skip drafts
               [ "$note_status" = "draft" ] && continue
               [ -z "$title" ] && continue
 
-              echo "${slug}|${title}|${category}|${note_type}" >> "$temp_meta"
-              echo "  ✓ $slug (type: $note_type)"
+              echo "${slug}|${title}|${category}|${note_type}|${tags}" >> "$temp_meta"
+              echo "  ✓ $slug (type: $note_type, tags: ${tags:-none})"
             done < <(find "content/${lang}/notes" -name "*.md" -type f)
 
             # Step 2: Collect all wikilinks
@@ -497,13 +500,15 @@ jobs:
 
               # Output nodes
               first=true
-              sort "$temp_meta" 2>/dev/null | while IFS='|' read -r slug title category note_type; do
+              sort "$temp_meta" 2>/dev/null | while IFS='|' read -r slug title category note_type tags; do
                 [ -z "$slug" ] && continue
                 [[ "$first" == true ]] || echo ","
                 # Escape quotes in title
                 title_esc="${title//\"/\\\"}"
-                printf '    {"id": "%s", "label": "%s", "category": "%s", "type": "%s", "url": "%s.html"}' \
-                  "$slug" "$title_esc" "$category" "$note_type" "$slug"
+                # Escape quotes in tags
+                tags_esc="${tags//\"/\\\"}"
+                printf '    {"id": "%s", "label": "%s", "category": "%s", "type": "%s", "tags": "%s", "url": "%s.html"}' \
+                  "$slug" "$title_esc" "$category" "$note_type" "$tags_esc" "$slug"
                 first=false
               done
 

@@ -19,7 +19,8 @@
   let isInitialized = false;
   let activeFilters = {
     types: new Set(),
-    categories: new Set()
+    categories: new Set(),
+    tags: new Set()
   };
 
   // Get current note slug from URL
@@ -65,6 +66,10 @@
       allNodes.forEach(node => {
         activeFilters.types.add(node.type);
         if (node.category) activeFilters.categories.add(node.category);
+        if (node.tags) {
+          const tagList = node.tags.split(';').map(t => t.trim()).filter(Boolean);
+          tagList.forEach(tag => activeFilters.tags.add(tag));
+        }
       });
 
       createFilterUI();
@@ -152,6 +157,40 @@
       });
     }
 
+    // Tag filters
+    const tags = [...new Set(allNodes.flatMap(n => {
+      if (!n.tags) return [];
+      return n.tags.split(';').map(t => t.trim()).filter(Boolean);
+    }))].sort();
+    if (tags.length > 0) {
+      const tagLabel = document.createElement('div');
+      tagLabel.style.cssText = 'font-size: 11px; font-weight: bold; margin-top: 8px; margin-bottom: 6px;';
+      tagLabel.textContent = 'Tags:';
+      filterSection.appendChild(tagLabel);
+
+      tags.forEach(tag => {
+        const label = document.createElement('label');
+        label.style.cssText = 'display: flex; align-items: center; font-size: 10px; margin-bottom: 4px; cursor: pointer;';
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.checked = true;
+        checkbox.style.cssText = 'margin-right: 6px; cursor: pointer;';
+        checkbox.addEventListener('change', () => {
+          if (checkbox.checked) {
+            activeFilters.tags.add(tag);
+          } else {
+            activeFilters.tags.delete(tag);
+          }
+          updateGraph();
+        });
+
+        label.appendChild(checkbox);
+        label.appendChild(document.createTextNode(tag));
+        filterSection.appendChild(label);
+      });
+    }
+
     legend.appendChild(filterSection);
   }
 
@@ -159,10 +198,22 @@
    * Filter nodes and links based on active filters
    */
   function getFilteredData() {
-    const filteredNodes = allNodes.filter(node =>
-      activeFilters.types.has(node.type) &&
-      (!node.category || activeFilters.categories.has(node.category))
-    );
+    const filteredNodes = allNodes.filter(node => {
+      // Check type filter
+      if (!activeFilters.types.has(node.type)) return false;
+
+      // Check category filter
+      if (node.category && !activeFilters.categories.has(node.category)) return false;
+
+      // Check tag filter - node must have at least one active tag if tags are filtered
+      if (activeFilters.tags.size > 0 && node.tags) {
+        const nodeTags = node.tags.split(';').map(t => t.trim()).filter(Boolean);
+        const hasActiveTags = nodeTags.some(tag => activeFilters.tags.has(tag));
+        if (!hasActiveTags) return false;
+      }
+
+      return true;
+    });
 
     const filteredNodeIds = new Set(filteredNodes.map(n => n.id));
     const filteredLinks = allLinks.filter(link =>
