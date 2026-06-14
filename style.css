@@ -88,9 +88,7 @@ ol li::before {
 }
 
 em {
-  color: var(--accent);
-  font-style: normal;
-  font-size: 0.9rem;
+  font-style: italic;
 }
 
 blockquote {
