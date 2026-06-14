@@ -294,11 +294,12 @@ jobs:
               echo "<p><a class=\"nav-back\" href=\"index.html\">&larr; Back</a></p>"
             } > _note_nav.html
 
-            # Footer: created · modified · version
+            # Footer: created · modified · version + RSS link
             footer_text=""
             [ -n "$note_created" ] && footer_text="$note_created"
             [ -n "$note_modified" ] && footer_text="${footer_text:+${footer_text} &middot; modified ${note_modified}}"
             [ -n "$note_version" ] && footer_text="${footer_text:+${footer_text} &middot; }${note_version}"
+            footer_text="${footer_text:+${footer_text} &middot; }<a href=\"feed.xml\" class=\"rss-link\" title=\"Subscribe to RSS feed\">📡 RSS</a>"
             echo "<footer class=\"note-footer\"><small>${footer_text}</small></footer>" > _note_footer.html
             echo '<script src="../sidenotes.js"></script>' >> _note_footer.html
 
@@ -365,6 +366,7 @@ jobs:
             [ -n "$note_created" ] && footer_text="$note_created"
             [ -n "$note_modified" ] && footer_text="${footer_text:+${footer_text} &middot; geändert ${note_modified}}"
             [ -n "$note_version" ] && footer_text="${footer_text:+${footer_text} &middot; }${note_version}"
+            footer_text="${footer_text:+${footer_text} &middot; }<a href=\"feed.xml\" class=\"rss-link\" title=\"RSS Feed abonnieren\">📡 RSS</a>"
             echo "<footer class=\"note-footer\"><small>${footer_text}</small></footer>" > _note_footer.html
             echo '<script src="../sidenotes.js"></script>' >> _note_footer.html
 
