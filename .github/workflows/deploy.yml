@@ -29,7 +29,8 @@ jobs:
           cp style.css _site/style.css
           [ -d images ] && cp -r images _site/images
           cp sidenotes.js _site/sidenotes.js
-          cp graph-init.js _site/graph-init.js
+          cp graph-init.js _site/en/graph-init.js
+          cp graph-init.js _site/de/graph-init.js
 
           # ── Helpers ────────────────────────────────────────────────────────
 
