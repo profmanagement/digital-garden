@@ -1,8 +1,8 @@
 ---
 title: "Beyond the Filing Cabinet: Do Organisation Methods Actually Solve the Retrieval Paradox?"
-description: "Testing whether PKM organisation methods address the encoding–retrieval gap or support recognition over navigation."
+description: Testing whether PKM organisation methods address the encoding–retrieval gap or support recognition over navigation.
 author: Maik
-written_by: 100% human
+written_by: 60% human
 status: published
 type: growing
 category: PKM
@@ -55,11 +55,11 @@ It turns out: Most of them, it turns out, do neither. Most organisation approach
 
 ## How to make sense of the table
 
-There's a gradient running top to bottom, and it's the whole argument. The methods at the top (LATCH, Johnny.Decimal, PARA, etc.) are **filing systems**: they optimise navigation through structuring that work as presets in our (human) brains. They are very good at reducing clutter and making it easier to decide where something belongs. They solve an organizational problem, but not the deeper problem raised by the retrieval paradox. Reorganising storage cannot close a gap that lives between my past-me's encoding and present-me's cue.
+There is a gradient running top to bottom, and it is the whole argument. The methods at the top (LATCH, Johnny.Decimal, PARA, etc.) are **filing systems**: they optimise navigation through structuring that work as presets in our (human) brains. They are very good at reducing clutter and making it easier to decide where something belongs. They solve an organisational problem, but not the deeper problem raised by the retrieval paradox. Reorganising storage cannot close a gap that lives between my past-me's encoding and present-me's cue.
 
-The methods improve precisely as they stop being filing cabinets and start being **surfacing layers**. MOCs and Zettelkasten earn their ◐ marks not because they're better-organised but because they help us to re-expose us to the notes we have created before: a *MOC* by being a browsable overview and a *Zettelkasten* by making link-following an act of rediscovery. They convert some navigation into recognition. But both still depend on my effort and capacity to remember the exact entry point. Speaking with a metaphor: They turn down the noise, but they do not make the signal clear.
+The methods improve precisely as they stop being filing cabinets and start being **surfacing layers**. MOCs and Zettelkasten earn their ◐ marks not because they are better-organised but because they help us to re-expose us to the notes we have created before: a *MOC* by being a browsable overview and a *Zettelkasten* by making link-following an act of rediscovery. They convert some navigation into recognition. But both still depend on my effort and capacity to remember the exact entry point. Speaking with a metaphor: They turn down the noise, but they do not make the signal clear.
 
-Only the last row addresses both columns at once, and not by coincidence: semantic search relaxes Tulving's matching requirement directly. Retrieval cue and encoding cue no longer have to be the "same words", only close in meaning. And proactive resurfacing, e.g., related-note nudges, daily re-exposure, or RAG that brings in notes I did not ask for, is the first thing on the list that can answer the question the paradox actually poses: *what might be useful to remember right now?*
+Only the last row addresses both columns at once, and not by coincidence: semantic search relaxes Tulving and Thompson's (1973) matching requirement directly. Retrieval cue and encoding cue no longer have to be the "same words", only close in meaning. And proactive resurfacing, e.g., related-note nudges, daily re-exposure, or RAG that brings in notes I did not ask for, is the first thing on the list that can answer the question the paradox actually poses: *what might be useful to remember right now?*
 
 ## A cautious conclusion
 
