@@ -1,12 +1,12 @@
 {
   "nodes": [
-    {"id": "20260331_PKM-Summit-2026-Reflexionen", "label": "PKM Summit 2026: Wenn Notizen zur Lebensphilosophie werden", "category": "PKM", "type": "seedling", "url": "20260331_PKM-Summit-2026-Reflexionen.html"},
-    {"id": "20260410_vom-wiki-llm-zum-reasoning-linter", "label": "Vom wiki LLM zum Reasoning-Linter: Discourse Maps und Claimprüfung in meinem Setup", "category": "PKM", "type": "seedling", "url": "20260410_vom-wiki-llm-zum-reasoning-linter.html"},
-    {"id": "20260502_wikipedia-projekt-pkm", "label": "Neues WikiProjekt für Personal Knowledge Management auf Wikipedia", "category": "PKM", "type": "seedling", "url": "20260502_wikipedia-projekt-pkm.html"},
-    {"id": "20260510_everything-claude-code", "label": "Auf dem Weg zu einem Agentic OS — Erste Schritte mit dem Everything Claude Code Repo", "category": "KI", "type": "seedling", "url": "20260510_everything-claude-code.html"},
-    {"id": "20260517_discourse-graph-pdf-synthesisierung", "label": "Wissenssynthese aus PDFs: Discourse Graph & strukturiertes Parsing mit Claude Code", "category": "Forschung", "type": "seedling", "url": "20260517_discourse-graph-pdf-synthesisierung.html"},
-    {"id": "20260607_das-retrieval-paradox", "label": "Das Retrieval-Paradox: Warum mich meine Tools for Thought zunehmend frustrieren", "category": "PKM", "type": "seedling", "url": "20260607_das-retrieval-paradox.html"},
-    {"id": "20260614_jenseits-des-aktenschranks", "label": "Jenseits des Aktenschranks: Lösen Organisationsmethoden das Retrieval-Paradox wirklich?", "category": "PKM", "type": "growing", "url": "20260614_jenseits-des-aktenschranks.html"}
+    {"id": "20260331_PKM-Summit-2026-Reflexionen", "label": "PKM Summit 2026: Wenn Notizen zur Lebensphilosophie werden", "category": "PKM", "type": "seedling", "tags": "pkm;digital-garden;konferenz;sensemaking;philosophie", "url": "20260331_PKM-Summit-2026-Reflexionen.html"},
+    {"id": "20260410_vom-wiki-llm-zum-reasoning-linter", "label": "Vom wiki LLM zum Reasoning-Linter: Discourse Maps und Claimprüfung in meinem Setup", "category": "PKM", "type": "seedling", "tags": "wiki-llm;discourse-graph;deep-background;OER;toulmin;linting;PKM;AI", "url": "20260410_vom-wiki-llm-zum-reasoning-linter.html"},
+    {"id": "20260502_wikipedia-projekt-pkm", "label": "Neues WikiProjekt für Personal Knowledge Management auf Wikipedia", "category": "PKM", "type": "seedling", "tags": "pkm;wikipedia;offenes-wissen;zettelkasten", "url": "20260502_wikipedia-projekt-pkm.html"},
+    {"id": "20260510_everything-claude-code", "label": "Auf dem Weg zu einem Agentic OS — Erste Schritte mit dem Everything Claude Code Repo", "category": "KI", "type": "seedling", "tags": "claude-code;ki-werkzeuge;pkm;software-entwicklung;workflows", "url": "20260510_everything-claude-code.html"},
+    {"id": "20260517_discourse-graph-pdf-synthesisierung", "label": "Wissenssynthese aus PDFs: Discourse Graph & strukturiertes Parsing mit Claude Code", "category": "Forschung", "type": "seedling", "tags": "knowledge-management;ai;research;grounded-theory;discourse-graph;llm;claude-code", "url": "20260517_discourse-graph-pdf-synthesisierung.html"},
+    {"id": "20260607_das-retrieval-paradox", "label": "Das Retrieval-Paradox: Warum mich meine Tools for Thought zunehmend frustrieren", "category": "PKM", "type": "seedling", "tags": "knowledge-management;tools-for-thought;pkm;retrieval;memory;encoding-specificity", "url": "20260607_das-retrieval-paradox.html"},
+    {"id": "20260614_jenseits-des-aktenschranks", "label": "Jenseits des Aktenschranks: Lösen Organisationsmethoden das Retrieval-Paradox wirklich?", "category": "PKM", "type": "growing", "tags": "retrieval-paradox;pkm;organisation;encoding-specificity;semantic-search;zettelkasten;latch;para;johnny-decimal", "url": "20260614_jenseits-des-aktenschranks.html"}
   ],
   "links": [
     {"source": "20260510_everything-claude-code", "target": "20260410_vom-wiki-llm-zum-reasoning-linter"},
