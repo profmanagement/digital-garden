@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Maik" />
+  <meta name="description" content="Testing whether PKM organisation methods address the encoding–retrieval gap or support recognition over navigation." />
+  <title>Beyond the Filing Cabinet: Do Organisation Methods Actually Solve the Retrieval Paradox?</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">
+</head>
+<body>
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html">🪴 Digital Garden</a>
+  <span class="nav-links">
+    <a href="index.html">HOME</a>
+    <span class="nav-sep">|</span>
+    <a href="about.html">ABOUT</a>
+  </span>
+  <span class="nav-right">
+    <span class="nav-lang"><a href="20260614_beyond-filing-cabinet.html">EN</a> &middot; <a href="../de/index.html">DE</a></span>
+    <a class="nav-search" href="search.html">&#x1F50D;</a>
+  </span>
+</nav>
+<p><a class="nav-back" href="index.html">&larr; Back</a></p>
+<h2 id="where-the-last-post-left-off">Where the last post left off</h2>
+<p>In my last note about the <a href="https://profmanagement.github.io/digital-garden/en/20260607_the-retrieval-paradox.html">The Retrieval Paradox</a>, I argued that the uncertainty in my PKM and second brain does not lie in storage, meaning that the notes are still available where they should be, but in the gap between the way I encoded a note in the past and the way I try to retrieve it in the present. Tulving and Thompson’s (1973) encoding specificity principle says retrieval succeeds when present cues simply resemble the cues that were present at encoding. It often happens that, months later, my cues have changed, so the note stays <em>available but not accessible</em>. And I made one further claim that matters here: links solve <strong>navigation</strong> (getting from a known note to another known note), but the paradox lives one step earlier, in <strong>recognition</strong> — realising that a relevant note exists at all.</p>
+<p>After discussion, a dear colleague suggested I have a look at the <strong>LATCH method</strong> as a possible future pathway to solve this issue. That intrigued me to do a little research on PKM organisation schemes. This post is the result, but not in the sense of “here are five ways to better organise your life,” but as a test. An organisation method only addresses <em>my</em> retrieval paradox if it does at least one of two things — <em>bridge the encoding–retrieval gap</em>, or <em>support recognition</em> rather than mere navigation.</p>
+<ol type="1">
+<li><strong>Encoding–retrieval match</strong> — Does the method help when my <em>present</em> search cue differs from the <em>past</em> term, tag, or context I filed under? Or does it assume I already remember the dimension I stored it on?</li>
+<li><strong>Recognition vs. navigation</strong> — Does the method help me <em>realise a forgotten note exists</em> (recognition / recall)? Or does it only help me <em>travel</em> efficiently once I already know what I’m looking for (navigation)?</li>
+</ol>
+<p>It turns out: Most of them, it turns out, do neither. Most organisation approaches are build for something different. Some are storage architectures wearing only the costume of a retrieval solution.</p>
+<h2 id="the-comparison">The comparison</h2>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 26%" />
+<col style="width: 26%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Approach</th>
+<th>Organises by</th>
+<th style="text-align: center;">Encoding–retrieval match</th>
+<th style="text-align: center;">Recognition vs. navigation</th>
+<th>Verdict against the paradox</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>LATCH</strong> (Wurman) — Location, Alphabet, Time, Category, Hierarchy</td>
+<td>A fixed, finite axis chosen at filing time</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">○</td>
+<td>A storage grammar, not a recall aid. Assumes I remember <em>which</em> axis and <em>which</em> value. Only <em>Time</em> has mild episodic value (“I noted this around spring”).</td>
+</tr>
+<tr class="even">
+<td><strong>Johnny.Decimal</strong></td>
+<td>A numeric address (10 areas × 10 categories)</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">○</td>
+<td>The purest navigation scheme: “two clicks away.” A decimal ID carries zero content cue. Brilliant for not getting lost; useless for remembering something exists.</td>
+</tr>
+<tr class="odd">
+<td><strong>PARA</strong> (Forte) — Projects, Areas, Resources, Archives</td>
+<td>Actionability, not topic</td>
+<td style="text-align: center;">◐</td>
+<td style="text-align: center;">○</td>
+<td>Current-project material surfaces because it’s in active attention. But <em>Resources</em> and <em>Archives</em> are exactly the fog the paradox describes — filed by past usefulness, not present cue.</td>
+</tr>
+<tr class="even">
+<td><strong>Tags / folksonomy</strong></td>
+<td>Keywords chosen at encoding</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">○</td>
+<td>This <em>is</em> the paradox in miniature: the tag freezes my past vocabulary. If present-me reaches for a different word, the tag is invisible.</td>
+</tr>
+<tr class="odd">
+<td><strong>MOCs</strong> (Milo / LYT) — Maps of Content</td>
+<td>Curated topic “hubs” you revisit</td>
+<td style="text-align: center;">◐</td>
+<td style="text-align: center;">◐</td>
+<td>Opening a MOC re-exposes me to everything under a theme — genuine recognition support. But a note on no MOC stays lost, and I still have to remember the MOC exists.</td>
+</tr>
+<tr class="even">
+<td><strong>Zettelkasten</strong> (Luhmann)</td>
+<td>Emergent links between atomic notes</td>
+<td style="text-align: center;">◐</td>
+<td style="text-align: center;">◐</td>
+<td>The “communication partner”: following links surfaces relationships I didn’t plan — recognition as a side effect. But only <em>once I’m already navigating from an entry point</em>; it surfaces near neighbours, not distant strangers.</td>
+</tr>
+<tr class="odd">
+<td><strong>Semantic / AI surfacing</strong> (embeddings, RAG, related-note suggestion)</td>
+<td>Meaning, plus proactive resurfacing</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td>The only approach aimed squarely at the gap: it matches on <em>meaning</em>, so a present query in different words still finds the past note — and paired with automatic surfacing it can tell me a note exists before I recall it.</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note:</em> This comparison table was produced by Claude (Cowork mode, Opus 4.8) at my direction after analysing the references mentioned below; the scoring lens, framing, and conclusions are mine. The model gathered the source material and applied the two evaluation criteria I defined.</p>
+<p><em>Legend:</em> ● strong · ◐ partial · ○ weak / by design doesn’t address it.</p>
+<h2 id="how-to-make-sense-of-the-table">How to make sense of the table</h2>
+<p>There is a gradient running top to bottom, and it is the whole argument. The methods at the top (LATCH, Johnny.Decimal, PARA, etc.) are <strong>filing systems</strong>: they optimise navigation through structuring that work as presets in our (human) brains. They are very good at reducing clutter and making it easier to decide where something belongs. They solve an organisational problem, but not the deeper problem raised by the retrieval paradox. Reorganising storage cannot close a gap that lives between my past-me’s encoding and present-me’s cue.</p>
+<p>The methods improve precisely as they stop being filing cabinets and start being <strong>surfacing layers</strong>. MOCs and Zettelkasten earn their ◐ marks not because they are better-organised but because they help us to re-expose us to the notes we have created before: a <em>MOC</em> by being a browsable overview and a <em>Zettelkasten</em> by making link-following an act of rediscovery. They convert some navigation into recognition. But both still depend on my effort and capacity to remember the exact entry point. Speaking with a metaphor: They turn down the noise, but they do not make the signal clear.</p>
+<p>Only the last row addresses both columns at once, and not by coincidence: semantic search relaxes Tulving and Thompson’s (1973) matching requirement directly. Retrieval cue and encoding cue no longer have to be the “same words”, only close in meaning. And proactive resurfacing, e.g., related-note nudges, daily re-exposure, or RAG that brings in notes I did not ask for, is the first thing on the list that can answer the question the paradox actually poses: <em>what might be useful to remember right now?</em></p>
+<h2 id="a-cautious-conclusion">A cautious conclusion</h2>
+<p>Two caveats, because I do not want this to read as a critique that’s secretly an ad for AI. <em>First</em>, the filing methods are not useless against the retrieval paradox. A smaller, well-bounded haystack makes every other technique work better, and LATCH’s time axis quietly leans on episodic memory, the one cue that tends to survive even when my vocabulary changes. <em>Second</em>, semantic surfacing has its own ways of failing. It still usually waits for me to ask a question. It will hand me the plausibly relevant when I needed the actually relevant. And “the answer is in your notes” is precisely the trust I said I had lost; automation that’s confidently wrong burns through it faster than a bad tag ever did. So I am not claiming AI retrieval is the fix. The fix, whatever it turns out to be, lives in the recollection column, not in a tidier “cabinet”. Maybe what comes after PKM is not a better second brain at all. Maybe it is one that occasionally taps me on the shoulder. That, too, is noted for another piece.</p>
+<h2 id="related">Related</h2>
+<p>This is a sequel to <a href="https://profmanagement.github.io/digital-garden/en/20260607_the-retrieval-paradox.html">The Retrieval Paradox</a></p>
+<h2 id="references">References</h2>
+<p>Ahrens, S. (2017). <em>How to take smart notes: One simple technique to boost writing, learning and thinking – for students, academics and nonfiction book writers</em>. CreateSpace.</p>
+<p>Anthropic. (2024, September 19). <em>Introducing contextual retrieval</em>. https://www.anthropic.com/news/contextual-retrieval</p>
+<p>Forte, T. (2023). <em>The PARA method: Simplify, organize, and master your digital life</em>. Atria Books.</p>
+<p>Godden, D. R., &amp; Baddeley, A. D. (1975). Context-dependent memory in two natural environments: On land and underwater. <em>British Journal of Psychology, 66</em>(3), 325–331. https://doi.org/10.1111/j.2044-8295.1975.tb01468.x</p>
+<p>Johnny.Decimal. (n.d.). <em>A system to organise your life</em>. Retrieved June 14, 2026, from https://johnnydecimal.com/</p>
+<p>Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., Küttler, H., Lewis, M., Yih, W., Rocktäschel, T., Riedel, S., &amp; Kiela, D. (2020). Retrieval-augmented generation for knowledge-intensive NLP tasks. In H. Larochelle, M. Ranzato, R. Hadsell, M. F. Balcan, &amp; H. Lin (Eds.), <em>Advances in neural information processing systems</em> (Vol. 33, pp. 9459–9474). Curran Associates.</p>
+<p>Luhmann, N. (1981). Kommunikation mit Zettelkästen: Ein Erfahrungsbericht. In H. Baier, H. M. Kepplinger, &amp; K. Reumann (Eds.), <em>Öffentliche Meinung und sozialer Wandel / Public opinion and social change</em> (pp. 222–228). Westdeutscher Verlag.</p>
+<p>Milo, N. (n.d.). <em>MOCs overview</em>. Linking Your Thinking. Retrieved June 14, 2026, from https://notes.linkingyourthinking.com/Cards/MOCs+Overview</p>
+<p>Tulving, E., &amp; Pearlstone, Z. (1966). Availability versus accessibility of information in memory for words. <em>Journal of Verbal Learning and Verbal Behavior, 5</em>(4), 381–391. https://doi.org/10.1016/S0022-5371(66)80048-8</p>
+<p>Tulving, E., &amp; Thomson, D. M. (1973). Encoding specificity and retrieval processes in episodic memory. <em>Psychological Review, 80</em>(5), 352–373. https://doi.org/10.1037/h0020071</p>
+<p>Wurman, R. S. (1989). <em>Information anxiety</em>. Doubleday.</p>
+<footer class="note-footer"><small>2026-06-14 &middot; modified 2026-06-14 &middot; v01 &middot; <a href="feed.xml" class="rss-link" title="Subscribe to RSS feed">📡 RSS</a> <span class="graph-toggle"><button id="graph-btn" class="graph-btn" title="Show knowledge graph">📊 Graph</button></span></small></footer>
+<div id="graph-modal" class="graph-modal"><div class="graph-container"><div id="graph-network"></div><div class="graph-legend"><p><span class="legend-dot legend-seedling">●</span> Seedling</p><p><span class="legend-dot legend-growing">●</span> Growing</p><p><span class="legend-dot legend-evergreen">●</span> Evergreen</p></div><button id="graph-close" class="graph-close" title="Close graph">✕</button></div></div>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<script src="../graph-init.js"></script>
+<script src="../sidenotes.js"></script>
+</body>
+</html>
