@@ -78,22 +78,22 @@ Dies ist eine Fortsetzung zum [Retrieval-Paradox](https://profmanagement.github.
 
 Ahrens, S. (2017). *How to take smart notes: One simple technique to boost writing, learning and thinking – for students, academics and nonfiction book writers*. CreateSpace.
 
-Anthropic. (2024, 19. September). *Introducing contextual retrieval*. https://www.anthropic.com/news/contextual-retrieval
+Anthropic. (2024, 19. September). *Introducing contextual retrieval*. [https://www.anthropic.com/news/contextual-retrieval](https://www.anthropic.com/news/contextual-retrieval)
 
 Forte, T. (2023). *The PARA method: Simplify, organize, and master your digital life*. Atria Books.
 
-Godden, D. R., & Baddeley, A. D. (1975). Context-dependent memory in two natural environments: On land and underwater. *British Journal of Psychology, 66*(3), 325–331. https://doi.org/10.1111/j.2044-8295.1975.tb01468.x
+Godden, D. R., & Baddeley, A. D. (1975). Context-dependent memory in two natural environments: On land and underwater. *British Journal of Psychology, 66*(3), 325–331. [https://doi.org/10.1111/j.2044-8295.1975.tb01468.x](https://doi.org/10.1111/j.2044-8295.1975.tb01468.x)
 
-Johnny.Decimal. (n.d.). *A system to organise your life*. Abgerufen am 14. Juni 2026, von https://johnnydecimal.com/
+Johnny.Decimal. (n.d.). *A system to organise your life*. Abgerufen am 14. Juni 2026, von [https://johnnydecimal.com/](https://johnnydecimal.com/)
 
 Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., Küttler, H., Lewis, M., Yih, W., Rocktäschel, T., Riedel, S., & Kiela, D. (2020). Retrieval-augmented generation for knowledge-intensive NLP tasks. In H. Larochelle, M. Ranzato, R. Hadsell, M. F. Balcan, & H. Lin (Eds.), *Advances in neural information processing systems* (Vol. 33, pp. 9459–9474). Curran Associates.
 
 Luhmann, N. (1981). Kommunikation mit Zettelkästen: Ein Erfahrungsbericht. In H. Baier, H. M. Kepplinger, & K. Reumann (Eds.), *Öffentliche Meinung und sozialer Wandel / Public opinion and social change* (pp. 222–228). Westdeutscher Verlag.
 
-Milo, N. (n.d.). *MOCs overview*. Linking Your Thinking. Abgerufen am 14. Juni 2026, von https://notes.linkingyourthinking.com/Cards/MOCs+Overview
+Milo, N. (n.d.). *MOCs overview*. Linking Your Thinking. Abgerufen am 14. Juni 2026, von [https://notes.linkingyourthinking.com/Cards/MOCs+Overview](https://notes.linkingyourthinking.com/Cards/MOCs+Overview)
 
-Tulving, E., & Pearlstone, Z. (1966). Availability versus accessibility of information in memory for words. *Journal of Verbal Learning and Verbal Behavior, 5*(4), 381–391. https://doi.org/10.1016/S0022-5371(66)80048-8
+Tulving, E., & Pearlstone, Z. (1966). Availability versus accessibility of information in memory for words. *Journal of Verbal Learning and Verbal Behavior, 5*(4), 381–391. [https://doi.org/10.1016/S0022-5371(66)80048-8](https://doi.org/10.1016/S0022-5371(66)80048-8)
 
-Tulving, E., & Thomson, D. M. (1973). Encoding specificity and retrieval processes in episodic memory. *Psychological Review, 80*(5), 352–373. https://doi.org/10.1037/h0020071
+Tulving, E., & Thomson, D. M. (1973). Encoding specificity and retrieval processes in episodic memory. *Psychological Review, 80*(5), 352–373. [https://doi.org/10.1037/h0020071](https://doi.org/10.1037/h0020071)
 
 Wurman, R. S. (1989). *Information anxiety*. Doubleday.

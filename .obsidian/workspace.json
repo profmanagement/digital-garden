@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/de/notes/20260614_jenseits-des-aktenschranks.md",
+                "file": "content/en/notes/20260614_beyond-filing-cabinet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20260614_jenseits-des-aktenschranks"
+              "title": "20260614_beyond-filing-cabinet"
             }
           }
         ]
@@ -207,8 +207,8 @@
   },
   "active": "594d0f8412cba6ff",
   "lastOpenFiles": [
-    "content/en/notes/20260614_beyond-filing-cabinet.md",
     "content/de/notes/20260614_jenseits-des-aktenschranks.md",
+    "content/en/notes/20260614_beyond-filing-cabinet.md",
     "content/en/notes/20260607_the-retrieval-paradox.md",
     "content/de/notes/20260607_das-retrieval-paradox.md",
     "content/de/notes/20260517_discourse-graph-pdf-synthesisierung.md",
