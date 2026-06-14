@@ -1,9 +1,11 @@
 # Project Index
 
 ## Active Tasks
+- [ ] TASK-001: Implement Graph View (wikilink visualization)
 - [ ] TASK-013: Blogpost — Discourse Graph & PDF-Synthesisierung (DE ✓ | EN ✓)
 
 ## Completed Tasks (recent)
+- [x] DONE-002: Generate RSS Feeds (EN + DE)
 - [x] DONE-012: Kurzbeitrag — Everything Claude Code (DE + EN)
 - [x] DONE-011: Sidenotes — Fußnoten als Randnotizen
 - [x] DONE-010: Switch second language NL → DE
@@ -25,6 +27,8 @@
 - [x] DONE-011: Sidenotes — Fußnoten als Randnotizen
 
 ## Documents
+- [PRD-001: Graph View + RSS Feed](01_PRD/PRD-001_20260614_graph-and-rss_v01.md)
+- [DONE-002: Generate RSS Feeds](03_DONE/DONE-002_20260614_generate-rss-feeds_v01.md)
 - [PRD-01: Digital Garden](01_PRD/PRD-01_20260321_digital-garden_v01.md)
 - [MANUAL-01: Setup guide for replication](MANUAL-01_20260321_digital-garden-setup_v02.md)
 - [RETRO-01: Launch retrospective](04_RETRO/RETRO-01_20260321_digital-garden-launch_v01.md)
