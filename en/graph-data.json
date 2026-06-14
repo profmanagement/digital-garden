@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {"id": "20260331_pkm-summit-2026-reflections", "label": "PKM Summit 2026: When Note-Taking Becomes Life Philosophy", "category": "PKM", "type": "seedling", "url": "20260331_pkm-summit-2026-reflections.html"},
+    {"id": "20260410_from-wiki-llm-to-reasoning-linter", "label": "From wiki LLM to reasoning linter: adding discourse maps and claim checking to my setup", "category": "PKM", "type": "seedling", "url": "20260410_from-wiki-llm-to-reasoning-linter.html"},
+    {"id": "20260502_wikipedia-project-pkm", "label": "New WikiProject for Personal Knowledge Management on Wikipedia", "category": "PKM", "type": "seedling", "url": "20260502_wikipedia-project-pkm.html"},
+    {"id": "20260510_everything-claude-code", "label": "On the Way to an Agentic OS — First Steps with the Everything Claude Code Repo", "category": "AI", "type": "seedling", "url": "20260510_everything-claude-code.html"},
+    {"id": "20260517_discourse-graph-pdf-synthesis", "label": "Knowledge Synthesis from PDFs: Discourse Graph & Structured Parsing with Claude Code", "category": "Research", "type": "seedling", "url": "20260517_discourse-graph-pdf-synthesis.html"},
+    {"id": "20260607_the-retrieval-paradox", "label": "The Retrieval Paradox: Why My Own Tools for Thought Increasingly Frustrate Me", "category": "PKM", "type": "seedling", "url": "20260607_the-retrieval-paradox.html"}
+  ],
+  "links": [
+
+  ]
+}
