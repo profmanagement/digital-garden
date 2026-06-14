@@ -420,7 +420,7 @@ jobs:
           # Generate RSS for a language
           generate_rss() {
             local lang="$1"
-            local base_url="https://cooltunes.github.io/digital-garden"
+            local base_url="https://profmanagement.github.io/digital-garden"
             local feed_file="_site/${lang}/feed.xml"
 
             echo "Generating RSS for $lang..."
