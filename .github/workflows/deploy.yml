@@ -166,6 +166,9 @@ jobs:
           awk '/<h2 id="notes">/{print; while((getline line < "_notes_listing_en.html") > 0) print line; close("_notes_listing_en.html"); next}1' \
             _site/en/index.html > _tmp.html && mv _tmp.html _site/en/index.html
 
+          # Inject RSS footer at end of body
+          sed -i '/<\/body>/i\  <footer class="site-footer"><a href="feed.xml" class="footer-rss" title="Subscribe to RSS feed">📡 RSS</a></footer>' _site/en/index.html
+
           # ── German homepage → _site/de/index.html ──────────────────────────
           {
             echo '<nav class="site-nav">'
@@ -200,6 +203,9 @@ jobs:
           # Inject notes listing right after <h2 id="notizen"> (awk one-liner)
           awk '/<h2 id="notizen">/{print; while((getline line < "_notes_listing_de.html") > 0) print line; close("_notes_listing_de.html"); next}1' \
             _site/de/index.html > _tmp.html && mv _tmp.html _site/de/index.html
+
+          # Inject RSS footer at end of body
+          sed -i '/<\/body>/i\  <footer class="site-footer"><a href="feed.xml" class="footer-rss" title="RSS Feed abonnieren">📡 RSS</a></footer>' _site/de/index.html
 
           # ── English pages (about, search) → _site/en/ ────────────────────
           # Language switcher links to the same slug in the DE folder.
