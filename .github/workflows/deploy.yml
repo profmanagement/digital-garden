@@ -158,9 +158,11 @@ jobs:
             --lua-filter .pandoc/wikilinks.lua \
             -o _site/en/index.html
 
-          # Inject feed discovery link + graph button into <head> and nav
+          # Inject feed discovery link into <head>
           sed -i '/<\/head>/i\  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">' _site/en/index.html
-          sed -i '/<span class="nav-right">/i\    <button id="graph-btn" class="graph-btn" title="Show knowledge graph">📊 Graph</button>' _site/en/index.html
+
+          # Inject graph button inside <span class="nav-right"> (after opening tag)
+          sed -i '/<span class="nav-right">/a\    <button id="graph-btn" class="graph-btn" title="Show knowledge graph">📊 Graph</button>' _site/en/index.html
 
           # Inject notes listing right after <h2 id="notes"> (awk one-liner)
           awk '/<h2 id="notes">/{print; while((getline line < "_notes_listing_en.html") > 0) print line; close("_notes_listing_en.html"); next}1' \
@@ -196,9 +198,11 @@ jobs:
             --lua-filter .pandoc/wikilinks.lua \
             -o _site/de/index.html
 
-          # Inject feed discovery link + graph button into <head> and nav
+          # Inject feed discovery link into <head>
           sed -i '/<\/head>/i\  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">' _site/de/index.html
-          sed -i '/<span class="nav-right">/i\    <button id="graph-btn" class="graph-btn" title="Wissensgraph anzeigen">📊 Graph</button>' _site/de/index.html
+
+          # Inject graph button inside <span class="nav-right"> (after opening tag)
+          sed -i '/<span class="nav-right">/a\    <button id="graph-btn" class="graph-btn" title="Wissensgraph anzeigen">📊 Graph</button>' _site/de/index.html
 
           # Inject notes listing right after <h2 id="notizen"> (awk one-liner)
           awk '/<h2 id="notizen">/{print; while((getline line < "_notes_listing_de.html") > 0) print line; close("_notes_listing_de.html"); next}1' \
