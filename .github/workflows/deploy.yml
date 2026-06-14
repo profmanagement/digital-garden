@@ -310,12 +310,12 @@ jobs:
               echo "<p><a class=\"nav-back\" href=\"index.html\">&larr; Back</a></p>"
             } > _note_nav.html
 
-            # Footer: created · modified · version + RSS link
+            # Footer: created · modified · version + graph button
             footer_text=""
             [ -n "$note_created" ] && footer_text="$note_created"
             [ -n "$note_modified" ] && footer_text="${footer_text:+${footer_text} &middot; modified ${note_modified}}"
             [ -n "$note_version" ] && footer_text="${footer_text:+${footer_text} &middot; }${note_version}"
-            footer_text="${footer_text:+${footer_text} &middot; }<a href=\"feed.xml\" class=\"rss-link\" title=\"Subscribe to RSS feed\">📡 RSS</a> <span class=\"graph-toggle\"><button id=\"graph-btn\" class=\"graph-btn\" title=\"Show knowledge graph\">📊 Graph</button></span>"
+            footer_text="${footer_text:+${footer_text} &middot; }<span class=\"graph-toggle\"><button id=\"graph-btn\" class=\"graph-btn\" title=\"Show knowledge graph\">📊 Graph</button></span>"
             echo "<footer class=\"note-footer\"><small>${footer_text}</small></footer>" > _note_footer.html
             echo '<div id="graph-modal" class="graph-modal"><div class="graph-container"><div id="graph-network"></div><div class="graph-legend"><p><span class="legend-dot legend-seedling">●</span> Seedling</p><p><span class="legend-dot legend-growing">●</span> Growing</p><p><span class="legend-dot legend-evergreen">●</span> Evergreen</p></div><button id="graph-close" class="graph-close" title="Close graph">✕</button></div></div>' >> _note_footer.html
             echo '<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>' >> _note_footer.html
@@ -332,9 +332,6 @@ jobs:
               --include-after-body _note_footer.html \
               --lua-filter .pandoc/wikilinks.lua \
               -o "_site/en/${slug}.html"
-
-            # Inject feed discovery link into <head>
-            sed -i '/<\/head>/i\  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">' "_site/en/${slug}.html"
 
             # Inject category label (before <h1>) and byline (after <h1>)
             byline=""
@@ -385,7 +382,6 @@ jobs:
             [ -n "$note_created" ] && footer_text="$note_created"
             [ -n "$note_modified" ] && footer_text="${footer_text:+${footer_text} &middot; geändert ${note_modified}}"
             [ -n "$note_version" ] && footer_text="${footer_text:+${footer_text} &middot; }${note_version}"
-            footer_text="${footer_text:+${footer_text} &middot; }<a href=\"feed.xml\" class=\"rss-link\" title=\"RSS Feed abonnieren\">📡 RSS</a>"
             echo "<footer class=\"note-footer\"><small>${footer_text}</small></footer>" > _note_footer.html
             echo '<script src="../sidenotes.js"></script>' >> _note_footer.html
 
@@ -399,9 +395,6 @@ jobs:
               --include-after-body _note_footer.html \
               --lua-filter .pandoc/wikilinks.lua \
               -o "_site/de/${slug}.html"
-
-            # Inject feed discovery link into <head>
-            sed -i '/<\/head>/i\  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">' "_site/de/${slug}.html"
 
             byline=""
             [ -n "$author" ] && byline="$author"
