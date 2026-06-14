@@ -54,8 +54,8 @@ Successfully implemented **automatic RSS feed generation** for all languages (EN
 ## How to Subscribe
 
 **Direct URLs:**
-- English: `https://cooltunes.github.io/digital-garden/en/feed.xml`
-- German: `https://cooltunes.github.io/digital-garden/de/feed.xml`
+- English: `https://profmanagement.github.io/digital-garden/en/feed.xml`
+- German: `https://profmanagement.github.io/digital-garden/de/feed.xml`
 
 **Browser auto-discovery:** Feed readers detect `<link rel="alternate">` tags automatically
 
@@ -95,4 +95,17 @@ Test in feed reader (Feedly, Apple News+, etc.)
 
 ---
 
-*Created: 2026-06-14 22:18:00 · v01*
+## Build Fixes
+
+**Issue 1:** sed commands failed on Linux with `\n` escape sequences and macOS `-i ''` syntax.
+- **Solution:** Replaced all 6 feed link injections with Linux-compatible sed insert mode
+- **Commits:** `34b8d1f`, `98dee80`
+
+**Issue 2:** Wrong GitHub Pages domain (hardcoded cooltunes.github.io instead of profmanagement.github.io)
+- **Solution:** Updated base_url in RSS generation function
+- **Commit:** `0779a41`
+
+---
+
+*Created: 2026-06-14 22:18:00 · v01*  
+*Updated: 2026-06-14 22:35:00 · v02*
