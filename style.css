@@ -179,6 +179,15 @@ blockquote p:last-child {
   color: var(--text);
 }
 
+.nav-rss {
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+.nav-rss:hover {
+  color: var(--text);
+}
+
 .nav-back {
   display: inline-block;
   font-size: 0.85rem;
