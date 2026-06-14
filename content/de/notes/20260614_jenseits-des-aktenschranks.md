@@ -26,6 +26,7 @@ modified: 2026-06-14
 version: v01
 ---
 
+# Jenseits des Aktenschranks: Lösen Organisationsmethoden das Retrieval-Paradox wirklich?
 ## Wo der letzte Post endete
 
 In meiner letzten Notiz über das [Retrieval-Paradox](https://profmanagement.github.io/digital-garden/de/20260607_das-retrieval-paradox.html) habe ich argumentiert, dass die Unsicherheit in meinem PKM und meinem „second brain" nicht in der Speicherung liegt – die Notizen sind immer noch dort, wo sie sein sollten – sondern in der Lücke zwischen der Art, wie ich eine Notiz in der Vergangenheit codiert habe, und der Art, wie ich versuche, sie in der Gegenwart abzurufen. Tulving und Thompsons (1973) Encoding-Specificity-Prinzip besagt, dass der Abruf gelingt, wenn aktuelle Hinweise einfach den Hinweisen ähneln, die beim Codieren vorhanden waren. Es kommt oft vor, dass sich meine Hinweise Monate später geändert haben – die Notiz bleibt *verfügbar, aber nicht zugänglich*. Und ich habe noch eine weitere Behauptung gemacht, die hier wichtig ist: Links lösen **Navigation** (von einer bekannten Note zu einer anderen bekannten Note), aber das Paradox lebt einen Schritt früher, bei der **Erkennung** – zu realisieren, dass eine relevante Notiz überhaupt existiert.

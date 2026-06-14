@@ -40,6 +40,10 @@ It turns out: Most of them, it turns out, do neither. Most organisation approach
 
 ## The comparison
 
+**Table 1**
+
+*Assessing PKM Organization Methods in Light of the Retrieval Paradox*
+
 | Approach | Organises by | Encoding–retrieval match | Recognition vs. navigation | Verdict against the paradox |
 |---|---|:---:|:---:|---|
 | **LATCH** (Wurman) — Location, Alphabet, Time, Category, Hierarchy | A fixed, finite axis chosen at filing time | ○ | ○ | A storage grammar, not a recall aid. Assumes I remember *which* axis and *which* value. Only *Time* has mild episodic value ("I noted this around spring"). |
