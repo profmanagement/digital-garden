@@ -183,7 +183,7 @@ jobs:
             -o _site/de/index.html
 
           # Inject feed discovery link into <head>
-          sed -i 's|</head>|  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">\n</head>|' _site/de/index.html
+          sed -i '/<\/head>/i\  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">' _site/de/index.html
 
           # Inject notes listing right after <h2 id="notizen"> (awk one-liner)
           awk '/<h2 id="notizen">/{print; while((getline line < "_notes_listing_de.html") > 0) print line; close("_notes_listing_de.html"); next}1' \
@@ -220,7 +220,7 @@ jobs:
               -o "_site/en/${slug}.html"
 
             # Inject feed discovery link into <head>
-            sed -i '' 's|</head>|  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">\n</head>|' "_site/en/${slug}.html"
+            sed -i '/<\/head>/i\  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">' "_site/en/${slug}.html"
           done
 
           # ── German pages (about, search) → _site/de/ ───────────────────────
@@ -253,7 +253,7 @@ jobs:
               -o "_site/de/${slug}.html"
 
             # Inject feed discovery link into <head>
-            sed -i 's|</head>|  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">\n</head>|' "_site/de/${slug}.html"
+            sed -i '/<\/head>/i\  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">' "_site/de/${slug}.html"
           done
 
           # ── English notes → _site/en/ ────────────────────────────────────
@@ -314,7 +314,7 @@ jobs:
               -o "_site/en/${slug}.html"
 
             # Inject feed discovery link into <head>
-            sed -i '' 's|</head>|  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">\n</head>|' "_site/en/${slug}.html"
+            sed -i '/<\/head>/i\  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">' "_site/en/${slug}.html"
 
             # Inject category label (before <h1>) and byline (after <h1>)
             byline=""
@@ -380,7 +380,7 @@ jobs:
               -o "_site/de/${slug}.html"
 
             # Inject feed discovery link into <head>
-            sed -i 's|</head>|  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">\n</head>|' "_site/de/${slug}.html"
+            sed -i '/<\/head>/i\  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">' "_site/de/${slug}.html"
 
             byline=""
             [ -n "$author" ] && byline="$author"
