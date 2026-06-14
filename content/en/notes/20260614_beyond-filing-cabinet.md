@@ -26,6 +26,7 @@ modified: 2026-06-14
 version: v01
 ---
 
+# Beyond the Filing Cabinet: Do Organisation Methods Actually Solve the Retrieval Paradox?
 ## Where the last post left off
 
 In my last note about the [The Retrieval Paradox](https://profmanagement.github.io/digital-garden/en/20260607_the-retrieval-paradox.html), I argued that the uncertainty in my PKM and second brain does not lie in storage, meaning that the notes are still available where they should be, but in the gap between the way I encoded a note in the past and the way I try to retrieve it in the present. Tulving and Thompson's (1973) encoding specificity principle says retrieval succeeds when present cues simply resemble the cues that were present at encoding. It often happens that, months later, my cues have changed, so the note stays *available but not accessible*. And I made one further claim that matters here: links solve **navigation** (getting from a known note to another known note), but the paradox lives one step earlier, in **recognition** — realising that a relevant note exists at all.
