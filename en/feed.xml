@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Maik's Digital Garden</title>
+    <link>https://profmanagement.github.io/digital-garden/en/index.html</link>
+    <description>Notes on knowledge management, learning, and digital gardening</description>
+    <language>en</language>
+    <item>
+      <title>The Retrieval Paradox: Why My Own Tools for Thought Increasingly Frustrate Me</title>
+      <link>https://profmanagement.github.io/digital-garden/en/20260607_the-retrieval-paradox.html</link>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
+      <author>Maik@example.com (Maik)</author>
+      <category>PKM</category>
+      <description><![CDATA[<h1 id="the-retrieval-paradox-why-my-own-tools-for-thought-increasingly-frustrate-me">The Retrieval Paradox: Why My Own Tools for Thought Increasingly Frustrate Me</h1>
+<p class="note-byline">Maik &middot; 2026-06-07 &middot; 90% human</p>
+<p>Over the past few weeks, I’ve repeatedly grappled with a problem that increasingly angers me. It concerns precisely those tools for thought that are supposed to help me organize knowledge, make connections visible, and keep information available in the long term.</p>
+<p>For years, I have been collecting notes, literature references, quotes, ideas, and observations in digital knowledge systems. Like many other users of Tana, Roam Research, Obsidian, or similar tools for thought, I conscientiously follow the conviction that well-networked knowledge is easier to retrieve later. So I’ve linked notes, assigned tags, created references, and tried to establish connections between atomic notes in the form of relationships.</p>
+<p>Yet I increasingly catch myself having this frustrating thought:</p>
+<blockquote>
+<p>I know that I noted something important about this at some point. But I have no idea anymore how I thought about it back then, under what term, with which tags, and especially in which vault I stored it. Where should I even start to search?</p>
+</blockquote>
+<p>The problem is not that the information or idea has been lost. It’s already located somewhere in my tool for thought. The problem is rather that I can’t search precisely because I can no longer remember the note—because it’s somehow slumbering in the sea of my second brains.</p>
+<p>The larger my knowledge archive grows, the more frequently this uncomfortable feeling arises. And therein lies the paradox: <strong>While the volume of my stored knowledge grows, my confidence in accessing it at the right moment decreases.</strong> Often, for quickly retrievable knowledge, I unconsciously resort to other storage methods, such as browser bookmarks.</p>
+<h2 id="storage-is-not-retrieval">Storage Is Not Retrieval</h2>
+<p>Many personal knowledge management systems and tools for thought are based on the assumption that good links and metadata should make later retrieval easier. The underlying assumptions initially seem plausible:</p>
+<ul>
+<li>Information is stored.</li>
+<li>Information is connected with other information.</li>
+<li>Information can later be retrieved through these connections.</li>
+</ul>
+<p>In practice, however, this only works under one important condition: <strong>I must know what I’m searching for.</strong></p>
+<p>This is exactly where the problem begins.</p>
+<p>Most notes are created in a specific situational context. I read an article, listen to a podcast, work on a publication, or engage with a concrete question. The terms I use to tag the note reflect this context.</p>
+<p>Months later, I encounter a similar problem, but from a completely different perspective. The search terms that come to mind now are different from those I u]]></description>
+      <guid>https://profmanagement.github.io/digital-garden/en/20260607_the-retrieval-paradox.html</guid>
+    </item>
+    <item>
+      <title>Knowledge Synthesis from PDFs: Discourse Graph &amp; Structured Parsing with Claude Code</title>
+      <link>https://profmanagement.github.io/digital-garden/en/20260517_discourse-graph-pdf-synthesis.html</link>
+      <pubDate>Sun, 17 May 2026 00:00:00 +0000</pubDate>
+      <author>Maik@example.com (Maik)</author>
+      <category>Research</category>
+      <description><![CDATA[<h1 id="knowledge-synthesis-from-pdfs-in-the-llm-wiki-discourse-graph-structured-parsing-with-claude-code">Knowledge Synthesis from PDFs in the LLM Wiki: Discourse Graph &amp; Structured Parsing with Claude Code</h1>
+<p class="note-byline">Maik &middot; 2026-05-17 &middot; 95% human</p>
+<h2 id="the-problem-information-overload-in-scientific-papers">The Problem: Information Overload in Scientific Papers</h2>
+<p>When building an “ingest workflow” for scientific papers (PDFs) into my LLM wiki, I realized summaries that contain <strong>everything</strong> are counterproductive. Instead, I needed to extract only genuinely relevant information. The context “clogs” processing, creating enormous noise. Many details in a paper are simply irrelevant to specific research questions, but the model doesn’t know that on its own.</p>
+<p>In the analogue world, the solution is straightforward: linear reading, highlighting, extracting. Time-consuming. Error-prone. Not scalable.</p>
+<p>But there is an approach: extracting information through structured parsing using the <a href="https://discoursegraphs.com/">Discourse Graph</a> methodology.</p>
+<h2 id="the-discourse-graph-a-method-for-structured-knowledge-synthesis">The Discourse Graph: A Method for Structured Knowledge Synthesis</h2>
+<p>The Discourse Graph is not merely an ontological knowledge concept—it’s a practical method for systematically extracting and linking knowledge from unstructured sources. The idea: decompose every text into granular, interconnected units rather than treating it as a monolithic block.</p>
+<p>I applied the <strong>five core components</strong> of the Discourse Graph to my wiki as follows:</p>
+<h3 id="sources">1. <strong>Sources</strong></h3>
+<p>The primary document itself. Who wrote it? When? In what context? This anchors all downstream information.</p>
+<h3 id="evidence">2. <strong>Evidence</strong></h3>
+<p>All usable information from the source:</p>
+<ul>
+<li><p>Methodological details (research design, sample size, instruments)</p></li>
+<li><p>Theoretical foundations (concepts, frameworks)</p></li>
+<li><p>Empirical findings (results, metrics, observations)</p></li>
+</ul>
+<p><strong>Important:</strong> Evidence is <em>facts or observations</em>, not yet interpretations.</p>
+<h3 id="claims-assertionsfindings">3. <strong>Claims (Assertions/Findings)</strong></h3>
+<p>The conclusions authors draw from evidence: “If evidence X shows, then statement Y follows.” Claims are the scientific findings a paper propagates.</p>
+<h3 id="questions">4. <strong>Questions</strong></h3>
+<p>The scientific questions the text answers or raises. These emerge <strong>inductively</strong> from evidence and claims. They map the research space.</p>
+<h3 id="concepts">5. <strong>Concepts</strong></h3>
+<p>Overarching ideas, theories, constructs linking multiple claims and evidence. They are the “building blocks” of my knowledge graph.</p>
+<p>This structure is also called <strong>atomization</stro]]></description>
+      <guid>https://profmanagement.github.io/digital-garden/en/20260517_discourse-graph-pdf-synthesis.html</guid>
+    </item>
+    <item>
+      <title>On the Way to an Agentic OS — First Steps with the Everything Claude Code Repo</title>
+      <link>https://profmanagement.github.io/digital-garden/en/20260510_everything-claude-code.html</link>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <author>Maik@example.com (Maik)</author>
+      <category>AI</category>
+      <description><![CDATA[<h1 id="one-step-closer-to-a-personal-agentic-os-for-research-and-teaching">One Step Closer to a Personal Agentic OS for Research and Teaching</h1>
+<p class="note-byline">Maik &middot; 2026-05-10 &middot; 80% human</p>
+<p>For some time now I’ve been thinking about how to deploy an agentic OS — or rather an OS kernel for research — to handle parts of routine tasks and support creativity in research and teaching. It should be capable of executing valid workflows with defined skills, and have access to learnable libraries of skills, plugins, routines, and so on (so-called research stacks). This has some similarities with the Architecture of AIOS, an “AI Agent Operating System, which embeds large language model (LLM) into the operating system and facilitates the development and deployment of LLM-based AI Agents” (<a href="https://github.com/agiresearch/AIOS">Agiresearch/Aios on GitHub</a>).</p>
+<figure>
+<img src="../images/aios-architecture.png" style="width:100.0%" alt="Fig. 1. Architecture of AIOS" />
+<figcaption aria-hidden="true">Fig. 1. Architecture of AIOS</figcaption>
+</figure>
+<p>In the course of my research I came across <a href="https://github.com/anthropics/everything-claude-code">Everything Claude Code</a> (ECC), which brings a collection of 75 skills, 71 agents, 33 hooks, and countless commands to Claude Code. The repo is capable of executing professional research tasks semi-autonomously.</p>
+<figure>
+<img src="../images/ecc-hero.png" style="width:100.0%" alt="Fig. 2. Everything Claude Code" />
+<figcaption aria-hidden="true">Fig. 2. Everything Claude Code</figcaption>
+</figure>
+<h2 id="plan-first-code-later-as-a-plugin">Plan first, code later — as a plugin</h2>
+<p>Central to the core workflow is the <code>/everything-claude-code:plan</code> command, which launches a specialized skill that asks clarifying questions, weighs options, and waits for explicit confirmation before a single line of code is written. This can be used both for planning a new feature in the current project and for designing a new system architecture.</p>
+<p>The same applies to test-driven development: the <code>/tdd</code> workflow automatically sets up a test framework, writes tests <em>before</em> the implementation, and targets 80% coverage. It repeats the procedure until the desired target is reached, refining at each step.</p>
+<h2 id="externalizing-judgment">Externalizing judgment</h2>
+<p>ECC raises an interesting question: if a tool like this makes it possible to externalize good practices for working routines, does it not replace my judgment? What is the actual added value beyond saving time?</p>
+<p>I lean toward a nuanced answer. Tools like ECC significantly lower the barrier to structured work. Beginners get a professional scaffold without years of learning experience. Those who have been at it for a long time have to exercise less discipline to maintain familiar patterns.</p>
+<p>What no tool can replace: knowing <em>when</em> to deviate from the]]></description>
+      <guid>https://profmanagement.github.io/digital-garden/en/20260510_everything-claude-code.html</guid>
+    </item>
+    <item>
+      <title>New WikiProject for Personal Knowledge Management on Wikipedia</title>
+      <link>https://profmanagement.github.io/digital-garden/en/20260502_wikipedia-project-pkm.html</link>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <author>Maik@example.com (Maik)</author>
+      <category>PKM</category>
+      <description><![CDATA[<h1 id="new-wikiproject-for-personal-knowledge-management-on-wikipedia">New WikiProject for Personal Knowledge Management on Wikipedia</h1>
+<p class="note-byline">Maik &middot; 2026-05-02 &middot; 100% human</p>
+<p><a href="https://en.wikipedia.org">Wikipedia</a> already has many articles that can be assigned to the topic of Personal Knowledge Management (PKM). Some key articles already exist — such as <strong>Personal knowledge management</strong>, <strong>Zettelkasten</strong>, <strong>Information literacy</strong> — but are often incomplete, methodologically outdated, or insufficiently sourced. By contrast, other relevant concepts, approaches, and related topics are missing entirely.</p>
+<p>Today I created the <strong><a href="https://en.wikipedia.org/wiki/User:Maikarnold">WikiProject Personal Knowledge Management</a></strong> to systematically close these gaps, together with other interested contributors.</p>
+<figure>
+<img src="../images/wikipedia-pkm-project_en.png" style="width:100.0%" alt="Figure 1: Screenshot New WikiProject PKM" />
+<figcaption aria-hidden="true">Figure 1: Screenshot New WikiProject PKM</figcaption>
+</figure>
+<p>The project coordinates work on existing and new articles in the following areas:</p>
+<ul>
+<li><strong>Methods and approaches</strong> — Zettelkasten, excerpting, mind mapping, Cornell method</li>
+<li><strong>Tools and software</strong> — Obsidian, Logseq, Notion, Roam Research</li>
+<li><strong>Foundational concepts</strong> — Knowledge management, information literacy, metacognition</li>
+<li><strong>Historical precursors</strong> — Commonplace book, Memex, card index</li>
+</ul>
+<p>The project inventory includes core articles and so-called <a href="https://en.wikipedia.org/wiki/Wikipedia:Stub">stubs</a> — along with working notes on relevance and specific areas for improvement. The goal is to revise existing articles and those yet to be identified, rewrite others where needed, and translate articles from other language versions where appropriate.</p>
+<p>The project is currently in its early stages. Anyone who researches, teaches, or is simply interested in the field and has some experience editing Wikipedia is warmly invited: contributions of any kind are welcome — a citation, a paragraph, a new article. If you are interested, feel free to reach out by <a href="https://en.wikipedia.org/wiki/Special:EmailUser/Maikarnold">email</a>.</p>
+<h2 id="related">Related</h2>
+<p><strong>“The Whole Wide World” by Wreckless Eric</strong>, 1977. A song about searching — which feels right for anyone building a knowledge system. Listen on: <a href="https://www.youtube.com/watch?v=">YouTube</a> | <a href="https://open.spotify.com/track/4AHU8QRdwCUWxPC53cw4Hh">Spotify</a></p>
+<hr />
+<p><em>Written from my desk, May 2026.</em></p>
+<footer class="note-footer"><small>2026-05-02 &middot; modified 2026-05-02 &middot; v01</small></footer>]]></description>
+      <guid>https://profmanagement.github.io/digital-garden/en/20260502_wikipedia-project-pkm.html</guid>
+    </item>
+    <item>
+      <title>From wiki LLM to reasoning linter: adding discourse maps and claim checking to my setup</title>
+      <link>https://profmanagement.github.io/digital-garden/en/20260410_from-wiki-llm-to-reasoning-linter.html</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <author>Maik@example.com (Maik)</author>
+      <category>PKM</category>
+      <description><![CDATA[<h1 id="from-wiki-llm-to-reasoning-linter-adding-discourse-maps-and-claim-checking-to-my-setup">From wiki LLM to reasoning linter: adding discourse maps and claim checking to my setup</h1>
+<p class="note-byline">Maik &middot; 2026-04-10 &middot; 80% human</p>
+<p>This week, I added two new layers on top of the wiki LLM I built last week following the Andrej Karpathy approach. One is a Joal Chan’s and Matt Akamatsu’s Discourse Graph implementation, the other is Mike Caulfield’s Deep Background superprompt. Together they cover something I kept bumping into: the gap between retrieving information and evaluating it.</p>
+<h2 id="the-problem-i-kept-hitting">The problem I kept hitting</h2>
+<p>The wiki LLM is good at surfacing material from my notes, slide decks, and lecture transcripts. What it does not do — and retrieval is just not designed for this — is tell me whether the reasoning in that material holds up.</p>
+<p>When I started using the setup to draft OER material, the bottleneck was not finding content. It was figuring out which parts of my source material were claims and which parts were evidence. That sounds like a clean distinction until you try to enforce it on actual lecture notes. Then it gets complicated.</p>
+<h2 id="discourse-graphs-separating-claims-from-observations">Discourse graphs: separating claims from observations</h2>
+<p>The Discourse Graph model, developed by Joel Chan and Matt Akamatsu, treats claims and evidence as separate, linkable units. Distinguishing an empirical observation from a proposed answer leaves room for multiple interpretations of the same data — which matters when you are synthesising across sources rather than summarising one.</p>
+<p>I set up the Obsidian plugin this week. The difficult part, which I did not anticipate, is the initial tagging. Pulling a claim apart from its evidence inside a paragraph of running prose turns out to be harder to detect than it looks. And this is not a tool problem, it is a consequence from the Toulmin logic. The Toulmin framework makes the claim-warrant-backing structure explicit, and until you think in those categories naturally, the distinctions resist each other.</p>
+<p>That resistance is probably worth sitting with. It forces a re-read of my own material that skimming does not.</p>
+<h2 id="deep-background-a-linter-for-scientific-reasoning">Deep Background: a linter for scientific reasoning</h2>
+<p>The second addition is Mike Caulfield’s Deep Background superprompt — a lengthy instruction block you paste into a Claude or ChatGPT session to change how the model approaches a claim. The prompt draws on the SIFT method and organises output around verified facts, errors and corrections, source assessment, and notes on the information environment.</p>
+<p>The framing I keep returning to is linting. In software development, a linter checks code against a set of rules before it runs — it catches structural problems, not just typos. Deep Background does something simi]]></description>
+      <guid>https://profmanagement.github.io/digital-garden/en/20260410_from-wiki-llm-to-reasoning-linter.html</guid>
+    </item>
+    <item>
+      <title>PKM Summit 2026: When Note-Taking Becomes Life Philosophy</title>
+      <link>https://profmanagement.github.io/digital-garden/en/20260331_pkm-summit-2026-reflections.html</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
+      <author>Maik@example.com (Maik)</author>
+      <category>PKM</category>
+      <description><![CDATA[<h1 id="pkm-summit-2026-when-note-taking-becomes-life-philosophy">PKM Summit 2026: When Note-Taking Becomes Life Philosophy</h1>
+<p class="note-byline">Maik &middot; 2026-03-31 &middot; 100% human</p>
+<p>I attended the PKM Summit for the first time and I’m still buzzing from the energy of the exchange, the many impulses, and the community of knowledge management enthusiasts that gathered in Utrecht on March, 20-21, 2026.</p>
+<p>The workshops and talks I attended covered both note-taking strategies and more philosophical approaches. Tools and features were present – of course – but they weren’t really the main catcher. What stood out for me was something harder to pin down: the way how PKM can transform learning and sensemaking, and how the process of self-understanding and thinking becomes, inevitably, very personal.</p>
+<p>PKM provides a particular way of seeing things. And once we notice that, the life-philosophical dimensions aren’t far behind us. The vocabulary people used was “LifeOS”, “Personal Lab”, “Make yourself observable”. These aren’t just eye-catching brands. They suggest that PKM isn’t simply migrating from hardware to software; it’s in the middle of developing <em>individual philosophies</em>. PKM practitioners aren’t just note collectors or knowledge architects. They’re something closer to existential philosophers.</p>
+<p>Maybe the venue helped. The event was hosted by <a href="%5Bhttps://wonderofwork.com/%5D(https://wondersofwork.nl/en/)">Wonder of Work</a> in Utrecht, and the spaces themselves were part of the experience. You could anchor yourself in the room called <em>Earth</em> or <em>Roots</em>, or let your mind wander in <em>Dream</em> and <em>Vision</em>. Either way felt appropriate and comfortable for such a conference.</p>
+<h3 id="the-digital-garden-accountability-group">The Digital Garden Accountability Group</h3>
+<p>The most practically concrete thing I’m taking away started at Saturday lunch: a small, spontaneously assembled accountability group around digital gardening — the practice of building personal websites where you share unfinished thoughts in public.</p>
+<p>Under the motto <strong>“Working with the garage door up”</strong>, the group plans to support each other in publishing at least one new entry per week in their personal gardens. It doesn’t have to be polished. A short reflection, a quick thought, a snippet — anything counts.</p>
+<p>This note is part of that commitment.</p>
+<h3 id="about-this-note">About this note</h3>
+<p>This note was created as part of the next <a href="https://notizlab.de/">notizlab</a> newsletter, for which we all reflected on our experience at the PKMSummit 2026.</p>
+<h3 id="related">Related</h3>
+<p><strong><a href="https://www.univ.ox.ac.uk/news/songs-gardens/">Songs of the Gardens</a></strong> — A 1925 anthology of 18th-century songs from the London Pleasure Gardens (Vauxhall, Ranelagh, Marylebone), compiled by composer and music critic]]></description>
+      <guid>https://profmanagement.github.io/digital-garden/en/20260331_pkm-summit-2026-reflections.html</guid>
+    </item>
+  </channel>
+</rss>
