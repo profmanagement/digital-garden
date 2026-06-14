@@ -33,6 +33,7 @@
     <span class="nav-sep">|</span>
     <a href="about.html">ABOUT</a>
   </span>
+      <button id="graph-btn" class="graph-btn" title="Show knowledge graph">📊 Graph</button>
   <span class="nav-right">
     <span class="nav-lang"><a href="search.html">EN</a> &middot; <a href="../de/search.html">DE</a></span>
     <a class="nav-search" href="search.html">&#x1F50D;</a>
@@ -50,5 +51,8 @@ window.addEventListener('DOMContentLoaded', () => {
   new PagefindUI({ element: '#search', showSubResults: true });
 });
 </script>
+<div id="graph-modal" class="graph-modal"><div class="graph-container"><div id="graph-network"></div><div class="graph-legend"><p><span class="legend-dot legend-seedling">●</span> Seedling</p><p><span class="legend-dot legend-growing">●</span> Growing</p><p><span class="legend-dot legend-evergreen">●</span> Evergreen</p></div><button id="graph-close" class="graph-close" title="Close graph">✕</button></div></div>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<script src="graph-init.js"></script>
 </body>
 </html>

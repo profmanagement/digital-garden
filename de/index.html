@@ -33,6 +33,7 @@
     <span class="nav-sep">|</span>
     <a href="about.html">ÜBER MICH</a>
   </span>
+    <button id="graph-btn" class="graph-btn" title="Wissensgraph anzeigen">📊 Graph</button>
   <span class="nav-right">
     <span class="nav-lang"><a href="../en/index.html">EN</a> &middot; <a href="index.html">DE</a></span>
     <a class="nav-search" href="search.html">&#x1F50D;</a>
@@ -145,5 +146,8 @@ den Wolken diese zarten Pflanzen nähren.</p>
 <p><em>© Maik Arnold 2026 | <a
 href="https://profmanagement.github.io/digital-garden">Digital
 Garden</a></em></p>
+<div id="graph-modal" class="graph-modal"><div class="graph-container"><div id="graph-network"></div><div class="graph-legend"><p><span class="legend-dot legend-seedling">●</span> Seedling</p><p><span class="legend-dot legend-growing">●</span> Growing</p><p><span class="legend-dot legend-evergreen">●</span> Evergreen</p></div><button id="graph-close" class="graph-close" title="Close graph">✕</button></div></div>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<script src="graph-init.js"></script>
 </body>
 </html>
