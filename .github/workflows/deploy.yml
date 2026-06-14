@@ -29,6 +29,7 @@ jobs:
           cp style.css _site/style.css
           [ -d images ] && cp -r images _site/images
           cp sidenotes.js _site/sidenotes.js
+          cp graph-init.js _site/graph-init.js
 
           # ── Helpers ────────────────────────────────────────────────────────
 
@@ -299,8 +300,11 @@ jobs:
             [ -n "$note_created" ] && footer_text="$note_created"
             [ -n "$note_modified" ] && footer_text="${footer_text:+${footer_text} &middot; modified ${note_modified}}"
             [ -n "$note_version" ] && footer_text="${footer_text:+${footer_text} &middot; }${note_version}"
-            footer_text="${footer_text:+${footer_text} &middot; }<a href=\"feed.xml\" class=\"rss-link\" title=\"Subscribe to RSS feed\">📡 RSS</a>"
+            footer_text="${footer_text:+${footer_text} &middot; }<a href=\"feed.xml\" class=\"rss-link\" title=\"Subscribe to RSS feed\">📡 RSS</a> <span class=\"graph-toggle\"><button id=\"graph-btn\" class=\"graph-btn\" title=\"Show knowledge graph\">📊 Graph</button></span>"
             echo "<footer class=\"note-footer\"><small>${footer_text}</small></footer>" > _note_footer.html
+            echo '<div id="graph-modal" class="graph-modal"><div class="graph-container"><div id="graph-network"></div><div class="graph-legend"><p><span class="legend-dot legend-seedling">●</span> Seedling</p><p><span class="legend-dot legend-growing">●</span> Growing</p><p><span class="legend-dot legend-evergreen">●</span> Evergreen</p></div><button id="graph-close" class="graph-close" title="Close graph">✕</button></div></div>' >> _note_footer.html
+            echo '<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>' >> _note_footer.html
+            echo '<script src="../graph-init.js"></script>' >> _note_footer.html
             echo '<script src="../sidenotes.js"></script>' >> _note_footer.html
 
             preprocess "$f" | pandoc \
@@ -391,6 +395,116 @@ jobs:
             awk -v cat="$category" -v bl="$byline" '/<h1[> ]/{if (cat != "") print "<p class=\"note-category-label\">" cat "</p>"; print; if (bl != "") print "<p class=\"note-byline\">" bl "</p>"; next}1' \
               "_site/de/${slug}.html" > _tmp.html && mv _tmp.html "_site/de/${slug}.html"
           done
+
+      # ── Graph View ───────────────────────────────────────────────────────
+      - name: Generate graph visualization data
+        run: |
+          # Helper: Extract wikilinks from markdown file
+          extract_wikilinks() {
+            local file="$1"
+            local source_slug=$(basename "${file%.md}")
+
+            # Extract all [[...]] patterns, skip external links
+            grep -oE '\[\[[^]]+\]\]' "$file" 2>/dev/null | \
+              sed 's/\[\[//;s/\]\]//' | \
+              while read link; do
+                # Skip external URLs and file references
+                [[ "$link" =~ ^http ]] && continue
+                [[ "$link" =~ \.(pdf|docx|xlsx|png|jpg|jpeg)$ ]] && continue
+
+                # Extract slug (remove |label and #anchor)
+                target_slug="${link%%|*}"
+                target_slug="${target_slug%%#*}"
+
+                # Output source→target pair
+                echo "$source_slug→$target_slug"
+              done
+          }
+
+          # Generate graph for a language
+          generate_graph() {
+            local lang="$1"
+            local graph_file="_site/${lang}/graph-data.json"
+
+            echo "Generating graph for $lang..."
+
+            # Step 1: Collect note metadata (exclude drafts)
+            declare -A notes_meta
+            while IFS= read -r f; do
+              [ -f "$f" ] || continue
+              slug=$(basename "${f%.md}")
+              title=$(grep -m1 "^title:" "$f" | sed 's/^title:[[:space:]]*//' | tr -d '"')
+              category=$(grep -m1 "^category:" "$f" | sed 's/^category:[[:space:]]*//' | tr -d '"')
+              type=$(grep -m1 "^type:" "$f" | sed 's/^type:[[:space:]]*//' | tr -d '"')
+              status=$(grep -m1 "^status:" "$f" | sed 's/^status:[[:space:]]*//' | tr -d '"')
+
+              # Skip drafts
+              [ "$status" = "draft" ] && continue
+              [ -z "$title" ] && continue
+
+              notes_meta["$slug"]="$title|$category|$type"
+            done < <(find "content/${lang}/notes" -name "*.md" -type f)
+
+            # Step 2: Collect all wikilinks (only include valid targets)
+            declare -A links_unique
+            while IFS= read -r f; do
+              [ -f "$f" ] || continue
+              status=$(grep -m1 "^status:" "$f" | sed 's/^status:[[:space:]]*//' | tr -d '"')
+              [ "$status" = "draft" ] && continue
+
+              extract_wikilinks "$f" | while read link; do
+                source="${link%→*}"
+                target="${link#*→}"
+
+                # Only include if both nodes exist
+                [[ -n "${notes_meta[$target]}" ]] || continue
+
+                # Store unique edge (source→target)
+                links_unique["${source}→${target}"]=1
+              done
+            done < <(find "content/${lang}/notes" -name "*.md" -type f)
+
+            # Step 3: Build JSON output
+            {
+              echo "{"
+              echo '  "nodes": ['
+
+              # Output nodes
+              first=true
+              for slug in $(for k in "${!notes_meta[@]}"; do echo "$k"; done | sort); do
+                IFS='|' read -r title category type <<< "${notes_meta[$slug]}"
+                [[ "$first" == true ]] || echo ","
+                # Escape quotes in title
+                title_esc="${title//\"/\\\"}"
+                printf '    {"id": "%s", "label": "%s", "category": "%s", "type": "%s", "url": "%s.html"}' \
+                  "$slug" "$title_esc" "$category" "$type" "$slug"
+                first=false
+              done
+
+              echo ""
+              echo '  ],'
+              echo '  "links": ['
+
+              # Output links
+              first=true
+              for edge in "${!links_unique[@]}"; do
+                source="${edge%→*}"
+                target="${edge#*→}"
+                [[ "$first" == true ]] || echo ","
+                printf '    {"source": "%s", "target": "%s"}' "$source" "$target"
+                first=false
+              done
+
+              echo ""
+              echo "  ]"
+              echo "}"
+            } > "$graph_file"
+
+            echo "✓ Generated graph: $graph_file ($(grep -o '"id"' "$graph_file" | wc -l) nodes)"
+          }
+
+          generate_graph "en"
+          generate_graph "de"
 
       # ── RSS Feeds ────────────────────────────────────────────────────────
       - name: Generate RSS feeds

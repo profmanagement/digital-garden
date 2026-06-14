@@ -454,3 +454,130 @@ img {
   color: #999;
   font-family: Georgia, serif;
 }
+
+/* ── Graph View ────────────────────────────────────────────────────────── */
+
+.graph-toggle {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.graph-btn {
+  background: none;
+  border: none;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0;
+  text-decoration: none;
+  font-family: Georgia, serif;
+  transition: color 0.15s ease-in-out;
+}
+
+.graph-btn:hover {
+  color: var(--text);
+}
+
+.graph-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.graph-modal.active {
+  display: flex;
+}
+
+.graph-container {
+  position: relative;
+  background: var(--bg);
+  border-radius: 8px;
+  width: 90%;
+  max-width: 900px;
+  height: 70vh;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+#graph-network {
+  flex: 1;
+  border-radius: 8px 8px 0 0;
+  background: var(--bg);
+}
+
+.graph-legend {
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  display: flex;
+  gap: 2rem;
+  font-size: 0.8rem;
+  color: var(--accent);
+  flex-wrap: wrap;
+}
+
+.graph-legend p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-dot {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.legend-seedling { color: #6d9b5a; }
+.legend-growing { color: #7a6b9e; }
+.legend-evergreen { color: #4a8a7e; }
+
+.graph-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text);
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.15s;
+}
+
+.graph-close:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--accent);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .graph-container {
+    width: 95%;
+    height: 75vh;
+  }
+
+  .graph-legend {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .graph-close {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}
