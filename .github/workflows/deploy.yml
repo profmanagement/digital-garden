@@ -140,6 +140,13 @@ jobs:
             echo '</nav>'
           } > _nav_en_index.html
 
+          # Create shared graph footer (used on all pages)
+          {
+            echo '<div id="graph-modal" class="graph-modal"><div class="graph-container"><div id="graph-network"></div><div class="graph-legend"><p><span class="legend-dot legend-seedling">●</span> Seedling</p><p><span class="legend-dot legend-growing">●</span> Growing</p><p><span class="legend-dot legend-evergreen">●</span> Evergreen</p></div><button id="graph-close" class="graph-close" title="Close graph">✕</button></div></div>'
+            echo '<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>'
+            echo '<script src="graph-init.js"></script>'
+          } > _graph_footer.html
+
           pt=$(get_title "content/en/en/index.md")
           preprocess "content/en/en/index.md" | pandoc \
             --standalone \
@@ -147,11 +154,13 @@ jobs:
             --metadata pagetitle="$pt" \
             --metadata title="" \
             --include-before-body _nav_en_index.html \
+            --include-after-body _graph_footer.html \
             --lua-filter .pandoc/wikilinks.lua \
             -o _site/en/index.html
 
-          # Inject feed discovery link into <head>
+          # Inject feed discovery link + graph button into <head> and nav
           sed -i '/<\/head>/i\  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">' _site/en/index.html
+          sed -i '/<span class="nav-right">/i\    <button id="graph-btn" class="graph-btn" title="Show knowledge graph">📊 Graph</button>' _site/en/index.html
 
           # Inject notes listing right after <h2 id="notes"> (awk one-liner)
           awk '/<h2 id="notes">/{print; while((getline line < "_notes_listing_en.html") > 0) print line; close("_notes_listing_en.html"); next}1' \
@@ -180,11 +189,13 @@ jobs:
             --metadata pagetitle="$pt" \
             --metadata title="" \
             --include-before-body _nav_de_index.html \
+            --include-after-body _graph_footer.html \
             --lua-filter .pandoc/wikilinks.lua \
             -o _site/de/index.html
 
-          # Inject feed discovery link into <head>
+          # Inject feed discovery link + graph button into <head> and nav
           sed -i '/<\/head>/i\  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">' _site/de/index.html
+          sed -i '/<span class="nav-right">/i\    <button id="graph-btn" class="graph-btn" title="Wissensgraph anzeigen">📊 Graph</button>' _site/de/index.html
 
           # Inject notes listing right after <h2 id="notizen"> (awk one-liner)
           awk '/<h2 id="notizen">/{print; while((getline line < "_notes_listing_de.html") > 0) print line; close("_notes_listing_de.html"); next}1' \
@@ -217,11 +228,13 @@ jobs:
               --metadata pagetitle="$pt" \
               --metadata title="" \
               --include-before-body _nav_page.html \
+              --include-after-body _graph_footer.html \
               --lua-filter .pandoc/wikilinks.lua \
               -o "_site/en/${slug}.html"
 
-            # Inject feed discovery link into <head>
+            # Inject feed discovery link + graph button
             sed -i '/<\/head>/i\  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">' "_site/en/${slug}.html"
+            sed -i '/<span class="nav-right">/i\      <button id="graph-btn" class="graph-btn" title="Show knowledge graph">📊 Graph</button>' "_site/en/${slug}.html"
           done
 
           # ── German pages (about, search) → _site/de/ ───────────────────────
@@ -250,11 +263,13 @@ jobs:
               --metadata pagetitle="$pt" \
               --metadata title="" \
               --include-before-body _nav_page.html \
+              --include-after-body _graph_footer.html \
               --lua-filter .pandoc/wikilinks.lua \
               -o "_site/de/${slug}.html"
 
-            # Inject feed discovery link into <head>
+            # Inject feed discovery link + graph button
             sed -i '/<\/head>/i\  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml">' "_site/de/${slug}.html"
+            sed -i '/<span class="nav-right">/i\      <button id="graph-btn" class="graph-btn" title="Wissensgraph anzeigen">📊 Graph</button>' "_site/de/${slug}.html"
           done
 
           # ── English notes → _site/en/ ────────────────────────────────────
