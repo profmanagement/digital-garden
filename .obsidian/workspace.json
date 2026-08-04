@@ -11,10 +11,14 @@
             "id": "0b554c46a2d7d12b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "content/de/notes/20260327_icedu2026-digital-gardening-paper.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Neuer Tab"
+              "title": "20260327_icedu2026-digital-gardening-paper"
             }
           }
         ]
@@ -76,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 381.63671875
+    "width": 249.69921875
   },
   "right": {
     "id": "d926b70788aa1d21",
@@ -98,6 +102,25 @@
               },
               "icon": "links-going-out",
               "title": "Ausgehende Links von icedu2026-digital-gardening-paper öffnen"
+            }
+          },
+          {
+            "id": "1d473d58411f2578",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/de/notes/20260327_icedu2026-digital-gardening-paper.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Rückverweise"
             }
           },
           {
@@ -155,35 +178,6 @@
             }
           },
           {
-            "id": "480ff046a85da22e",
-            "type": "leaf",
-            "state": {
-              "type": "copilot-chat-view",
-              "state": {},
-              "icon": "message-square",
-              "title": "Copilot"
-            }
-          },
-          {
-            "id": "1d473d58411f2578",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "content/de/notes/PKM-Summit-2026-Reflexionen.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Rückverweise auf PKM-Summit-2026-Reflexionen"
-            }
-          },
-          {
             "id": "4620818bbf3853e2",
             "type": "leaf",
             "state": {
@@ -194,11 +188,11 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 499.0625
+    "width": 638.5703125
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -217,6 +211,8 @@
   },
   "active": "08fb7fdabea25c75",
   "lastOpenFiles": [
+    "_graphtest_after.png",
+    "style.css.tmp.339.109fef0f80e9",
     "CLAUDE.md",
     "README.md.tmp.98984.58ba6dd3335a",
     "README.md",
@@ -247,7 +243,6 @@
     "Pasted image 20260510203239.png",
     "content/de/notes/20260502_wikipedia-projekt-pkm.md",
     "content/de/notes/20260426_warum-wir-oeffentlich-schreiben.md",
-    "content/de/notes/20260323_Einen-digitalen-Garten-anlegen.md",
     "images/wikipedia-pkm-project_de.png",
     "images/wikipedia-pkm-project_en.png",
     "style.css.tmp.31045.1777751722320",
@@ -259,7 +254,6 @@
     "images",
     "Pasted image 20260327143552.png",
     "copilot/copilot-conversations",
-    "copilot/copilot-custom-prompts",
-    "copilot"
+    "copilot/copilot-custom-prompts"
   ]
 }

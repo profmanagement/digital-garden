@@ -531,24 +531,28 @@ img {
   height: 70vh;
   min-height: 400px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 #graph-network {
   flex: 1;
-  border-radius: 8px 8px 0 0;
+  min-width: 0;
+  border-radius: 8px 0 0 8px;
   background: var(--bg);
 }
 
 .graph-legend {
+  width: 220px;
+  flex-shrink: 0;
   padding: 1rem;
-  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 0.5rem;
   font-size: 0.8rem;
   color: var(--accent);
-  flex-wrap: wrap;
+  overflow-y: auto;
 }
 
 .graph-legend p {
@@ -595,10 +599,19 @@ img {
 @media (max-width: 768px) {
   .graph-container {
     width: 95%;
-    height: 75vh;
+    height: 85vh;
+    flex-direction: column;
+  }
+
+  #graph-network {
+    border-radius: 8px 8px 0 0;
   }
 
   .graph-legend {
+    width: auto;
+    max-height: 40%;
+    border-left: none;
+    border-top: 1px solid #ddd;
     flex-direction: column;
     gap: 0.5rem;
   }

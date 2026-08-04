@@ -3,7 +3,7 @@
   "model": "claude-opus-4-8",
   "effortLevel": "medium",
   "customModels": [],
-  "permissionMode": "manual",
+  "permissionMode": "acceptEdits",
   "workingDirectory": "/Users/maik/Documents/GitHub/digital-garden",
   "defaultAgent": "",
   "maxOutputTokens": 64000,
