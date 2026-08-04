@@ -1,0 +1,17 @@
+{
+  "cliPath": "/opt/homebrew/bin/claude",
+  "model": "claude-opus-4-8",
+  "effortLevel": "medium",
+  "customModels": [],
+  "permissionMode": "manual",
+  "workingDirectory": "/Users/maik/Documents/GitHub/digital-garden",
+  "defaultAgent": "",
+  "maxOutputTokens": 64000,
+  "autoGenerateTitles": true,
+  "lastSeenVersion": "0.3.25",
+  "elevenLabsApiKey": "",
+  "voiceId": "",
+  "voiceName": "",
+  "voicePlaybackSpeed": 1.25,
+  "voiceAutoSpeak": true
+}

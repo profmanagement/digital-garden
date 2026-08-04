@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d06a7f2751257df4",
+        "id": "daef6021d4d3de63",
         "type": "tabs",
         "children": [
           {
-            "id": "594d0f8412cba6ff",
+            "id": "0b554c46a2d7d12b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/en/notes/20260614_beyond-filing-cabinet.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "20260614_beyond-filing-cabinet"
+              "title": "Neuer Tab"
             }
           }
         ]
@@ -41,7 +37,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Dateiexplorer"
@@ -78,7 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 478.5
+    "width": 381.63671875
   },
   "right": {
     "id": "d926b70788aa1d21",
@@ -184,13 +182,23 @@
               "icon": "links-coming-in",
               "title": "Rückverweise auf PKM-Summit-2026-Reflexionen"
             }
+          },
+          {
+            "id": "4620818bbf3853e2",
+            "type": "leaf",
+            "state": {
+              "type": "hyo-plugin-view",
+              "state": {},
+              "icon": "message-circle",
+              "title": "Hyo"
+            }
           }
         ],
         "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 302.5
+    "width": 499.0625
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -202,13 +210,18 @@
       "templates:Vorlage einfügen": false,
       "command-palette:Befehlspalette öffnen": false,
       "bases:Neue Base erstellen": false,
-      "copilot:Open Copilot Chat": false
+      "copilot:Open Copilot Chat": false,
+      "obsidian42-brat:BRAT": false,
+      "hyo:Open Hyo": false
     }
   },
-  "active": "594d0f8412cba6ff",
+  "active": "08fb7fdabea25c75",
   "lastOpenFiles": [
-    "content/de/notes/20260614_jenseits-des-aktenschranks.md",
+    "CLAUDE.md",
+    "README.md.tmp.98984.58ba6dd3335a",
+    "README.md",
     "content/en/notes/20260614_beyond-filing-cabinet.md",
+    "content/de/notes/20260614_jenseits-des-aktenschranks.md",
     "content/en/notes/20260607_the-retrieval-paradox.md",
     "content/de/notes/20260607_das-retrieval-paradox.md",
     "content/de/notes/20260517_discourse-graph-pdf-synthesisierung.md",
@@ -235,8 +248,6 @@
     "content/de/notes/20260502_wikipedia-projekt-pkm.md",
     "content/de/notes/20260426_warum-wir-oeffentlich-schreiben.md",
     "content/de/notes/20260323_Einen-digitalen-Garten-anlegen.md",
-    "_comms/03_DONE/DONE-012_20260510_ecc-garden-note_v01.md",
-    "_comms/02_TASK/TASK-012_20260510_ecc-garden-note_v01.md",
     "images/wikipedia-pkm-project_de.png",
     "images/wikipedia-pkm-project_en.png",
     "style.css.tmp.31045.1777751722320",
@@ -249,7 +260,6 @@
     "Pasted image 20260327143552.png",
     "copilot/copilot-conversations",
     "copilot/copilot-custom-prompts",
-    "copilot",
-    "_comms/INDEX.md.tmp.71705.1774424722552"
+    "copilot"
   ]
 }
