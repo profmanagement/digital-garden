@@ -94,12 +94,61 @@
 
     // Type filters
     const types = [...new Set(allNodes.map(n => n.type).filter(Boolean))].sort();
-    const typeLabel = document.createElement('div');
-    typeLabel.style.cssText = 'font-size: 11px; font-weight: bold; margin-bottom: 6px;';
-    typeLabel.textContent = 'Types:';
-    filterSection.appendChild(typeLabel);
+    buildFilterGroup(filterSection, 'Types:', types, activeFilters.types, type => typeColors[type]);
 
-    types.forEach(type => {
+    // Category filters
+    const categories = [...new Set(allNodes.map(n => n.category).filter(Boolean))].sort();
+    if (categories.length > 0) {
+      buildFilterGroup(filterSection, 'Categories:', categories, activeFilters.categories, null);
+    }
+
+    // Tag filters
+    const tags = [...new Set(allNodes.flatMap(n => {
+      if (!n.tags) return [];
+      return n.tags.split(';').map(t => t.trim()).filter(Boolean);
+    }))].sort();
+    if (tags.length > 0) {
+      buildFilterGroup(filterSection, 'Tags:', tags, activeFilters.tags, null);
+    }
+
+    legend.appendChild(filterSection);
+  }
+
+  /**
+   * Build a labelled filter group with an "All" toggle plus one checkbox per item.
+   * The "All" toggle selects/deselects every item; it stays in sync when
+   * individual items are changed.
+   */
+  function buildFilterGroup(parent, title, items, filterSet, colorFn) {
+    const heading = document.createElement('div');
+    heading.style.cssText = 'font-size: 11px; font-weight: bold; margin-top: 8px; margin-bottom: 6px;';
+    heading.textContent = title;
+    parent.appendChild(heading);
+
+    const itemCheckboxes = [];
+
+    // "All" toggle
+    const allLabel = document.createElement('label');
+    allLabel.style.cssText = 'display: flex; align-items: center; font-size: 10px; font-style: italic; margin-bottom: 4px; cursor: pointer;';
+
+    const allCheckbox = document.createElement('input');
+    allCheckbox.type = 'checkbox';
+    allCheckbox.checked = true;
+    allCheckbox.style.cssText = 'margin-right: 6px; cursor: pointer;';
+    allCheckbox.addEventListener('change', () => {
+      const checked = allCheckbox.checked;
+      itemCheckboxes.forEach(cb => { cb.checked = checked; });
+      filterSet.clear();
+      if (checked) items.forEach(item => filterSet.add(item));
+      updateGraph();
+    });
+
+    allLabel.appendChild(allCheckbox);
+    allLabel.appendChild(document.createTextNode('All'));
+    parent.appendChild(allLabel);
+
+    // Item checkboxes
+    items.forEach(item => {
       const label = document.createElement('label');
       label.style.cssText = 'display: flex; align-items: center; font-size: 10px; margin-bottom: 4px; cursor: pointer;';
 
@@ -109,89 +158,25 @@
       checkbox.style.cssText = 'margin-right: 6px; cursor: pointer;';
       checkbox.addEventListener('change', () => {
         if (checkbox.checked) {
-          activeFilters.types.add(type);
+          filterSet.add(item);
         } else {
-          activeFilters.types.delete(type);
+          filterSet.delete(item);
         }
+        allCheckbox.checked = itemCheckboxes.every(cb => cb.checked);
         updateGraph();
       });
-
-      const dot = document.createElement('span');
-      dot.textContent = '●';
-      dot.style.cssText = `color: ${typeColors[type]}; margin-right: 4px;`;
+      itemCheckboxes.push(checkbox);
 
       label.appendChild(checkbox);
-      label.appendChild(dot);
-      label.appendChild(document.createTextNode(type));
-      filterSection.appendChild(label);
+      if (colorFn) {
+        const dot = document.createElement('span');
+        dot.textContent = '●';
+        dot.style.cssText = `color: ${colorFn(item)}; margin-right: 4px;`;
+        label.appendChild(dot);
+      }
+      label.appendChild(document.createTextNode(item));
+      parent.appendChild(label);
     });
-
-    // Category filters
-    const categories = [...new Set(allNodes.map(n => n.category).filter(Boolean))].sort();
-    if (categories.length > 0) {
-      const categoryLabel = document.createElement('div');
-      categoryLabel.style.cssText = 'font-size: 11px; font-weight: bold; margin-top: 8px; margin-bottom: 6px;';
-      categoryLabel.textContent = 'Categories:';
-      filterSection.appendChild(categoryLabel);
-
-      categories.forEach(category => {
-        const label = document.createElement('label');
-        label.style.cssText = 'display: flex; align-items: center; font-size: 10px; margin-bottom: 4px; cursor: pointer;';
-
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.checked = true;
-        checkbox.style.cssText = 'margin-right: 6px; cursor: pointer;';
-        checkbox.addEventListener('change', () => {
-          if (checkbox.checked) {
-            activeFilters.categories.add(category);
-          } else {
-            activeFilters.categories.delete(category);
-          }
-          updateGraph();
-        });
-
-        label.appendChild(checkbox);
-        label.appendChild(document.createTextNode(category));
-        filterSection.appendChild(label);
-      });
-    }
-
-    // Tag filters
-    const tags = [...new Set(allNodes.flatMap(n => {
-      if (!n.tags) return [];
-      return n.tags.split(';').map(t => t.trim()).filter(Boolean);
-    }))].sort();
-    if (tags.length > 0) {
-      const tagLabel = document.createElement('div');
-      tagLabel.style.cssText = 'font-size: 11px; font-weight: bold; margin-top: 8px; margin-bottom: 6px;';
-      tagLabel.textContent = 'Tags:';
-      filterSection.appendChild(tagLabel);
-
-      tags.forEach(tag => {
-        const label = document.createElement('label');
-        label.style.cssText = 'display: flex; align-items: center; font-size: 10px; margin-bottom: 4px; cursor: pointer;';
-
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.checked = true;
-        checkbox.style.cssText = 'margin-right: 6px; cursor: pointer;';
-        checkbox.addEventListener('change', () => {
-          if (checkbox.checked) {
-            activeFilters.tags.add(tag);
-          } else {
-            activeFilters.tags.delete(tag);
-          }
-          updateGraph();
-        });
-
-        label.appendChild(checkbox);
-        label.appendChild(document.createTextNode(tag));
-        filterSection.appendChild(label);
-      });
-    }
-
-    legend.appendChild(filterSection);
   }
 
   /**
@@ -205,8 +190,9 @@
       // Check category filter
       if (node.category && !activeFilters.categories.has(node.category)) return false;
 
-      // Check tag filter - node must have at least one active tag if tags are filtered
-      if (activeFilters.tags.size > 0 && node.tags) {
+      // Check tag filter - a tagged node must have at least one active tag
+      // (deselecting all tags therefore hides every tagged node)
+      if (node.tags) {
         const nodeTags = node.tags.split(';').map(t => t.trim()).filter(Boolean);
         const hasActiveTags = nodeTags.some(tag => activeFilters.tags.has(tag));
         if (!hasActiveTags) return false;
