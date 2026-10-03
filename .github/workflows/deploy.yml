@@ -29,6 +29,7 @@ jobs:
           cp style.css _site/style.css
           [ -d images ] && cp -r images _site/images
           cp sidenotes.js _site/sidenotes.js
+          cp mermaid-init.js _site/mermaid-init.js
           cp graph-d3.js _site/en/graph-d3.js
           cp graph-d3.js _site/de/graph-d3.js
 
@@ -338,6 +339,7 @@ jobs:
             echo '<script src="https://d3js.org/d3.v7.min.js"></script>' >> _note_footer.html
             echo '<script src="../graph-d3.js"></script>' >> _note_footer.html
             echo '<script src="../sidenotes.js"></script>' >> _note_footer.html
+            echo '<script src="../mermaid-init.js"></script>' >> _note_footer.html
 
             preprocess "$f" | pandoc \
               --standalone \
@@ -402,6 +404,7 @@ jobs:
             [ -n "$note_version" ] && footer_text="${footer_text:+${footer_text} &middot; }${note_version}"
             echo "<footer class=\"note-footer\"><small>${footer_text}</small></footer>" > _note_footer.html
             echo '<script src="../sidenotes.js"></script>' >> _note_footer.html
+            echo '<script src="../mermaid-init.js"></script>' >> _note_footer.html
 
             preprocess "$f" | pandoc \
               --standalone \

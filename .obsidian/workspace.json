@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/en/notes/20261003_opencode-meets-academic-cloud.md",
+                "file": "content/de/notes/20261003_opencode-academic-cloud.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20261003_opencode-meets-academic-cloud"
+              "title": "20261003_opencode-academic-cloud"
             }
           }
         ]
@@ -210,10 +210,11 @@
   },
   "active": "08fb7fdabea25c75",
   "lastOpenFiles": [
-    "style.css.tmp.10131.191f063b4bdc",
-    "content/de/notes/20261003_opencode-academic-cloud.md",
-    "content/de/notes/20260614_jenseits-des-aktenschranks.md",
+    "mermaid-init.js",
     "content/en/notes/20261003_opencode-meets-academic-cloud.md",
+    "content/de/notes/20261003_opencode-academic-cloud.md",
+    "style.css.tmp.10131.191f063b4bdc",
+    "content/de/notes/20260614_jenseits-des-aktenschranks.md",
     "content/en/notes/20260510_everything-claude-code.md",
     "content/en/notes/20260517_discourse-graph-pdf-synthesis.md",
     "content/en/notes/20260607_the-retrieval-paradox.md",
@@ -253,7 +254,6 @@
     "images/icedu2026-figure1.png",
     "images",
     "Pasted image 20260327143552.png",
-    "copilot/copilot-conversations",
-    "copilot/copilot-custom-prompts"
+    "copilot/copilot-conversations"
   ]
 }

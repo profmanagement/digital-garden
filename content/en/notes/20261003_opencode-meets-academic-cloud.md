@@ -188,7 +188,7 @@ If necessary, determine the path to the OpenCode binary with `which opencode`. T
 
 
 > [!TIP] Staging workflow for automated changes in the vault
-> A staging workflow makes sense for automated changes to the vault: `00_Inbox` → `_Staging` → human review → final filing. This prevents an agent from writing well-intentioned but wrong organisation directly into the garden.
+> A staging workflow makes sense for automated changes to the vault: `00_Inbox → Staging → human review → final filing`. This prevents an agent from writing well-intentioned but wrong organisation directly into the garden.
 
 ### 2.6 Sensible Model Choice Based on the Benchmark So Far
 
@@ -254,7 +254,7 @@ A corresponding installation guide will be added later. The retrieval step thus 
 
 **Robust workflow:**
 
-```
+```mermaid
 flowchart TD
     A[Module assignment & framework] --> B[Didactic concept]
     B --> C[Material and source base]

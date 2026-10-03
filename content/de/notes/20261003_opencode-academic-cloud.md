@@ -188,7 +188,7 @@ Den Pfad zum OpenCode-Binary ggf. mit `which opencode` bestimmen. Der Wrapper wi
 
 
 > [!TIP] Staging-Workflow für automatische Änderungen in der Vault
-> Für automatisierte Änderungen an der Vault ist ein Staging-Workflow sinnvoll: `00_Inbox` → `_Staging` → menschliche Prüfung → endgültige Ablage. Das verhindert, dass ein Agent gut gemeinte, aber falsche Ordnung direkt in den Garden schreibt.
+> Für automatisierte Änderungen an der Vault ist ein Staging-Workflow sinnvoll: `00_Inbox → Staging → menschliche Prüfung → endgültige Ablage`. Das verhindert, dass ein Agent gut gemeinte, aber falsche Ordnung direkt in den Garden schreibt.
 
 ### 2.6 Sinnvolle Modellwahl aus dem bisherigen Benchmark
 
@@ -254,7 +254,7 @@ Eine entsprechende Installationsanleitung muss später nachgeliefert werden. Der
 
 **Robuster Workflow:**
 
-```
+```mermaid
 flowchart TD
     A[Modulauftrag & Rahmen] --> B[Didaktisches Konzept]
     B --> C[Material- und Quellenbasis]
