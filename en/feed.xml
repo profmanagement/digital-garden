@@ -6,6 +6,35 @@
     <description>Notes on knowledge management, learning, and digital gardening</description>
     <language>en</language>
     <item>
+      <title>OpenCode meets Academic Cloud: Sovereign Academic AI Workflows</title>
+      <link>https://profmanagement.github.io/digital-garden/en/20261003_opencode-meets-academic-cloud.html</link>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <author>Maik@example.com (Maik)</author>
+      <category>AI</category>
+      <description><![CDATA[<h1 id="opencode-meets-academic-cloud-towards-sovereign-academic-ai-workflows">OpenCode meets Academic Cloud: Towards Sovereign Academic AI Workflows</h1>
+<p class="note-byline">Maik &middot; 2026-10-03 &middot; 75% human</p>
+<blockquote>
+<p><strong>Summary:</strong> OpenCode serves as the working interface, or agent harness. The Academic Cloud (SAIA with API access) provides OpenAI-compatible LLM endpoints that can, under certain conditions, be used in OpenCode in a GDPR-oriented way. Together, this combination offers controllable, desktop-based access to powerful models that suits academic workflows well – in Obsidian, in the terminal or in an IDE (e.g. VS Code).</p>
+</blockquote>
+<p>The configuration documented here is a snapshot and the result of an experimental setup on macOS (Golden Gate) and Linux (Mint). Model catalogue, context windows, limits, API parameters and OpenCode syntax can be adapted to each project. Before productive use, <code>/models</code> and the current <a href="https://docs.hpc.gwdg.de/services/ai-services/saia/index.html">SAIA documentation</a> should therefore be checked.</p>
+<h2 id="gdpr-oriented-use-and-digital-sovereignty">1. GDPR-Oriented Use and Digital Sovereignty</h2>
+<h3 id="why-the-combination-is-attractive">Why the Combination Is Attractive</h3>
+<p>The combination of OpenCode and the Academic Cloud is interesting for several reasons:</p>
+<ul>
+<li><strong>Choice of provider:</strong> OpenCode connects OpenAI-compatible endpoints via API. You are therefore not tied to a single (US) LLM chat service.</li>
+<li><strong>Working location and file control:</strong> Markdown files, scripts, prompts and knowledge base stay in your own Obsidian vault or on storage of your choice.</li>
+<li><strong>Transparent context:</strong> Files are passed in deliberately (e.g. <code>@note.md</code>) or read by a tool that has been explicitly permitted. This is easier to control than an opaque agent harness.</li>
+<li><strong>Interchangeable architecture:</strong> Models can be switched depending on the task without rebuilding the workflow. Local models or other compatible academic endpoints can be added later.</li>
+</ul>
+<h3 id="gdpr-oriented-does-not-automatically-mean-gdpr-compliant">GDPR-Oriented Does Not Automatically Mean GDPR-Compliant</h3>
+<p>Whether a specific use is permissible depends not on the model name but on the entire workflow. Before using personal, confidential or research-related data, the following points in particular need to be clarified:</p>
+<ol type="1">
+<li><strong>Legal basis and purpose limitation:</strong> May this specific information be processed for this task?</li>
+<li><strong>Contractual basis:</strong> Check the current terms of use, the data processing agreement and the institutional approval of the university, research partners and other institutions.</li>
+<li><strong>Data minimisation:</strong> Send to the LLM only the extract of the data that is necessary for the task; ideally pseudonymise or ]]></description>
+      <guid>https://profmanagement.github.io/digital-garden/en/20261003_opencode-meets-academic-cloud.html</guid>
+    </item>
+    <item>
       <title>Beyond the Filing Cabinet: Do Organisation Methods Actually Solve the Retrieval Paradox?</title>
       <link>https://profmanagement.github.io/digital-garden/en/20260614_beyond-filing-cabinet.html</link>
       <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>

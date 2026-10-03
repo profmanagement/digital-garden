@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Maik" />
+  <meta name="description" content="OpenCode as an agent harness plus OpenAI-compatible LLM endpoints from the Academic Cloud – controllable, file-based access to models for academic workflows." />
+  <title>OpenCode meets Academic Cloud: Sovereign Academic AI Workflows</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html">🪴 Digital Garden</a>
+  <span class="nav-links">
+    <a href="index.html">HOME</a>
+    <span class="nav-sep">|</span>
+    <a href="about.html">ABOUT</a>
+  </span>
+  <span class="nav-right">
+    <span class="nav-lang"><a href="20261003_opencode-meets-academic-cloud.html">EN</a> &middot; <a href="../de/20261003_opencode-academic-cloud.html">DE</a></span>
+    <a class="nav-search" href="search.html">&#x1F50D;</a>
+  </span>
+</nav>
+<p><a class="nav-back" href="index.html">&larr; Back</a></p>
+<p class="note-category-label">AI</p>
+<h1 id="opencode-meets-academic-cloud-towards-sovereign-academic-ai-workflows">OpenCode meets Academic Cloud: Towards Sovereign Academic AI Workflows</h1>
+<p class="note-byline">Maik &middot; 2026-10-03 &middot; 75% human</p>
+<blockquote>
+<p><strong>Summary:</strong> OpenCode serves as the working interface, or agent harness. The Academic Cloud (SAIA with API access) provides OpenAI-compatible LLM endpoints that can, under certain conditions, be used in OpenCode in a GDPR-oriented way. Together, this combination offers controllable, desktop-based access to powerful models that suits academic workflows well – in Obsidian, in the terminal or in an IDE (e.g. VS Code).</p>
+</blockquote>
+<p>The configuration documented here is a snapshot and the result of an experimental setup on macOS (Golden Gate) and Linux (Mint). Model catalogue, context windows, limits, API parameters and OpenCode syntax can be adapted to each project. Before productive use, <code>/models</code> and the current <a href="https://docs.hpc.gwdg.de/services/ai-services/saia/index.html">SAIA documentation</a> should therefore be checked.</p>
+<h2 id="gdpr-oriented-use-and-digital-sovereignty">1. GDPR-Oriented Use and Digital Sovereignty</h2>
+<h3 id="why-the-combination-is-attractive">Why the Combination Is Attractive</h3>
+<p>The combination of OpenCode and the Academic Cloud is interesting for several reasons:</p>
+<ul>
+<li><strong>Choice of provider:</strong> OpenCode connects OpenAI-compatible endpoints via API. You are therefore not tied to a single (US) LLM chat service.</li>
+<li><strong>Working location and file control:</strong> Markdown files, scripts, prompts and knowledge base stay in your own Obsidian vault or on storage of your choice.</li>
+<li><strong>Transparent context:</strong> Files are passed in deliberately (e.g. <code>@note.md</code>) or read by a tool that has been explicitly permitted. This is easier to control than an opaque agent harness.</li>
+<li><strong>Interchangeable architecture:</strong> Models can be switched depending on the task without rebuilding the workflow. Local models or other compatible academic endpoints can be added later.</li>
+</ul>
+<h3 id="gdpr-oriented-does-not-automatically-mean-gdpr-compliant">GDPR-Oriented Does Not Automatically Mean GDPR-Compliant</h3>
+<p>Whether a specific use is permissible depends not on the model name but on the entire workflow. Before using personal, confidential or research-related data, the following points in particular need to be clarified:</p>
+<ol type="1">
+<li><strong>Legal basis and purpose limitation:</strong> May this specific information be processed for this task?</li>
+<li><strong>Contractual basis:</strong> Check the current terms of use, the data processing agreement and the institutional approval of the university, research partners and other institutions.</li>
+<li><strong>Data minimisation:</strong> Send to the LLM only the extract of the data that is necessary for the task; ideally pseudonymise or remove names, contact details and identification data beforehand.</li>
+<li><strong>No premature disclosure:</strong> Do not simply copy raw interviews, expert assessments, student work, or personnel and project data into an external prompt.</li>
+<li><strong>Human-in-the-loop:</strong> AI outputs are drafts. Academic interpretation, quotations, assessments and decisions remain a human responsibility.</li>
+<li><strong>Traceability:</strong> When developing for research and teaching, always briefly document the model, version, parameters, prompt, the context provided and the verification steps.</li>
+</ol>
+<h3 id="a-practical-protection-model">A Practical Protection Model</h3>
+<p>Tab. 1: Data types and appropriate handling (own representation)</p>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 54%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Data type</strong></th>
+<th><strong>Appropriate handling</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Public literature, self-written drafts</td>
+<td>Can be processed after a normal quality check.</td>
+</tr>
+<tr class="even">
+<td>Internal teaching materials, unpublished manuscripts</td>
+<td>Only with a clarified institutional basis; selectively rather than the whole vault.</td>
+</tr>
+<tr class="odd">
+<td>Interview data, performance data, expert assessments, personal cases</td>
+<td>Pseudonymise consistently beforehand; when in doubt, do not process externally.</td>
+</tr>
+<tr class="even">
+<td>Particularly sensitive data</td>
+<td>As a rule, a local/isolated solution or an explicitly approved service.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="installation-and-setup-api-opencode">2. Installation and Setup: API + OpenCode</h2>
+<h3 id="prerequisites">2.1 Prerequisites</h3>
+<ul>
+<li>A current OpenCode installation.</li>
+<li>An Academic Cloud API key with access to chat models.</li>
+<li>Optional: Obsidian with OpenCode integration, Arcana access or local MCPs (e.g. Zotero, Anytype).</li>
+</ul>
+<p>The SAIA API can be reached via this OpenAI-compatible base endpoint: <code>https://chat-ai.academiccloud.de/v1</code></p>
+<p>The endpoint and the available models must be checked before any new setup.</p>
+<h3 id="storing-secrets-as-environment-variables">2.2 Storing Secrets as Environment Variables</h3>
+<p>API keys and other credentials <strong>never</strong> belong in Git, Markdown notes or screenshots. A local <code>.env</code> file could look like this:</p>
+<pre><code>ACADEMIC_CLOUD_API_KEY=&quot;&lt;your-new-api-key&gt;&quot;
+ACADEMIC_CLOUD_ARCANA_ID=&quot;&lt;arcana-collection-id&gt;&quot;  # only if Arcana is used</code></pre>
+<p><code>chmod 600 .env</code> sets restrictive read permissions on macOS/Linux. The <code>.env</code> file also belongs in <code>.gitignore</code>.</p>
+<blockquote>
+<p>[!Important] Note An API key that was previously exposed should be rotated. A new key is the cheapest security gain of this entire architecture.</p>
+</blockquote>
+<h3 id="adding-the-academic-cloud-as-an-opencode-provider">2.3 Adding the Academic Cloud as an OpenCode Provider</h3>
+<p>All OpenAI-compatible providers or endpoints and the parameters of the individual models must be entered in <code>~/.config/opencode/opencode.json</code>. The exact OpenCode schema version may differ; this template shows the essential fields:</p>
+<pre><code>{
+  &quot;$schema&quot;: &quot;https://opencode.ai/config.json&quot;,
+  &quot;provider&quot;: {
+    &quot;academic-cloud&quot;: {
+      &quot;npm&quot;: &quot;@ai-sdk/openai-compatible&quot;,
+      &quot;name&quot;: &quot;Academic Cloud&quot;,
+      &quot;options&quot;: {
+        &quot;baseURL&quot;: &quot;https://chat-ai.academiccloud.de/v1&quot;,
+        &quot;apiKey&quot;: &quot;{env:ACADEMIC_CLOUD_API_KEY}&quot;
+      },
+      &quot;models&quot;: {
+        &quot;openai-gpt-oss-120b&quot;: {
+          &quot;name&quot;: &quot;GPT-OSS 120B – Reasoning&quot;,
+          &quot;limit&quot;: { &quot;context&quot;: 131072, &quot;output&quot;: 32768 },
+          &quot;variants&quot;: {
+            &quot;low&quot;: { &quot;reasoningEffort&quot;: &quot;low&quot; },
+            &quot;medium&quot;: { &quot;reasoningEffort&quot;: &quot;medium&quot; },
+            &quot;high&quot;: { &quot;reasoningEffort&quot;: &quot;high&quot; }
+          }
+        },
+        &quot;qwen3-coder-next&quot;: { &quot;name&quot;: &quot;Qwen 3 Coder Next&quot; },
+        &quot;qwen3-30b-a3b-instruct-2507&quot;: { &quot;name&quot;: &quot;Qwen 3 30B A3B&quot; }
+      }
+    }
+  }
+}</code></pre>
+<p>The limits shown above are no guarantee for the future. A model may have a large nominal context window, while the effectively usable context is usually smaller because of output reserves, tool calls, server limits or timeouts.</p>
+<h3 id="loading-the-environment-and-testing-the-connection">2.4 Loading the Environment and Testing the Connection</h3>
+<p>To start OpenCode with all environment variables and keys, run the following in the terminal:</p>
+<pre><code>set -a
+source /path/to/.env
+set +a
+opencode</code></pre>
+<p>If everything works so far, you can run the following tests in OpenCode:</p>
+<ol type="1">
+<li>Use <code>/models</code> to check that the provider and the desired model appear in the list (note: frequently used models appear under <em>Recent</em>).</li>
+<li>Run a short prompt, e.g. <code>Reply exactly with: Connection successful.</code></li>
+<li>Then explicitly include a small file, e.g. <code>@test.md Summarise this note in three bullet points.</code></li>
+<li>Only then work with longer documents, tools or agents.</li>
+</ol>
+<p>With GPT-OSS models, you can also switch between the defined performance variants <code>low</code>, <code>medium</code> and <code>high</code> using <code>Ctrl + T</code>. Please verify this key binding in the current OpenCode interface.</p>
+<h3 id="making-the-obsidian-integration-robust">2.5 Making the Obsidian Integration Robust</h3>
+<h4 id="loading-the-.env-file">Loading the <code>.env</code> File</h4>
+<p>A typical stumbling block: the Obsidian plugin does not necessarily load an <code>.env</code> file itself. A local wrapper can load the variables and then start OpenCode (<em>example for macOS with a Homebrew installation of OpenCode</em>):</p>
+<pre><code>#!/usr/bin/env bash
+set -a
+source &quot;$HOME/.config/opencode/.env&quot;
+set +a
+exec /opt/homebrew/bin/opencode &quot;$@&quot;</code></pre>
+<h4 id="alternative-loading-.env-permanently-via-.zshrc">Alternative: Loading <code>.env</code> Permanently via <code>~/.zshrc</code></h4>
+<p>If you only use OpenCode in the terminal and do not want a wrapper, you can load the variables at every shell start. To do so, add the following to <code>~/.zshrc</code> (on Linux Mint with Bash: <code>~/.bashrc</code>):</p>
+<pre><code># OpenCode / Academic Cloud: load keys from .env
+if [ -f &quot;$HOME/.config/opencode/.env&quot; ]; then
+  set -a
+  source &quot;$HOME/.config/opencode/.env&quot;
+  set +a
+fi</code></pre>
+<p>Then restart the shell or run <code>source ~/.zshrc</code>, and use <code>echo ${ACADEMIC_CLOUD_API_KEY:+set}</code> to check that the variable is available (the output only shows “set”, not the key).</p>
+<p>There are a few limitations:</p>
+<ul>
+<li><strong>Terminal sessions only:</strong> Programs launched via the Dock, Spotlight or Finder (e.g. Obsidian) do not read <code>~/.zshrc</code>. The Obsidian plugin will therefore only find the variables if Obsidian is started from a terminal (<code>open -a Obsidian</code>). For use with Obsidian, the wrapper remains the more robust solution.</li>
+<li><strong>Wider exposure of the keys:</strong> Every process started from this shell inherits the API key. This is acceptable for a key to a single university API, but it should be a conscious decision.</li>
+<li><strong>Trusted content only:</strong> <code>source</code> executes the file as shell code. Values containing spaces or special characters must therefore be quoted, and the <code>.env</code> file may only contain content you trust (do not forget <code>chmod 600</code>).</li>
+<li><strong>Delayed effect of changes:</strong> If the key is rotated, the new <code>.env</code> only takes effect in new shells.</li>
+</ul>
+<p>If necessary, determine the path to the OpenCode binary with <code>which opencode</code>. The wrapper is then registered as the OpenCode command in the plugin.</p>
+<blockquote>
+<p>[!TIP] Staging workflow for automated changes in the vault A staging workflow makes sense for automated changes to the vault: <code>00_Inbox</code> → <code>_Staging</code> → human review → final filing. This prevents an agent from writing well-intentioned but wrong organisation directly into the garden.</p>
+</blockquote>
+<h3 id="sensible-model-choice-based-on-the-benchmark-so-far">2.6 Sensible Model Choice Based on the Benchmark So Far</h3>
+<p>Tab. 2: Selected Academic Cloud models for different uses (own representation)</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 14%" />
+<col style="width: 64%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Task</strong></th>
+<th><strong>Option</strong></th>
+<th><strong>Reason for choice</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>General, fast work</td>
+<td>GPT-OSS 120B, <code>low</code></td>
+<td>Very versatile and fast in tests so far</td>
+</tr>
+<tr class="even">
+<td>Demanding qualitative analysis</td>
+<td>GPT-OSS 120B, <code>high</code></td>
+<td>Best tested quality of results</td>
+</tr>
+<tr class="odd">
+<td>Coding</td>
+<td>Qwen 3 Coder Next</td>
+<td>Very fast in the coding test; quality needs further testing. Also suitable for agentic tasks</td>
+</tr>
+<tr class="even">
+<td>Research and academic writing</td>
+<td>Qwen 3 30B A3B</td>
+<td>Very fast in the test with average quality</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note</em>: These are not performance and quality tests in the strict sense but heuristic, experimental tests.</p>
+<h2 id="use-cases">3. Use Cases</h2>
+<p>In the following, I would like to describe a few use cases that I have been experimenting with so far.</p>
+<h3 id="a.-researching-and-analysing-academic-texts">A. Researching and Analysing Academic Texts</h3>
+<p><strong>Goal:</strong> Not simply to summarise literature, but to process it transparently into evidence, to find (critical) counter-positions and to assess applicability.</p>
+<p><strong>Workflow:</strong></p>
+<ol type="1">
+<li>Search in subject databases or via [[Zotero]]; an LLM answer is not a bibliography.</li>
+<li>Store relevant full texts/notes locally and pass only the files you need to OpenCode, deliberately.</li>
+<li>Have a structured evidence matrix generated: finding, study design, sample/setting, key limitation, supporting and opposing position, transferability.</li>
+<li>Check every important claim against the original source; do not let the model guess page numbers or DOIs.</li>
+<li>Transfer the result as a Markdown note with [[Wikilinks]] and source references into Zotero/LaTeX.</li>
+</ol>
+<p><strong>Example prompt:</strong></p>
+<pre><code>Read @article.md. Write an evidence note in English with:
+1) research question and design,
+2) robust findings with the location in the text,
+3) limitations and counter-positions,
+4) assessment of transferability to social management/teaching.
+Do not invent references or page numbers. Explicitly flag missing evidence.</code></pre>
+<p><em>Note</em>: It is advisable to work only with Markdown files at first. PDFs cannot easily be processed in the Academic Cloud without a suitable conversion (e.g. with <code>docling</code>).</p>
+<p><strong>Extension with a local Zotero MCP:</strong></p>
+<pre><code>Zotero PDF → local Beaver Zotero MCP → OpenCode → LLM → evidence note</code></pre>
+<p>A corresponding installation guide will be added later. The retrieval step thus remains locally controllable; the LLM receives only the text excerpt required for the request.</p>
+<h3 id="b.-organising-and-developing-courses"><strong>B. Organising and Developing Courses</strong></h3>
+<p><strong>Goal:</strong> To get from a module assignment to a consistent, evidence-based course – without outsourcing the subject-specific and didactic decisions.</p>
+<p><strong>Suitable subtasks:</strong></p>
+<ul>
+<li>Translate the module description into learning objectives, sessions, assessment formats and materials.</li>
+<li>Structure literature and practice cases as searchable units.</li>
+<li>Create Moodle wiki contributions, peer-feedback rubrics, assignments and presentation drafts.</li>
+<li>Consistency check: do activities and assessments cover the learning objectives?</li>
+<li>After the semester: cluster evaluations, but do not uncritically let the model “evaluate” them.</li>
+</ul>
+<p><strong>Robust workflow:</strong></p>
+<pre><code>flowchart TD
+    A[Module assignment &amp; framework] --&gt; B[Didactic concept]
+    B --&gt; C[Material and source base]
+    C --&gt; D[Drafts: sessions, tasks, rubrics]
+    D --&gt; E[Instructor review]
+    E --&gt; F[Moodle / Excalidraw / presentation]
+    F --&gt; G[Evaluation &amp; next iteration]</code></pre>
+<p><strong>Example prompt:</strong></p>
+<pre><code>Use @module-description.md and @teaching-concept.md. Develop a first plan
+for 14 sessions. For each session, give the learning objective, preparatory reading,
+activity, output artefact and link to the assessment.
+Flag all assumptions that do not follow from the files.
+Format as a Markdown table.</code></pre>
+<p><em>Didactic guardrail</em>: The agent generates material and variants in the respective working directory. Afterwards, the learning level, fit with the group, assessment alignment and subject-matter accuracy must be checked.</p>
+<h3 id="c.-obsidian-rag-with-arcana"><strong>C. Obsidian RAG with Arcana</strong></h3>
+<p><strong>Goal:</strong> To search a documented collection (e.g. project material, literature or course corpus) semantically and to process the results further in OpenCode.</p>
+<p>Arcana is a Retrieval-Augmented Generation (RAG) service that enables you to interact with documents – such as research papers, manuals or study materials – using natural language. For detailed documentation: https://docs.hpc.gwdg.de/services/ai-services/arcana/index.html</p>
+<p>Arcana was connected via the chat completions API with two special parameters:</p>
+<ul>
+<li>Activate tool/extension use: <code>"enable-tools": true</code></li>
+<li>Pass the collection/Arcana ID explicitly: <code>"arcana": { "id": "…" }</code></li>
+</ul>
+<p>Since OpenCode does not map this additional request logic automatically, a custom tool, e.g. <code>arcana_search.ts</code>, can pass on the natural-language request. The IDs are integrated exclusively via environment variables:</p>
+<pre><code>OpenCode → arcana_search.ts → Academic Cloud + Arcana corpus → hits → LLM synthesis → Markdown draft</code></pre>
+<p><strong>Working rules for good RAG:</strong></p>
+<ol type="1">
+<li>Define the corpus clearly and name it cleanly; do not index an entire private vault.</li>
+<li>Require sources/file names or text passages in the output.</li>
+<li>Separate retrieval and synthesis: check the hits first, then have them interpreted.</li>
+<li>Accept missing hits as a result; RAG does not replace evidence.</li>
+<li>Have changes output as a diff or in <code>_Staging</code>; do not let the model write directly into notes.</li>
+</ol>
+<p><strong>Example prompt:</strong></p>
+<pre><code>Search the Arcana corpus for positions on “digital gardening as reflective
+teaching practice”. First give a maximum of eight hits with source and relevance.
+Only then write a synthesis. Separate findings, interpretation and open
+questions. No statement without a traceable source.</code></pre>
+<blockquote>
+<p>[!TIP] ARCANA/RAG with Obsidian For many Obsidian tasks, RAG is not strictly necessary: a well-linked, atomic Markdown vault can often be followed more easily through file search, wikilinks and deliberate context passing. RAG is mainly worthwhile for larger, less well-structured corpora.</p>
+</blockquote>
+<h2 id="limits-and-typical-problems">4. Limits and Typical Problems</h2>
+<h3 id="the-bottleneck-is-often-context-and-performance-not-necessarily-the-model">The Bottleneck Is Often Context and Performance – Not Necessarily the Model</h3>
+<ul>
+<li><strong>Context budget:</strong> A large context window does not mean that an entire vault or many PDFs fit sensibly into one prompt.</li>
+<li><strong>Chunking and preselection:</strong> Search, filter and summarise first, then go deeper selectively. This is often better than “throwing everything into the LLM”.</li>
+<li><strong>Server load and rate limits:</strong> Runtimes fluctuate. In the tests, one and the same model showed large performance outliers; individual runs are therefore not a reliable comparison. It is advisable to always start new requests in a new session with <code>/new</code>.</li>
+<li><strong>Reasoning budget:</strong> With Qwen and Mistral, internal reasoning could use up the entire completion budget, so that no usable answer appeared. More reasoning is not automatically better.</li>
+<li><strong>Tool harness:</strong> OpenCode, plugin, MCP, network, API timeout and prompt structure strongly influence the result. A good model in a poor tool chain looks poor.</li>
+<li><strong>Hallucination and source errors:</strong> The model can formulate convincingly and still deliver false references, page numbers or conclusions.</li>
+</ul>
+<h3 id="practical-countermeasures">Practical Countermeasures</h3>
+<p>There are a few workarounds for the following problems:</p>
+<p>Tab. 3: Problems and countermeasures when using OpenCode and the Academic Cloud (own representation)</p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 81%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Problem</strong></th>
+<th><strong>Countermeasure</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Too much material</td>
+<td>Search → selection → chunks → synthesis instead of the full corpus in the prompt.</td>
+</tr>
+<tr class="even">
+<td>Slow/unstable responses</td>
+<td>Use a small control prompt, switch models, use streaming and repeat the test.</td>
+</tr>
+<tr class="odd">
+<td>Response stays empty</td>
+<td>Check the reasoning setting and <code>max_tokens</code>; with Qwen/Mistral, reduce thinking/reasoning if needed.</td>
+</tr>
+<tr class="even">
+<td>Unclear source basis</td>
+<td>Make citations/references mandatory and check them against the primary source.</td>
+</tr>
+<tr class="odd">
+<td>Risky vault changes</td>
+<td>Staging, diff, backup and explicit approval.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="working-principles-instead-of-a-short-summary">5. Working Principles – Instead of a Short Summary</h2>
+<p>Instead of summarising this tutorial once more, a number of principles can be derived from these tests that may also transfer to other workflows and development environments:</p>
+<ol type="1">
+<li><strong>Minimise and classify sensitive data.</strong></li>
+<li><strong>Keep secrets out of notes and Git.</strong></li>
+<li><strong>Give context deliberately; do not load in bulk.</strong></li>
+<li><strong>Choose the model by task; test speed and quality separately.</strong></li>
+<li><strong>Keep retrieval, analysis and decision visibly separate.</strong></li>
+<li><strong>Check outputs, especially sources, quotations, assessments and code.</strong></li>
+<li><strong>Your own vault remains the system of record; the LLM provides suggestions.</strong></li>
+</ol>
+<blockquote>
+<p>[!todo] Still open: Arcana Arcana is a Retrieval-Augmented Generation (RAG) service that enables you to interact with documents – such as research papers, manuals or study materials – using natural language. I want to examine how Arcana can be integrated into this workflow – as a complement to the vault, without sensitive documents being uploaded unchecked.</p>
+</blockquote>
+<footer class="note-footer"><small>2026-10-03 &middot; modified 2026-10-03 &middot; v01 &middot; <span class="graph-toggle"><button id="graph-btn" class="graph-btn" title="Show knowledge graph">📊 Graph</button></span></small></footer>
+<div id="graph-modal" class="graph-modal"><div class="graph-container"><div id="graph-network"></div><div class="graph-legend"><p><span class="legend-dot legend-seedling">●</span> Seedling</p><p><span class="legend-dot legend-growing">●</span> Growing</p><p><span class="legend-dot legend-evergreen">●</span> Evergreen</p></div><button id="graph-close" class="graph-close" title="Close graph">✕</button></div></div>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="../graph-d3.js"></script>
+<script src="../sidenotes.js"></script>
+</body>
+</html>

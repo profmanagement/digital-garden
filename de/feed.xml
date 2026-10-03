@@ -6,6 +6,34 @@
     <description>Notes on knowledge management, learning, and digital gardening</description>
     <language>de</language>
     <item>
+      <title>OpenCode meets Academic Cloud: souveräne akademische KI-Workflows</title>
+      <link>https://profmanagement.github.io/digital-garden/de/20261003_opencode-academic-cloud.html</link>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <author>Maik@example.com (Maik)</author>
+      <category>KI</category>
+      <description><![CDATA[<h1 id="opencode-meets-academic-cloud-auf-dem-weg-zu-souveränen-akademischen-ki-workflows">OpenCode meets Academic Cloud: Auf dem Weg zu souveränen akademischen KI-Workflows</h1>
+<p class="note-byline">Maik &middot; 2026-10-03 &middot; 75% human</p>
+<blockquote>
+<p><strong>Zusammenfassung:</strong> OpenCode wird als Arbeitsoberfläche bzw. Agent-Harness verwendet. Die Academic Cloud (SAIA mit API-Zugriff) stellt OpenAI-kompatible LLM-Endpunkte bereit, die in OpenCode unter Umständen DSGVO-orientiert genutzt werden können. Zusammen ermöglicht diese Kombination einen kontrollierbaren, desktopnahen und für akademische Workflows gut geeigneten Zugang zu leistungsfähigen Modellen – in Obsidian, im Terminal oder einer IDE (z. B. VS Code).</p>
+</blockquote>
+<p>Die hier dokumentierte Konfiguration ist eine Momentaufnahme und Ergebnis einer Experimentalumgebung auf macOS (Golden Gate) und Linux (Mint). Modellkatalog, Kontextfenster, Limits, API-Parameter und OpenCode-Syntax können je nach Projekt angepasst werden. Vor einer produktiven Nutzung sollten deshalb <code>/models</code> und die aktuelle <a href="https://docs.hpc.gwdg.de/services/ai-services/saia/index.html">SAIA-Dokumentation</a> geprüft werden.</p>
+<h2 id="dsgvo-orientierte-nutzung-und-digitale-souveränität">1. DSGVO-orientierte Nutzung und digitale Souveränität</h2>
+<h3 id="was-die-kombination-attraktiv-macht">Was die Kombination attraktiv macht</h3>
+<p>Die Kombination aus OpenCode und Academic Cloud ist aus verschiedenen Gründen interessant:</p>
+<ul>
+<li><strong>Providerwahl:</strong> OpenCode bindet OpenAI-kompatible Endpunkte per API ein. Damit ist man nicht an einen einzelnen (US-)LLM-Chatdienst gebunden.</li>
+<li><strong>Arbeitsort und Dateikontrolle:</strong> Markdown-Dateien, Skripte, Prompts und Wissensbasis bleiben in der eigenen Obsidian-Vault bzw. auf selbst gewähltem Speicher.</li>
+<li><strong>Transparenter Kontext:</strong> Dateien werden gezielt übergeben (z. B. <code>@notiz.md</code>) oder von einem ausdrücklich erlaubten Tool gelesen. Das ist besser kontrollierbar als ein intransparenter Agent-Harness.</li>
+<li><strong>Austauschbare Architektur:</strong> Modelle können je nach Aufgabe gewechselt werden, ohne den Workflow neu zu bauen. Lokale Modelle oder weitere kompatible akademische Endpunkte bleiben erweiterbar.</li>
+</ul>
+<h3 id="dsgvo-orientiert-heißt-nicht-automatisch-dsgvo-konform">DSGVO-orientiert heißt nicht automatisch DSGVO-konform</h3>
+<p>Ob ein konkreter Einsatz zulässig ist, entscheidet sich nicht am Modellnamen, sondern am gesamten Workflow. Vor dem Einsatz mit personenbezogenen, vertraulichen oder forschungsbezogenen Daten sind insbesondere zu klären:</p>
+<ol type="1">
+<li><strong>Rechtsgrundlage und Zweckbindung:</strong> Darf die konkrete Information für diese Aufgabe verarbeitet werden?</li>
+<li><strong>Vertragliche Grundlage:</strong> Aktuelle Nutzungsbedingungen, Auftragsverarbeitungsvereinbarung bzw. institutionelle Freigabe der Ho]]></description>
+      <guid>https://profmanagement.github.io/digital-garden/de/20261003_opencode-academic-cloud.html</guid>
+    </item>
+    <item>
       <title>Jenseits des Aktenschranks: Lösen Organisationsmethoden das Retrieval-Paradox wirklich?</title>
       <link>https://profmanagement.github.io/digital-garden/de/20260614_jenseits-des-aktenschranks.html</link>
       <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
