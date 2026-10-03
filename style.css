@@ -108,6 +108,35 @@ blockquote p:last-child {
   margin-bottom: 0;
 }
 
+/* ── Callouts (Obsidian > [!type]) ─────────────────────────────────────── */
+
+.callout {
+  --callout-color: var(--accent);
+  margin: 1.5rem 0;
+  padding: 0.75rem 1.25rem;
+  border-left: 3px solid var(--callout-color);
+  background: color-mix(in srgb, var(--callout-color) 8%, transparent);
+  line-height: 1.7;
+}
+
+.callout-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.callout-title p,
+.callout > p {
+  margin: 0 0 0.5rem;
+}
+
+.callout > p:last-child {
+  margin-bottom: 0;
+}
+
+.callout-tip { --callout-color: #2e8b57; }
+.callout-important { --callout-color: #b8860b; }
+.callout-todo { --callout-color: #4a6fa5; }
+
 /* ── Nav bar ───────────────────────────────────────────────────────────── */
 
 .site-nav {
