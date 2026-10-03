@@ -1,6 +1,7 @@
 # Project Index
 
 ## Active Tasks
+- [ ] TASK-014: Notiz — OpenCode × Academic Cloud (DE; Entwurf endet bei „Praktisches Schutzmodell“)
 - [ ] TASK-013: Blogpost — Discourse Graph & PDF-Synthesisierung (DE ✓ | EN ✓)
 
 ## Completed Tasks (recent)

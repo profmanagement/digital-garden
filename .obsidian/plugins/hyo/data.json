@@ -1,6 +1,6 @@
 {
-  "cliPath": "/opt/homebrew/bin/claude",
-  "model": "claude-opus-4-8",
+  "cliPath": "/Users/maik/.local/bin/claude",
+  "model": "claude-sonnet-5-5",
   "effortLevel": "medium",
   "customModels": [],
   "permissionMode": "acceptEdits",
@@ -8,10 +8,22 @@
   "defaultAgent": "",
   "maxOutputTokens": 64000,
   "autoGenerateTitles": true,
-  "lastSeenVersion": "0.3.25",
+  "gatewayUrl": "",
+  "askFirst": true,
+  "enableMobileAccess": false,
+  "gatewayPort": 8787,
+  "lastSeenVersion": "0.6.5",
+  "voiceEngine": "elevenlabs",
   "elevenLabsApiKey": "",
   "voiceId": "",
   "voiceName": "",
   "voicePlaybackSpeed": 1.25,
-  "voiceAutoSpeak": true
+  "voiceAutoSpeak": true,
+  "openAiApiKey": "",
+  "gptLiveVoice": "marin",
+  "voicePersonality": "",
+  "voiceDebugLog": false,
+  "tasks": {},
+  "commands": {},
+  "commandsMigrated": true
 }
