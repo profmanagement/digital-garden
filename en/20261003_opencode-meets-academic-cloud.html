@@ -112,9 +112,12 @@
 <pre><code>ACADEMIC_CLOUD_API_KEY=&quot;&lt;your-new-api-key&gt;&quot;
 ACADEMIC_CLOUD_ARCANA_ID=&quot;&lt;arcana-collection-id&gt;&quot;  # only if Arcana is used</code></pre>
 <p><code>chmod 600 .env</code> sets restrictive read permissions on macOS/Linux. The <code>.env</code> file also belongs in <code>.gitignore</code>.</p>
-<blockquote>
-<p>[!Important] Note An API key that was previously exposed should be rotated. A new key is the cheapest security gain of this entire architecture.</p>
-</blockquote>
+<div class="callout callout-important">
+<div class="callout-title">
+<p>Note</p>
+</div>
+<p>An API key that was previously exposed should be rotated. A new key is the cheapest security gain of this entire architecture.</p>
+</div>
 <h3 id="adding-the-academic-cloud-as-an-opencode-provider">2.3 Adding the Academic Cloud as an OpenCode Provider</h3>
 <p>All OpenAI-compatible providers or endpoints and the parameters of the individual models must be entered in <code>~/.config/opencode/opencode.json</code>. The exact OpenCode schema version may differ; this template shows the essential fields:</p>
 <pre><code>{
@@ -183,9 +186,12 @@ fi</code></pre>
 <li><strong>Delayed effect of changes:</strong> If the key is rotated, the new <code>.env</code> only takes effect in new shells.</li>
 </ul>
 <p>If necessary, determine the path to the OpenCode binary with <code>which opencode</code>. The wrapper is then registered as the OpenCode command in the plugin.</p>
-<blockquote>
-<p>[!TIP] Staging workflow for automated changes in the vault A staging workflow makes sense for automated changes to the vault: <code>00_Inbox</code> → <code>_Staging</code> → human review → final filing. This prevents an agent from writing well-intentioned but wrong organisation directly into the garden.</p>
-</blockquote>
+<div class="callout callout-tip">
+<div class="callout-title">
+<p>Staging workflow for automated changes in the vault</p>
+</div>
+<p>A staging workflow makes sense for automated changes to the vault: <code>00_Inbox</code> → <code>_Staging</code> → human review → final filing. This prevents an agent from writing well-intentioned but wrong organisation directly into the garden.</p>
+</div>
 <h3 id="sensible-model-choice-based-on-the-benchmark-so-far">2.6 Sensible Model Choice Based on the Benchmark So Far</h3>
 <p>Tab. 2: Selected Academic Cloud models for different uses (own representation)</p>
 <table>
@@ -296,9 +302,12 @@ Format as a Markdown table.</code></pre>
 teaching practice”. First give a maximum of eight hits with source and relevance.
 Only then write a synthesis. Separate findings, interpretation and open
 questions. No statement without a traceable source.</code></pre>
-<blockquote>
-<p>[!TIP] ARCANA/RAG with Obsidian For many Obsidian tasks, RAG is not strictly necessary: a well-linked, atomic Markdown vault can often be followed more easily through file search, wikilinks and deliberate context passing. RAG is mainly worthwhile for larger, less well-structured corpora.</p>
-</blockquote>
+<div class="callout callout-tip">
+<div class="callout-title">
+<p>ARCANA/RAG with Obsidian</p>
+</div>
+<p>For many Obsidian tasks, RAG is not strictly necessary: a well-linked, atomic Markdown vault can often be followed more easily through file search, wikilinks and deliberate context passing. RAG is mainly worthwhile for larger, less well-structured corpora.</p>
+</div>
 <h2 id="limits-and-typical-problems">4. Limits and Typical Problems</h2>
 <h3 id="the-bottleneck-is-often-context-and-performance-not-necessarily-the-model">The Bottleneck Is Often Context and Performance – Not Necessarily the Model</h3>
 <ul>
@@ -357,9 +366,12 @@ questions. No statement without a traceable source.</code></pre>
 <li><strong>Check outputs, especially sources, quotations, assessments and code.</strong></li>
 <li><strong>Your own vault remains the system of record; the LLM provides suggestions.</strong></li>
 </ol>
-<blockquote>
-<p>[!todo] Still open: Arcana Arcana is a Retrieval-Augmented Generation (RAG) service that enables you to interact with documents – such as research papers, manuals or study materials – using natural language. I want to examine how Arcana can be integrated into this workflow – as a complement to the vault, without sensitive documents being uploaded unchecked.</p>
-</blockquote>
+<div class="callout callout-todo">
+<div class="callout-title">
+<p>Still open: Arcana</p>
+</div>
+<p>Arcana is a Retrieval-Augmented Generation (RAG) service that enables you to interact with documents – such as research papers, manuals or study materials – using natural language. I want to examine how Arcana can be integrated into this workflow – as a complement to the vault, without sensitive documents being uploaded unchecked.</p>
+</div>
 <footer class="note-footer"><small>2026-10-03 &middot; modified 2026-10-03 &middot; v01 &middot; <span class="graph-toggle"><button id="graph-btn" class="graph-btn" title="Show knowledge graph">📊 Graph</button></span></small></footer>
 <div id="graph-modal" class="graph-modal"><div class="graph-container"><div id="graph-network"></div><div class="graph-legend"><p><span class="legend-dot legend-seedling">●</span> Seedling</p><p><span class="legend-dot legend-growing">●</span> Growing</p><p><span class="legend-dot legend-evergreen">●</span> Evergreen</p></div><button id="graph-close" class="graph-close" title="Close graph">✕</button></div></div>
 <script src="https://d3js.org/d3.v7.min.js"></script>
