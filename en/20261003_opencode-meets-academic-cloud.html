@@ -190,7 +190,7 @@ fi</code></pre>
 <div class="callout-title">
 <p>Staging workflow for automated changes in the vault</p>
 </div>
-<p>A staging workflow makes sense for automated changes to the vault: <code>00_Inbox</code> → <code>_Staging</code> → human review → final filing. This prevents an agent from writing well-intentioned but wrong organisation directly into the garden.</p>
+<p>A staging workflow makes sense for automated changes to the vault: <code>00_Inbox → Staging → human review → final filing</code>. This prevents an agent from writing well-intentioned but wrong organisation directly into the garden.</p>
 </div>
 <h3 id="sensible-model-choice-based-on-the-benchmark-so-far">2.6 Sensible Model Choice Based on the Benchmark So Far</h3>
 <p>Tab. 2: Selected Academic Cloud models for different uses (own representation)</p>
@@ -265,7 +265,7 @@ Do not invent references or page numbers. Explicitly flag missing evidence.</cod
 <li>After the semester: cluster evaluations, but do not uncritically let the model “evaluate” them.</li>
 </ul>
 <p><strong>Robust workflow:</strong></p>
-<pre><code>flowchart TD
+<pre class="mermaid"><code>flowchart TD
     A[Module assignment &amp; framework] --&gt; B[Didactic concept]
     B --&gt; C[Material and source base]
     C --&gt; D[Drafts: sessions, tasks, rubrics]
@@ -377,5 +377,6 @@ questions. No statement without a traceable source.</code></pre>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="../graph-d3.js"></script>
 <script src="../sidenotes.js"></script>
+<script src="../mermaid-init.js"></script>
 </body>
 </html>

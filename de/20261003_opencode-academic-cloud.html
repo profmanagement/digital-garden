@@ -190,7 +190,7 @@ fi</code></pre>
 <div class="callout-title">
 <p>Staging-Workflow für automatische Änderungen in der Vault</p>
 </div>
-<p>Für automatisierte Änderungen an der Vault ist ein Staging-Workflow sinnvoll: <code>00_Inbox</code> → <code>_Staging</code> → menschliche Prüfung → endgültige Ablage. Das verhindert, dass ein Agent gut gemeinte, aber falsche Ordnung direkt in den Garden schreibt.</p>
+<p>Für automatisierte Änderungen an der Vault ist ein Staging-Workflow sinnvoll: <code>00_Inbox → Staging → menschliche Prüfung → endgültige Ablage</code>. Das verhindert, dass ein Agent gut gemeinte, aber falsche Ordnung direkt in den Garden schreibt.</p>
 </div>
 <h3 id="sinnvolle-modellwahl-aus-dem-bisherigen-benchmark">2.6 Sinnvolle Modellwahl aus dem bisherigen Benchmark</h3>
 <p>Tab. 2: Ausgewählte Modelle der Academic Cloud für unterschiedliche Einsatzformen (eigene Darstellung)</p>
@@ -265,7 +265,7 @@ Erfinde keine Literaturangaben oder Seitenzahlen. Markiere fehlende Evidenz ausd
 <li>Nach dem Semester: Evaluationen clustern, aber nicht unkritisch „auswerten lassen“.</li>
 </ul>
 <p><strong>Robuster Workflow:</strong></p>
-<pre><code>flowchart TD
+<pre class="mermaid"><code>flowchart TD
     A[Modulauftrag &amp; Rahmen] --&gt; B[Didaktisches Konzept]
     B --&gt; C[Material- und Quellenbasis]
     C --&gt; D[Entwürfe: Sitzungen, Aufgaben, Rubriken]
@@ -373,5 +373,6 @@ Fragen. Keine Aussage ohne rückverfolgbare Quelle.</code></pre>
 </div>
 <footer class="note-footer"><small>2026-10-03 &middot; geändert 2026-10-03 &middot; v01</small></footer>
 <script src="../sidenotes.js"></script>
+<script src="../mermaid-init.js"></script>
 </body>
 </html>
